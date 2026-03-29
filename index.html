@@ -122,27 +122,39 @@
       <button id="menu-toggle" type="button" class="focusable rounded-lg border border-slate/20 bg-surface px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-navy md:hidden" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
 
       <ul class="hidden items-center gap-6 text-sm font-medium text-slate/90 md:flex">
-        <li><a href="#genel" class="focusable transition hover:text-navy">Genel</a></li>
-        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable transition hover:text-navy">Hizmetler</a></li>
-        <li><a href="#icerik" data-tab-link="urunler" class="focusable transition hover:text-navy">Ürünler</a></li>
-        <li><a href="#icerik" data-tab-link="vaka" class="focusable transition hover:text-navy">Vaka</a></li>
-        <li><a href="#projeler" class="focusable transition hover:text-navy">Projeler</a></li>
-        <li><a href="#paketler" class="focusable transition hover:text-navy">Paketler</a></li>
-        <li><a href="#sss" class="focusable transition hover:text-navy">SSS</a></li>
-        <li><a href="#contact" class="focusable transition hover:text-navy">İletişim</a></li>
+        <li><a href="#genel" class="focusable transition hover:text-navy" data-i18n="navGeneral">Genel</a></li>
+        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable transition hover:text-navy" data-i18n="navServices">Hizmetler</a></li>
+        <li><a href="#icerik" data-tab-link="urunler" class="focusable transition hover:text-navy" data-i18n="navProducts">Ürünler</a></li>
+        <li><a href="#icerik" data-tab-link="vaka" class="focusable transition hover:text-navy" data-i18n="navCases">Vaka</a></li>
+        <li><a href="#projeler" class="focusable transition hover:text-navy" data-i18n="navProjects">Projeler</a></li>
+        <li><a href="#paketler" class="focusable transition hover:text-navy" data-i18n="navPackages">Paketler</a></li>
+        <li><a href="#sss" class="focusable transition hover:text-navy" data-i18n="navFaq">SSS</a></li>
+        <li><a href="#contact" class="focusable transition hover:text-navy" data-i18n="navContact">İletişim</a></li>
+        <li>
+          <div class="inline-flex rounded-lg border border-slate/20 bg-surface p-1 text-[11px] font-semibold tracking-[0.08em]">
+            <button id="lang-tr" type="button" class="focusable rounded-md bg-navy px-2 py-1 text-white">TR</button>
+            <button id="lang-en" type="button" class="focusable rounded-md px-2 py-1 text-navy">EN</button>
+          </div>
+        </li>
       </ul>
     </nav>
 
     <div id="mobile-menu" class="mx-auto hidden w-full max-w-7xl px-5 pb-4 md:hidden md:px-8">
       <ul class="grid gap-1 rounded-xl border border-slate/10 bg-paper p-2 text-sm text-slate shadow-sm">
-        <li><a href="#genel" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Genel</a></li>
-        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Hizmetler</a></li>
-        <li><a href="#icerik" data-tab-link="urunler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Ürünler</a></li>
-        <li><a href="#icerik" data-tab-link="vaka" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Vaka</a></li>
-        <li><a href="#projeler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Projeler</a></li>
-        <li><a href="#paketler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">Paketler</a></li>
-        <li><a href="#sss" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">SSS</a></li>
-        <li><a href="#contact" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]">İletişim</a></li>
+        <li>
+          <div class="mb-1 inline-flex rounded-lg border border-slate/20 bg-surface p-1 text-[11px] font-semibold tracking-[0.08em]">
+            <button id="lang-tr-mobile" type="button" class="focusable rounded-md bg-navy px-2 py-1 text-white">TR</button>
+            <button id="lang-en-mobile" type="button" class="focusable rounded-md px-2 py-1 text-navy">EN</button>
+          </div>
+        </li>
+        <li><a href="#genel" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navGeneral">Genel</a></li>
+        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navServices">Hizmetler</a></li>
+        <li><a href="#icerik" data-tab-link="urunler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProducts">Ürünler</a></li>
+        <li><a href="#icerik" data-tab-link="vaka" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navCases">Vaka</a></li>
+        <li><a href="#projeler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProjects">Projeler</a></li>
+        <li><a href="#paketler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navPackages">Paketler</a></li>
+        <li><a href="#sss" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navFaq">SSS</a></li>
+        <li><a href="#contact" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navContact">İletişim</a></li>
       </ul>
     </div>
   </header>
@@ -170,16 +182,26 @@
       </div>
     </section>
 
-    <section id="genel" class="mt-10">
+    <section id="genel" class="mt-10 reveal-target">
       <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Aktif Kurumsal Hesap</p><p class="mt-2 text-2xl font-bold text-navy">45+</p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Ortalama Lansman Süresi</p><p class="mt-2 text-2xl font-bold text-navy">10-21 Gün</p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Ortalama Dönüşüm Artışı</p><p class="mt-2 text-2xl font-bold text-navy">%32</p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">SLA ve Raporlama Uyum</p><p class="mt-2 text-2xl font-bold text-navy">%99.9</p></article>
+        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Aktif Kurumsal Hesap</p><p class="mt-2 text-2xl font-bold text-navy"><span data-counter-target="45" data-counter-suffix="+">0</span></p></article>
+        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Tamamlanan Teslim</p><p class="mt-2 text-2xl font-bold text-navy"><span data-counter-target="128" data-counter-suffix="+">0</span></p></article>
+        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Ortalama Dönüşüm Artışı</p><p class="mt-2 text-2xl font-bold text-navy">%<span data-counter-target="32" data-counter-decimals="0">0</span></p></article>
+        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">SLA Uyum Oranı</p><p class="mt-2 text-2xl font-bold text-navy">%<span data-counter-target="99.9" data-counter-decimals="1">0</span></p></article>
       </div>
     </section>
 
-    <section id="icerik" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-4 md:p-6">
+    <section id="guven-rozetleri" class="mt-6 rounded-3xl border border-slate/10 bg-surface p-4 md:p-6 reveal-target">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Güven Rozetleri</p>
+      <div class="mt-3 grid gap-2 text-sm text-slate/85 sm:grid-cols-2 lg:grid-cols-4">
+        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">KVKK Uyum Süreç Kontrolü</span>
+        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">SLA Odaklı Teslim Disiplini</span>
+        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Haftalık Ölçülebilir Raporlama</span>
+        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Risk Öncelikli Operasyon Modeli</span>
+      </div>
+    </section>
+
+    <section id="icerik" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-4 md:p-6 reveal-target">
       <div class="flex flex-wrap gap-2" role="tablist" aria-label="İçerik Sekmeleri">
         <button type="button" class="focusable tab-btn active rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="true" aria-controls="panel-hizmetler" data-tab="hizmetler">Hizmetler</button>
         <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-urunler" data-tab="urunler">Ürünler</button>
@@ -282,7 +304,6 @@
                 <a id="digital-ghost-product-playstore-link" href="https://play.google.com/store" data-store-url="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="focusable inline-flex min-w-[180px] items-center justify-center rounded-xl border border-slate/20 bg-surface px-5 py-3 text-sm font-semibold text-navy hover:border-navy">Google Play</a>
               </div>
             </article>
-            </div>
           </div>
         </section>
 
@@ -292,16 +313,19 @@
               <p class="text-xs uppercase tracking-[0.12em] text-slate/60">B2B Yazılım Lansmanı</p>
               <p class="mt-2 text-3xl font-bold text-navy">%41</p>
               <p class="mt-1 text-sm text-slate/80">90 günde lead artış etkisi.</p>
+              <button type="button" data-case-open="b2b-launch" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
               <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Kurumsal Medya Kampanyası</p>
               <p class="mt-2 text-3xl font-bold text-navy">2.7x</p>
               <p class="mt-1 text-sm text-slate/80">Dönüşüm çarpanı iyileşmesi.</p>
+              <button type="button" data-case-open="media-campaign" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
               <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Teknik Optimizasyon</p>
               <p class="mt-2 text-3xl font-bold text-navy">-38%</p>
               <p class="mt-1 text-sm text-slate/80">İlk etkileşim süresi azalması.</p>
+              <button type="button" data-case-open="tech-optimization" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
             </article>
           </div>
         </section>
@@ -320,7 +344,7 @@
       </div>
     </section>
 
-    <section id="projeler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+    <section id="projeler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Canlı Proje Örnekleri</p>
@@ -347,7 +371,50 @@
       </div>
     </section>
 
-    <section id="paketler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+    <section id="referanslar" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Referans Markalar</p>
+      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Birlikte Çalıştığımız Sektörlerden Örnekler</h2>
+      <div class="mt-5 overflow-hidden rounded-2xl border border-slate/10 bg-slate/[0.02] py-4">
+        <div class="logo-marquee gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate/70">
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Atlas Logistics</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">MediNova Health</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Northline Commerce</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Helix B2B Cloud</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Orion Retail Group</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">BluePort Mobility</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Atlas Logistics</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">MediNova Health</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Northline Commerce</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Helix B2B Cloud</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Orion Retail Group</span>
+          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">BluePort Mobility</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Insight Notları</p>
+      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Büyüme ve Güvenlikten Kısa İçgörüler</h2>
+      <div class="mt-5 grid gap-4 md:grid-cols-3">
+        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Büyüme</p>
+          <h3 class="mt-2 text-base font-semibold text-navy">Dönüşüm için ilk 7 gün planı</h3>
+          <p class="mt-2 text-sm text-slate/80">Yeni kampanya sonrası landing page, form akışı ve takip tetiklerini ilk hafta optimize etmek kazanımı hızlandırır.</p>
+        </article>
+        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Güvenlik</p>
+          <h3 class="mt-2 text-base font-semibold text-navy">İzin yönetimi neden kritik?</h3>
+          <p class="mt-2 text-sm text-slate/80">Rol bazlı erişim ve minimum yetki politikası, operasyonel hata kaynaklı veri riskini ciddi ölçüde azaltır.</p>
+        </article>
+        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Operasyon</p>
+          <h3 class="mt-2 text-base font-semibold text-navy">Rapor ritmi kararları hızlandırır</h3>
+          <p class="mt-2 text-sm text-slate/80">Haftalık KPI özeti ve aksiyon listesiyle ekip içi karar süreci daha az toplantı ile ilerler.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="paketler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
         <div>
           <p class="text-xs uppercase tracking-[0.16em] text-slate/60">ALAT Medya Sosyal Medya Çözüm Paketleri</p>
@@ -411,7 +478,7 @@
       </div>
     </section>
 
-    <section id="surec" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+    <section id="surec" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Çalışma Sürecimiz</p>
       <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Şeffaf, Ölçülebilir ve Hızlı İlerleme</h2>
       <div class="mt-5 grid gap-4 md:grid-cols-4">
@@ -475,60 +542,82 @@
       </article>
     </section>
 
-    <section id="sss" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+    <section id="sss" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Sık Sorulan Sorular</p>
       <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Karar Sürecini Hızlandıran Net Yanıtlar</h2>
+      <div class="mt-4 rounded-xl border border-slate/10 bg-slate/[0.02] p-3">
+        <input id="faq-search" type="search" placeholder="SSS içinde ara (ör. raporlama, bütçe, başlangıç)" class="focusable w-full rounded-lg border border-slate/20 bg-white px-3 py-2 text-sm text-navy" />
+        <p id="faq-empty" class="mt-2 hidden text-xs text-slate/70">Aramanızla eşleşen soru bulunamadı.</p>
+      </div>
       <div class="mt-5 space-y-3">
-        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4" open>
+        <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4" open>
           <summary class="cursor-pointer text-sm font-semibold text-navy">Proje başlangıcı ne kadar sürer?</summary>
           <p class="mt-2 text-sm text-slate/80">Keşif görüşmesinden sonra ortalama 3-5 iş günü içinde proje başlangıç planını çıkarırız.</p>
         </details>
-        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
+        <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
           <summary class="cursor-pointer text-sm font-semibold text-navy">Sadece medya veya sadece yazılım hizmeti alabilir miyim?</summary>
           <p class="mt-2 text-sm text-slate/80">Evet. İhtiyacınıza göre tek hizmet veya birleşik operasyon modeli sunabiliriz.</p>
         </details>
-        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
+        <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
           <summary class="cursor-pointer text-sm font-semibold text-navy">Raporlamayı nasıl paylaşıyorsunuz?</summary>
           <p class="mt-2 text-sm text-slate/80">Haftalık performans özeti, aylık stratejik rapor ve düzenli toplantılarla tüm çıktıları görünür kılıyoruz.</p>
         </details>
-        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
+        <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
           <summary class="cursor-pointer text-sm font-semibold text-navy">Sözleşme kapsamı değişirse ne olur?</summary>
           <p class="mt-2 text-sm text-slate/80">Ek kapsam maddeleri şeffaf şekilde revize edilir, iş planı ve bütçe onayınızla güncellenir.</p>
         </details>
       </div>
     </section>
 
-    <section id="teklif" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+    <section id="teklif" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <h2 class="text-2xl font-bold text-navy md:text-3xl">Projeniz İçin Yol Haritasını Birlikte Çıkartalım</h2>
         <a id="calendly-link" href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="focusable inline-flex items-center justify-center rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">Ücretsiz Ön Değerlendirme Toplantısı</a>
       </div>
+      <div class="mt-5 rounded-xl border border-slate/10 bg-slate/[0.02] p-3">
+        <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate/60">Adım <span id="form-step-current">1</span>/3</p>
+        <div class="mt-2 h-2 overflow-hidden rounded-full bg-slate/10">
+          <div id="form-progress-bar" class="h-full w-1/3 rounded-full bg-navy transition-all duration-300"></div>
+        </div>
+      </div>
       <form id="lead-form" class="mt-5 grid gap-3 md:grid-cols-2" aria-label="Teklif formu" novalidate>
-        <input type="text" name="ad_soyad" required placeholder="Ad Soyad" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
-        <input type="email" name="eposta" required placeholder="E-posta" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
-        <input type="tel" name="telefon" placeholder="Telefon" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
-        <select name="hizmet" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-          <option>Medya Prodüksiyon</option>
-          <option>Yazılım Geliştirme</option>
-          <option>Güvenlik ve Danışmanlık</option>
-          <option>Birleşik Operasyon Paketi</option>
-        </select>
-        <select name="butce" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-          <option>Bütçe Aralığı Seçin</option>
-          <option>₺45.000 - ₺95.000</option>
-          <option>₺95.000 - ₺200.000</option>
-          <option>₺200.000+</option>
-        </select>
-        <select name="sektor" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-          <option>Sektör Seçin</option>
-          <option>Lojistik</option>
-          <option>Sağlık</option>
-          <option>E-Ticaret</option>
-          <option>Diğer</option>
-        </select>
-        <textarea name="proje_detayi" rows="4" placeholder="Projenizi kısaca anlatın" class="focusable md:col-span-2 rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy"></textarea>
-        <label class="md:col-span-2 inline-flex items-start gap-2 text-xs text-slate/70"><input type="checkbox" required class="mt-0.5" /> KVKK ve gizlilik metinlerini okudum, onaylıyorum.</label>
-        <button type="submit" class="focusable rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white md:col-span-2">Teklif Gönder</button>
+        <div data-form-step="1" class="grid gap-3 md:col-span-2 md:grid-cols-2">
+          <input type="text" name="ad_soyad" required placeholder="Ad Soyad" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
+          <input type="email" name="eposta" required placeholder="E-posta" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
+          <input type="tel" name="telefon" placeholder="Telefon" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2" />
+        </div>
+        <div data-form-step="2" class="hidden gap-3 md:col-span-2 md:grid-cols-2">
+          <select name="hizmet" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
+            <option>Medya Prodüksiyon</option>
+            <option>Yazılım Geliştirme</option>
+            <option>Güvenlik ve Danışmanlık</option>
+            <option>Birleşik Operasyon Paketi</option>
+          </select>
+          <select name="butce" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
+            <option>Bütçe Aralığı Seçin</option>
+            <option>₺45.000 - ₺95.000</option>
+            <option>₺95.000 - ₺200.000</option>
+            <option>₺200.000+</option>
+          </select>
+          <select name="sektor" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2">
+            <option>Sektör Seçin</option>
+            <option>Lojistik</option>
+            <option>Sağlık</option>
+            <option>E-Ticaret</option>
+            <option>Diğer</option>
+          </select>
+        </div>
+        <div data-form-step="3" class="hidden gap-3 md:col-span-2">
+          <textarea name="proje_detayi" rows="4" placeholder="Projenizi kısaca anlatın" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy"></textarea>
+          <label class="inline-flex items-start gap-2 text-xs text-slate/70"><input type="checkbox" required class="mt-0.5" /> KVKK ve gizlilik metinlerini okudum, onaylıyorum.</label>
+        </div>
+        <div class="md:col-span-2 flex flex-wrap justify-between gap-2">
+          <button id="form-prev" type="button" class="focusable rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">Geri</button>
+          <div class="flex gap-2">
+            <button id="form-next" type="button" class="focusable rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">İleri</button>
+            <button id="form-submit" type="submit" class="focusable hidden rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white">Teklif Gönder</button>
+          </div>
+        </div>
       </form>
       <p id="form-status" class="mt-3 text-sm text-slate/80" aria-live="polite"></p>
     </section>
@@ -557,7 +646,26 @@
     </div>
   </footer>
 
+  <div class="fixed bottom-5 left-5 z-40 hidden sm:block">
+    <div class="rounded-2xl border border-slate/20 bg-surface/95 p-2 shadow-lg backdrop-blur">
+      <a href="tel:+905075385671" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Hızlı Ara</a>
+      <a href="mailto:destek@alatmedya.tech" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Hızlı E-Posta</a>
+      <a href="#teklif" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Toplantı Planla</a>
+    </div>
+  </div>
   <a id="whatsapp-link" href="https://wa.me/905075385671" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geç" class="focusable fixed bottom-5 right-5 z-40 rounded-full bg-navy px-4 py-3 text-xs font-semibold text-white shadow-lg transition hover:bg-slate-900">WhatsApp</a>
+
+  <div id="case-modal" class="fixed inset-0 z-[70] hidden items-end justify-center bg-navy/50 p-4 sm:items-center" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
+    <div class="w-full max-w-2xl rounded-2xl border border-slate/10 bg-surface p-5 shadow-2xl">
+      <div class="flex items-start justify-between gap-3">
+        <h3 id="case-modal-title" class="text-xl font-bold text-navy">Vaka Detayı</h3>
+        <button id="case-modal-close" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-navy">Kapat</button>
+      </div>
+      <p id="case-modal-problem" class="mt-4 text-sm text-slate/85"></p>
+      <p id="case-modal-solution" class="mt-2 text-sm text-slate/85"></p>
+      <p id="case-modal-result" class="mt-2 text-sm font-semibold text-navy"></p>
+    </div>
+  </div>
 
   <script>
     const cfg = window.ALAT_CONFIG || {};
@@ -593,6 +701,30 @@
     const testimonialPrev = document.getElementById("testimonial-prev");
     const testimonialNext = document.getElementById("testimonial-next");
     const testimonialDots = document.querySelectorAll("[data-testimonial-dot]");
+    const faqSearch = document.getElementById("faq-search");
+    const faqEmpty = document.getElementById("faq-empty");
+    const faqItems = document.querySelectorAll("[data-faq-item]");
+    const formStepCurrent = document.getElementById("form-step-current");
+    const formProgressBar = document.getElementById("form-progress-bar");
+    const formPrev = document.getElementById("form-prev");
+    const formNext = document.getElementById("form-next");
+    const formSubmit = document.getElementById("form-submit");
+    const formSteps = document.querySelectorAll("[data-form-step]");
+    const caseOpenButtons = document.querySelectorAll("[data-case-open]");
+    const caseModal = document.getElementById("case-modal");
+    const caseModalClose = document.getElementById("case-modal-close");
+    const caseModalTitle = document.getElementById("case-modal-title");
+    const caseModalProblem = document.getElementById("case-modal-problem");
+    const caseModalSolution = document.getElementById("case-modal-solution");
+    const caseModalResult = document.getElementById("case-modal-result");
+    const counterNodes = document.querySelectorAll("[data-counter-target]");
+    const revealNodes = document.querySelectorAll(".reveal-target");
+    const langButtons = [
+      document.getElementById("lang-tr"),
+      document.getElementById("lang-en"),
+      document.getElementById("lang-tr-mobile"),
+      document.getElementById("lang-en-mobile")
+    ];
 
     const safeExternalUrl = (url, fallback) => {
       try {
@@ -605,6 +737,60 @@
         return fallback;
       }
     };
+
+    const setLanguage = (lang) => {
+      const dict = {
+        tr: {
+          navGeneral: "Genel",
+          navServices: "Hizmetler",
+          navProducts: "Ürünler",
+          navCases: "Vaka",
+          navProjects: "Projeler",
+          navPackages: "Paketler",
+          navFaq: "SSS",
+          navContact: "İletişim"
+        },
+        en: {
+          navGeneral: "Overview",
+          navServices: "Services",
+          navProducts: "Products",
+          navCases: "Cases",
+          navProjects: "Projects",
+          navPackages: "Plans",
+          navFaq: "FAQ",
+          navContact: "Contact"
+        }
+      };
+
+      const active = dict[lang] || dict.tr;
+      document.querySelectorAll("[data-i18n]").forEach((node) => {
+        const key = node.dataset.i18n;
+        if (active[key]) {
+          node.textContent = active[key];
+        }
+      });
+
+      ["lang-tr", "lang-tr-mobile"].forEach((id) => {
+        const node = document.getElementById(id);
+        if (!node) return;
+        node.classList.toggle("bg-navy", lang === "tr");
+        node.classList.toggle("text-white", lang === "tr");
+      });
+      ["lang-en", "lang-en-mobile"].forEach((id) => {
+        const node = document.getElementById(id);
+        if (!node) return;
+        node.classList.toggle("bg-navy", lang === "en");
+        node.classList.toggle("text-white", lang === "en");
+      });
+    };
+
+    langButtons.forEach((button) => {
+      if (!button) return;
+      button.addEventListener("click", () => {
+        setLanguage(button.id.includes("en") ? "en" : "tr");
+      });
+    });
+    setLanguage("tr");
 
     const normalizedPhone = String(cfg.whatsappNumber || "").replace(/[^\d]/g, "");
     const whatsappText = encodeURIComponent(cfg.whatsappDefaultMessage || "Merhaba");
@@ -749,6 +935,24 @@
       startTestimonialAutoplay();
     }
 
+    if (faqSearch && faqItems.length) {
+      faqSearch.addEventListener("input", () => {
+        const query = faqSearch.value.trim().toLowerCase();
+        let visibleCount = 0;
+
+        faqItems.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          const show = !query || text.includes(query);
+          item.classList.toggle("hidden", !show);
+          if (show) visibleCount += 1;
+        });
+
+        if (faqEmpty) {
+          faqEmpty.classList.toggle("hidden", visibleCount > 0);
+        }
+      });
+    }
+
     if (estimateBtn && estimateService && estimateScale && estimateOutput) {
       estimateBtn.addEventListener("click", () => {
         const base = 45000;
@@ -760,6 +964,52 @@
         const format = (value) => `₺${value.toLocaleString("tr-TR")}`;
         estimateOutput.textContent = `Tahmini bütçe aralığı: ${format(low)} - ${format(high)} (nihai teklif kapsam analizinden sonra netleşir).`;
       });
+    }
+
+    if (counterNodes.length) {
+      const animateCounter = (node) => {
+        const target = Number(node.dataset.counterTarget || 0);
+        const decimals = Number(node.dataset.counterDecimals || 0);
+        const suffix = node.dataset.counterSuffix || "";
+        const duration = 1200;
+        const start = performance.now();
+
+        const tick = (now) => {
+          const progress = Math.min((now - start) / duration, 1);
+          const value = target * progress;
+          const output = decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
+          node.textContent = `${output}${suffix}`;
+          if (progress < 1) {
+            requestAnimationFrame(tick);
+          }
+        };
+
+        requestAnimationFrame(tick);
+      };
+
+      const counterObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counterNodes.forEach((node) => counterObserver.observe(node));
+    }
+
+    if (revealNodes.length) {
+      const revealObserver = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      revealNodes.forEach((node) => revealObserver.observe(node));
     }
 
     if (ceplogDays && ceplogHours && ceplogMinutes && ceplogSeconds && ceplogCountdownNote) {
@@ -900,9 +1150,124 @@
       setInterval(updateDigitalGhostProductCountdown, 1000);
     }
 
-    if (leadForm) {
+    if (caseOpenButtons.length && caseModal && caseModalTitle && caseModalProblem && caseModalSolution && caseModalResult) {
+      const caseDetails = {
+        "b2b-launch": {
+          title: "B2B Yazılım Lansmanı",
+          problem: "Problem: Dağınık kanal iletişimi nedeniyle MQL üretimi hedefin altında kalıyordu.",
+          solution: "Çözüm: Yeni landing page, lead scoring ve haftalık kreatif optimizasyon tek ritimde birleştirildi.",
+          result: "Sonuç: 90 gün içinde %41 lead artışı ve daha düşük edinme maliyeti."
+        },
+        "media-campaign": {
+          title: "Kurumsal Medya Kampanyası",
+          problem: "Problem: Kampanyalar erişim alıyor fakat dönüşüm oranı düşük kalıyordu.",
+          solution: "Çözüm: Hedef kitle kırılımı, teklif mesajı ve dönüşüm odaklı içerik akışı yeniden kurgulandı.",
+          result: "Sonuç: Dönüşüm çarpanı 2.7x seviyesine yükseldi."
+        },
+        "tech-optimization": {
+          title: "Teknik Optimizasyon",
+          problem: "Problem: İlk etkileşim süresi uzun olduğu için reklam trafiği verimsizleşiyordu.",
+          solution: "Çözüm: Önbellek stratejisi, kritik kaynak optimizasyonu ve gereksiz script temizliği uygulandı.",
+          result: "Sonuç: İlk etkileşim süresinde %38 iyileşme sağlandı."
+        }
+      };
+
+      const closeCaseModal = () => {
+        caseModal.classList.add("hidden");
+      };
+
+      caseOpenButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const key = button.dataset.caseOpen;
+          const data = caseDetails[key];
+          if (!data) return;
+
+          caseModalTitle.textContent = data.title;
+          caseModalProblem.textContent = data.problem;
+          caseModalSolution.textContent = data.solution;
+          caseModalResult.textContent = data.result;
+          caseModal.classList.remove("hidden");
+        });
+      });
+
+      if (caseModalClose) {
+        caseModalClose.addEventListener("click", closeCaseModal);
+      }
+
+      caseModal.addEventListener("click", (event) => {
+        if (event.target === caseModal) {
+          closeCaseModal();
+        }
+      });
+
+      window.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          closeCaseModal();
+        }
+      });
+    }
+
+    if (leadForm && formSteps.length) {
+      let currentStep = 1;
+
+      const showStep = (step) => {
+        currentStep = Math.max(1, Math.min(3, step));
+
+        formSteps.forEach((panel) => {
+          const panelStep = Number(panel.dataset.formStep || 1);
+          panel.classList.toggle("hidden", panelStep !== currentStep);
+          panel.classList.toggle("grid", panelStep === currentStep);
+        });
+
+        if (formStepCurrent) {
+          formStepCurrent.textContent = String(currentStep);
+        }
+        if (formProgressBar) {
+          formProgressBar.style.width = `${(currentStep / 3) * 100}%`;
+        }
+
+        if (formPrev) {
+          formPrev.disabled = currentStep === 1;
+          formPrev.classList.toggle("opacity-50", currentStep === 1);
+        }
+
+        if (formNext && formSubmit) {
+          const isLast = currentStep === 3;
+          formNext.classList.toggle("hidden", isLast);
+          formSubmit.classList.toggle("hidden", !isLast);
+        }
+      };
+
+      const validateCurrentStep = () => {
+        const currentPanel = document.querySelector(`[data-form-step="${currentStep}"]`);
+        if (!currentPanel) return true;
+
+        const controls = currentPanel.querySelectorAll("input, select, textarea");
+        for (const control of controls) {
+          if (!control.checkValidity()) {
+            control.reportValidity();
+            return false;
+          }
+        }
+        return true;
+      };
+
+      if (formPrev) {
+        formPrev.addEventListener("click", () => showStep(currentStep - 1));
+      }
+
+      if (formNext) {
+        formNext.addEventListener("click", () => {
+          if (!validateCurrentStep()) return;
+          showStep(currentStep + 1);
+        });
+      }
+
+      showStep(1);
+
       leadForm.addEventListener("submit", async (event) => {
         event.preventDefault();
+
         if (!leadForm.checkValidity()) {
           formStatus.textContent = "Lütfen zorunlu alanları doldurun.";
           formStatus.className = "mt-3 text-sm text-red-700";
@@ -945,6 +1310,7 @@
           formStatus.textContent = "Talebiniz alındı. Kısa sürede dönüş yapacağız.";
           formStatus.className = "mt-3 text-sm text-emerald-700";
           leadForm.reset();
+          showStep(1);
         } catch (error) {
           formStatus.textContent = "Gönderimde sorun oluştu. Lütfen e-posta veya WhatsApp üzerinden ulaşın.";
           formStatus.className = "mt-3 text-sm text-red-700";

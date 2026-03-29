@@ -48,6 +48,7 @@
   <script>
     window.ALAT_CONFIG = {
       leadWebhookUrl: "",
+      leadEmail: "destek@alatmedya.tech",
       calendlyUrl: "https://calendly.com",
       whatsappNumber: "905075385671",
       whatsappDefaultMessage: "Merhaba, ALAT Medya | Tech için proje görüşmesi planlamak istiyorum."
@@ -68,8 +69,32 @@
       color: #0f172a;
     }
     .tab-panel[hidden] { display: none; }
+    .reveal-target {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal-target.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .logo-marquee {
+      display: flex;
+      min-width: max-content;
+      animation: marquee 28s linear infinite;
+    }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
+      .reveal-target {
+        opacity: 1;
+        transform: none;
+        transition: none;
+      }
+      .logo-marquee { animation: none; }
     }
   </style>
 
@@ -885,20 +910,31 @@
         }
 
         const webhookUrl = safeExternalUrl(cfg.leadWebhookUrl, "");
-        if (!webhookUrl) {
-          formStatus.textContent = "Talebiniz alındı. Ekip sizinle e-posta üzerinden iletişime geçecek.";
-          formStatus.className = "mt-3 text-sm text-emerald-700";
-          leadForm.reset();
+        const leadEmail = String(cfg.leadEmail || "").trim();
+        const formSubmitUrl = leadEmail ? `https://formsubmit.co/ajax/${encodeURIComponent(leadEmail)}` : "";
+        const submitUrl = webhookUrl || formSubmitUrl;
+
+        if (!submitUrl) {
+          formStatus.textContent = "Form hedefi ayarlanmadı. Lütfen site yöneticisiyle iletişime geçin.";
+          formStatus.className = "mt-3 text-sm text-red-700";
           return;
         }
 
         const formData = new FormData(leadForm);
         const payload = Object.fromEntries(formData.entries());
 
+        if (!webhookUrl && formSubmitUrl) {
+          payload._subject = "ALAT Medya | Tech - Yeni Teklif Talebi";
+          payload._template = "table";
+        }
+
         try {
-          const resp = await fetch(webhookUrl, {
+          const resp = await fetch(submitUrl, {
             method: "POST",
-            headers: { "Content-Type": "application/json" },
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
             body: JSON.stringify(payload)
           });
 

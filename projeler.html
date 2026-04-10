@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALAT Medya | Vaka Merkezi</title>
+  <meta name="description" content="ALAT Medya | Tech vaka merkezi" />
+  <link rel="icon" type="image/png" href="ALAT_LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            paper: "#f6f1e8",
+            surface: "#fffaf2",
+            slate: "#334155",
+            navy: "#0f172a"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      overflow-x: hidden;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    body.page-entered { opacity: 1; transform: translateY(0); }
+    body.page-exit { opacity: 0; transform: translateY(-8px); }
+    .focusable:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
+    .hero-bg {
+      background:
+        radial-gradient(circle at 15% 5%, rgba(15,23,42,0.08), transparent 34%),
+        radial-gradient(circle at 85% 0%, rgba(120,87,56,0.11), transparent 38%),
+        linear-gradient(to bottom, rgba(255,250,242,0.98), rgba(246,241,232,0.96));
+    }
+    .route-pill.active {
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+      box-shadow: 0 12px 24px -18px rgba(15, 23, 42, 0.75);
+    }
+    .card {
+      transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(15, 23, 42, 0.22);
+      box-shadow: 0 16px 32px -26px rgba(15, 23, 42, 0.55);
+    }
+  </style>
+</head>
+<body class="bg-paper font-sans text-slate antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate/10 bg-paper/95 backdrop-blur-xl">
+    <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Ana Menu">
+      <a href="index.html" class="focusable inline-flex items-center gap-3 text-sm font-extrabold tracking-tight text-navy md:text-base">
+        <img src="ALAT_LOGO.png" alt="ALAT Medya logosu" class="h-9 w-9 rounded-md object-cover" width="36" height="36" />
+        <span class="hidden sm:inline">ALAT Medya | Tech</span>
+      </a>
+      <a href="iletisim.html" data-route-link class="focusable rounded-full bg-navy px-5 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white">Toplanti Planla</a>
+    </nav>
+  </header>
+
+  <main class="mx-auto w-full max-w-7xl px-5 pb-14 md:px-8">
+    <section class="mt-6 rounded-3xl border border-slate/10 bg-white/50 p-3 sm:p-4">
+      <div class="grid gap-2 md:grid-cols-4">
+        <a href="index.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Ana Merkez</a>
+        <a href="hizmetler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Cozumler</a>
+        <a href="projeler.html" data-route-link class="route-pill active focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em]">Vaka Merkezi</a>
+        <a href="iletisim.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Planlama</a>
+      </div>
+    </section>
+
+    <section class="hero-bg mt-6 rounded-3xl border border-slate/10 p-6 md:p-8">
+      <p class="text-xs uppercase tracking-[0.18em] text-slate/70">Vaka Merkezi</p>
+      <h1 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">Gercek Sonuclarin Temiz ve Okunur Ozeti</h1>
+      <p class="mt-3 max-w-3xl text-sm text-slate/80 sm:text-base">Vaka kartlari ve yorum alanini yeniden duzenleyerek yoneticilerin hizli karar alabilecegi tek bakislik bir akis olusturduk.</p>
+    </section>
+
+    <section class="mt-8 grid gap-4 md:grid-cols-3">
+      <article class="card rounded-2xl border border-slate/10 bg-surface p-5">
+        <p class="text-xs uppercase tracking-[0.12em] text-slate/60">B2B Yazilim Lansmani</p>
+        <p class="mt-2 text-3xl font-bold text-navy">%41</p>
+        <p class="mt-1 text-sm text-slate/80">90 gunde lead artis etkisi.</p>
+      </article>
+      <article class="card rounded-2xl border border-slate/10 bg-surface p-5">
+        <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Kurumsal Medya Kampanyasi</p>
+        <p class="mt-2 text-3xl font-bold text-navy">2.7x</p>
+        <p class="mt-1 text-sm text-slate/80">Donusum carpani iyilesmesi.</p>
+      </article>
+      <article class="card rounded-2xl border border-slate/10 bg-surface p-5">
+        <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Teknik Optimizasyon</p>
+        <p class="mt-2 text-3xl font-bold text-navy">-38%</p>
+        <p class="mt-1 text-sm text-slate/80">Ilk etkilesim suresi azalmasi.</p>
+      </article>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Musteri Gorusleri</p>
+      <div class="mt-4 overflow-hidden rounded-2xl border border-slate/10 bg-slate/[0.02]">
+        <div id="testimonial-track" class="flex transition-transform duration-700 ease-out will-change-transform">
+          <figure class="min-w-full p-4 md:p-5">
+            <blockquote class="text-sm leading-relaxed text-slate/85">"Onboarding surecimiz daginikti. Ekip, ilk ayda surecleri sadeleştirip icerik ve teknik teslimleri tek takvime topladi. Ozellikle toplanti verimi ve karar alma hizi gorunur bicimde artti."</blockquote>
+            <figcaption class="mt-3 text-sm font-semibold text-navy">Operasyon Ekibi, Orta Olcekli Teknoloji Firmasi</figcaption>
+          </figure>
+          <figure class="min-w-full p-4 md:p-5">
+            <blockquote class="text-sm leading-relaxed text-slate/85">"Kampanya yonetimi, tasarim ve teknik tarafi ayni masada yurutmek bize ciddi zaman kazandirdi. Haftalik rapor yapisi sayesinde neyin calistigini anlik takip edebildik."</blockquote>
+            <figcaption class="mt-3 text-sm font-semibold text-navy">Pazarlama Birimi, E-Ticaret Operasyonu</figcaption>
+          </figure>
+          <figure class="min-w-full p-4 md:p-5">
+            <blockquote class="text-sm leading-relaxed text-slate/85">"Urun sayfalari, teknik iyilestirmeler ve icerik uretimi ayni sprint icinde ilerledi. Bu yaklasim lansman suresini kisaltti."</blockquote>
+            <figcaption class="mt-3 text-sm font-semibold text-navy">Urun Takimi, Lojistik Teknoloji Sirketi</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="mt-4 flex items-center justify-between gap-3">
+        <div class="flex items-center gap-2">
+          <button id="testimonial-prev" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-navy">Geri</button>
+          <button id="testimonial-next" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-navy">Ileri</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate/10 bg-paper">
+    <div class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-slate/85 md:flex-row md:items-end md:justify-between md:px-8">
+      <p>ALAT Medya | Tech</p>
+      <p><a class="focusable font-medium text-navy hover:underline" href="mailto:destek@alatmedya.tech">destek@alatmedya.tech</a></p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("page-entered");
+    });
+
+    const routeLinks = document.querySelectorAll("[data-route-link]");
+    routeLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (!href || href.startsWith("#")) return;
+        event.preventDefault();
+        document.body.classList.add("page-exit");
+        setTimeout(() => { window.location.href = href; }, 220);
+      });
+    });
+
+    const testimonialTrack = document.getElementById("testimonial-track");
+    const testimonialPrev = document.getElementById("testimonial-prev");
+    const testimonialNext = document.getElementById("testimonial-next");
+
+    if (testimonialTrack) {
+      let activeSlide = 0;
+      const slideCount = testimonialTrack.children.length;
+      const render = () => {
+        testimonialTrack.style.transform = `translateX(-${activeSlide * 100}%)`;
+      };
+
+      if (testimonialPrev) {
+        testimonialPrev.addEventListener("click", () => {
+          activeSlide = (activeSlide - 1 + slideCount) % slideCount;
+          render();
+        });
+      }
+      if (testimonialNext) {
+        testimonialNext.addEventListener("click", () => {
+          activeSlide = (activeSlide + 1) % slideCount;
+          render();
+        });
+      }
+
+      setInterval(() => {
+        activeSlide = (activeSlide + 1) % slideCount;
+        render();
+      }, 5000);
+    }
+  </script>
+</body>
+</html>

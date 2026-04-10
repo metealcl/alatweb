@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALAT Medya | Planlama</title>
+  <meta name="description" content="ALAT Medya | Tech planlama ve iletisim" />
+  <link rel="icon" type="image/png" href="ALAT_LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            paper: "#f6f1e8",
+            surface: "#fffaf2",
+            slate: "#334155",
+            navy: "#0f172a"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      overflow-x: hidden;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    body.page-entered { opacity: 1; transform: translateY(0); }
+    body.page-exit { opacity: 0; transform: translateY(-8px); }
+    .focusable:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
+    .hero-bg {
+      background:
+        radial-gradient(circle at 12% 5%, rgba(15,23,42,0.08), transparent 34%),
+        radial-gradient(circle at 88% 0%, rgba(120,87,56,0.11), transparent 38%),
+        linear-gradient(to bottom, rgba(255,250,242,0.98), rgba(246,241,232,0.96));
+    }
+    .route-pill.active {
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+      box-shadow: 0 12px 24px -18px rgba(15, 23, 42, 0.75);
+    }
+    .card {
+      transition: transform 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: rgba(15, 23, 42, 0.22);
+      box-shadow: 0 16px 32px -26px rgba(15, 23, 42, 0.55);
+    }
+  </style>
+</head>
+<body class="bg-paper font-sans text-slate antialiased">
+  <header class="sticky top-0 z-50 border-b border-slate/10 bg-paper/95 backdrop-blur-xl">
+    <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Ana Menu">
+      <a href="index.html" class="focusable inline-flex items-center gap-3 text-sm font-extrabold tracking-tight text-navy md:text-base">
+        <img src="ALAT_LOGO.png" alt="ALAT Medya logosu" class="h-9 w-9 rounded-md object-cover" width="36" height="36" />
+        <span class="hidden sm:inline">ALAT Medya | Tech</span>
+      </a>
+      <a href="tel:+905075385671" class="focusable rounded-full bg-navy px-5 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-white">Hizli Ara</a>
+    </nav>
+  </header>
+
+  <main class="mx-auto w-full max-w-7xl px-5 pb-14 md:px-8">
+    <section class="mt-6 rounded-3xl border border-slate/10 bg-white/50 p-3 sm:p-4">
+      <div class="grid gap-2 md:grid-cols-4">
+        <a href="index.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Ana Merkez</a>
+        <a href="hizmetler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Cozumler</a>
+        <a href="projeler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Vaka Merkezi</a>
+        <a href="iletisim.html" data-route-link class="route-pill active focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em]">Planlama</a>
+      </div>
+    </section>
+
+    <section class="hero-bg mt-6 rounded-3xl border border-slate/10 p-6 md:p-8">
+      <p class="text-xs uppercase tracking-[0.18em] text-slate/70">Planlama ve Iletisim</p>
+      <h1 class="mt-3 text-3xl font-extrabold leading-tight text-navy sm:text-4xl">Yol Haritasini 3 Adimda Netlestirelim</h1>
+      <p class="mt-3 max-w-3xl text-sm text-slate/80 sm:text-base">Surec adimlarini, SSS alanini ve iletisim formunu ayni sayfada daha karar odakli bir dizilimle topladik.</p>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Calisma Surecimiz</p>
+      <div class="mt-4 grid gap-4 md:grid-cols-3">
+        <article class="card rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">1. Kesif</p><p class="mt-2 text-sm text-slate/85">Hedef, butce ve teknik kapsam netlestirilir.</p></article>
+        <article class="card rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">2. Yol Haritasi</p><p class="mt-2 text-sm text-slate/85">Haftalik teslim plani ve KPI seti olusturulur.</p></article>
+        <article class="card rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">3. Uygulama + Rapor</p><p class="mt-2 text-sm text-slate/85">Tek ekip, tek ritim ve olculebilir rapor akisi.</p></article>
+      </div>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Sik Sorulan Sorular</p>
+      <div class="mt-4 space-y-3">
+        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4" open>
+          <summary class="cursor-pointer text-sm font-semibold text-navy">Proje baslangici ne kadar surer?</summary>
+          <p class="mt-2 text-sm text-slate/80">Kesif gorusmesinden sonra ortalama 3-5 is gunu icinde baslangic plani cikarilir.</p>
+        </details>
+        <details class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
+          <summary class="cursor-pointer text-sm font-semibold text-navy">Sadece medya veya sadece yazilim hizmeti alabilir miyim?</summary>
+          <p class="mt-2 text-sm text-slate/80">Evet. Ihtiyaca gore tek hizmet veya birlesik operasyon modeli sunulur.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="mt-8 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
+      <h2 class="text-2xl font-bold text-navy md:text-3xl">Kisa On Degerlendirme Formu</h2>
+      <form id="lead-form" class="mt-4 grid gap-3 md:grid-cols-2" novalidate>
+        <input type="text" name="ad_soyad" required placeholder="Ad Soyad" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
+        <input type="email" name="eposta" required placeholder="E-posta" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
+        <select name="hizmet" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2">
+          <option>Medya Produksiyon</option>
+          <option>Yazilim Gelistirme</option>
+          <option>Guvenlik ve Danismanlik</option>
+          <option>Birlesik Operasyon Paketi</option>
+        </select>
+        <textarea name="proje_detayi" rows="4" placeholder="Projenizi kisaca anlatin" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2"></textarea>
+        <button type="submit" class="focusable rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white md:col-span-2">Talep Gonder</button>
+      </form>
+      <p id="form-status" class="mt-3 text-sm text-slate/80" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="border-t border-slate/10 bg-paper">
+    <div class="mx-auto flex w-full max-w-7xl flex-col gap-4 px-5 py-8 text-sm text-slate/85 md:flex-row md:items-end md:justify-between md:px-8">
+      <p>ALAT Medya | Tech</p>
+      <p><a class="focusable font-medium text-navy hover:underline" href="mailto:destek@alatmedya.tech">destek@alatmedya.tech</a></p>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("page-entered");
+    });
+
+    const routeLinks = document.querySelectorAll("[data-route-link]");
+    routeLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (!href || href.startsWith("#")) return;
+        event.preventDefault();
+        document.body.classList.add("page-exit");
+        setTimeout(() => { window.location.href = href; }, 220);
+      });
+    });
+
+    const leadForm = document.getElementById("lead-form");
+    const formStatus = document.getElementById("form-status");
+
+    if (leadForm && formStatus) {
+      leadForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        if (!leadForm.checkValidity()) {
+          formStatus.textContent = "Lutfen zorunlu alanlari doldurun.";
+          formStatus.className = "mt-3 text-sm text-red-700";
+          return;
+        }
+        formStatus.textContent = "Talebiniz alindi. Kisa surede donus yapacagiz.";
+        formStatus.className = "mt-3 text-sm text-emerald-700";
+        leadForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>

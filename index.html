@@ -59,6 +59,19 @@
     html { scroll-behavior: smooth; }
     body { overflow-x: hidden; }
     img { max-width: 100%; height: auto; }
+    body {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    body.page-entered {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    body.page-exit {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
     .focusable:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
     .hero-bg {
       background:
@@ -72,6 +85,16 @@
       color: #0f172a;
     }
     .tab-panel[hidden] { display: none; }
+    .route-pill.active {
+      background: #0f172a;
+      color: #fff;
+      border-color: #0f172a;
+      box-shadow: 0 12px 24px -18px rgba(15, 23, 42, 0.75);
+    }
+    .route-grid {
+      background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.06), rgba(120, 87, 56, 0.08));
+    }
     #projeler article,
     #paketler article,
     #insights article,
@@ -139,14 +162,14 @@
       <button id="menu-toggle" type="button" class="focusable rounded-lg border border-slate/20 bg-surface px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-navy md:hidden" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
 
       <ul class="hidden items-center gap-6 text-sm font-medium text-slate/90 md:flex">
-        <li><a href="#genel" class="focusable transition hover:text-navy" data-i18n="navGeneral">Genel</a></li>
-        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable transition hover:text-navy" data-i18n="navServices">Hizmetler</a></li>
-        <li><a href="#icerik" data-tab-link="urunler" class="focusable transition hover:text-navy" data-i18n="navProducts">Ürünler</a></li>
-        <li><a href="#icerik" data-tab-link="vaka" class="focusable transition hover:text-navy" data-i18n="navCases">Vaka</a></li>
+        <li><a href="index.html#genel" class="focusable transition hover:text-navy" data-i18n="navGeneral">Genel</a></li>
+        <li><a href="hizmetler.html" class="focusable transition hover:text-navy" data-i18n="navServices">Hizmetler</a></li>
+        <li><a href="hizmetler.html" class="focusable transition hover:text-navy" data-i18n="navProducts">Ürünler</a></li>
+        <li><a href="projeler.html" class="focusable transition hover:text-navy" data-i18n="navCases">Vaka</a></li>
         <li><a href="#projeler" class="focusable transition hover:text-navy" data-i18n="navProjects">Projeler</a></li>
-        <li><a href="#paketler" class="focusable transition hover:text-navy" data-i18n="navPackages">Paketler</a></li>
-        <li><a href="#sss" class="focusable transition hover:text-navy" data-i18n="navFaq">SSS</a></li>
-        <li><a href="#contact" class="focusable transition hover:text-navy" data-i18n="navContact">İletişim</a></li>
+        <li><a href="index.html#paketler" class="focusable transition hover:text-navy" data-i18n="navPackages">Paketler</a></li>
+        <li><a href="iletisim.html" class="focusable transition hover:text-navy" data-i18n="navFaq">SSS</a></li>
+        <li><a href="iletisim.html" class="focusable transition hover:text-navy" data-i18n="navContact">İletişim</a></li>
         <li>
           <div class="inline-flex rounded-lg border border-slate/20 bg-surface p-1 text-[11px] font-semibold tracking-[0.08em]">
             <button id="lang-tr" type="button" class="focusable rounded-md bg-navy px-2 py-1 text-white">TR</button>
@@ -165,18 +188,27 @@
           </div>
         </li>
         <li><a href="#genel" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navGeneral">Genel</a></li>
-        <li><a href="#icerik" data-tab-link="hizmetler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navServices">Hizmetler</a></li>
-        <li><a href="#icerik" data-tab-link="urunler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProducts">Ürünler</a></li>
-        <li><a href="#icerik" data-tab-link="vaka" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navCases">Vaka</a></li>
+        <li><a href="hizmetler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navServices">Hizmetler</a></li>
+        <li><a href="hizmetler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProducts">Ürünler</a></li>
+        <li><a href="projeler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navCases">Vaka</a></li>
         <li><a href="#projeler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProjects">Projeler</a></li>
         <li><a href="#paketler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navPackages">Paketler</a></li>
-        <li><a href="#sss" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navFaq">SSS</a></li>
-        <li><a href="#contact" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navContact">İletişim</a></li>
+        <li><a href="iletisim.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navFaq">SSS</a></li>
+        <li><a href="iletisim.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navContact">İletişim</a></li>
       </ul>
     </div>
   </header>
 
   <main id="main" class="mx-auto w-full max-w-7xl px-5 pb-14 md:px-8">
+    <section class="route-grid mt-6 rounded-3xl border border-slate/10 p-3 sm:p-4">
+      <div class="grid gap-2 md:grid-cols-4">
+        <a href="index.html" data-route-link class="route-pill active focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Ana Merkez</a>
+        <a href="hizmetler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Cozumler</a>
+        <a href="projeler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Vaka Merkezi</a>
+        <a href="iletisim.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Planlama</a>
+      </div>
+    </section>
+
     <section class="hero-bg mt-6 overflow-hidden rounded-3xl border border-slate/10 p-6 md:p-10">
       <div class="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
@@ -666,6 +698,10 @@
   </div>
 
   <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("page-entered");
+    });
+
     const cfg = window.ALAT_CONFIG || {};
     const menuToggle = document.getElementById("menu-toggle");
     const mobileMenu = document.getElementById("mobile-menu");
@@ -719,6 +755,7 @@
       document.getElementById("lang-tr-mobile"),
       document.getElementById("lang-en-mobile")
     ];
+    const routeLinks = document.querySelectorAll("a[href$='.html'], a[href*='.html#'], [data-route-link]");
 
     const safeExternalUrl = (url, fallback) => {
       try {
@@ -785,6 +822,20 @@
       });
     });
     setLanguage("tr");
+
+    routeLinks.forEach((link) => {
+      link.addEventListener("click", (event) => {
+        const href = link.getAttribute("href");
+        if (!href) return;
+        if (href.startsWith("#")) return;
+        if (link.target === "_blank") return;
+        event.preventDefault();
+        document.body.classList.add("page-exit");
+        setTimeout(() => {
+          window.location.href = href;
+        }, 220);
+      });
+    });
 
     const normalizedPhone = String(cfg.whatsappNumber || "").replace(/[^\d]/g, "");
     const whatsappText = encodeURIComponent(cfg.whatsappDefaultMessage || "Merhaba");

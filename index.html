@@ -55,7 +55,10 @@
     };
   </script>
   <style>
+    * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+    body { overflow-x: hidden; }
+    img { max-width: 100%; height: auto; }
     .focusable:focus-visible { outline: 2px solid #0f172a; outline-offset: 2px; }
     .hero-bg {
       background:
@@ -69,6 +72,20 @@
       color: #0f172a;
     }
     .tab-panel[hidden] { display: none; }
+    #projeler article,
+    #paketler article,
+    #insights article,
+    #icerik article {
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+    #projeler article:hover,
+    #paketler article:hover,
+    #insights article:hover,
+    #icerik article:hover {
+      transform: translateY(-3px);
+      border-color: rgba(15, 23, 42, 0.22);
+      box-shadow: 0 16px 32px -26px rgba(15, 23, 42, 0.55);
+    }
     .reveal-target {
       opacity: 0;
       transform: translateY(18px);
@@ -116,7 +133,7 @@
     <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Ana Menü">
       <a href="#main" class="focusable inline-flex items-center gap-3 text-sm font-extrabold tracking-tight text-navy md:text-base">
         <img src="ALAT_LOGO.png" alt="ALAT Medya logosu" class="h-9 w-9 rounded-md object-cover" fetchpriority="high" decoding="async" width="36" height="36" />
-        <span>ALAT Medya | Tech</span>
+        <span class="hidden sm:inline">ALAT Medya | Tech</span>
       </a>
 
       <button id="menu-toggle" type="button" class="focusable rounded-lg border border-slate/20 bg-surface px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-navy md:hidden" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
@@ -420,7 +437,7 @@
           <p class="text-xs uppercase tracking-[0.16em] text-slate/60">ALAT Medya Sosyal Medya Çözüm Paketleri</p>
           <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">İşletme Ölçeğine Göre 3 Yönetim Paketi</h2>
         </div>
-        <p class="text-sm text-slate/70">Net fiyatlandırma, marka hedefleri ve kanal sayısına göre keşif sonrası belirlenir.</p>
+        <p class="text-sm text-slate/70">Paket içerikleri hedef, sektör ve operasyon yoğunluğuna göre keşif sonrasında netleştirilir.</p>
       </div>
       <div class="mt-5 grid gap-4 lg:grid-cols-3">
         <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
@@ -457,25 +474,6 @@
           </ul>
         </article>
       </div>
-
-      <div class="mt-6 rounded-2xl border border-slate/10 bg-white p-4 md:p-5">
-        <p class="text-sm font-semibold text-navy">Mini Bütçe Öngörü Aracı</p>
-        <div class="mt-3 grid gap-3 md:grid-cols-3">
-          <select id="estimate-service" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-            <option value="1">Medya Operasyonu</option>
-            <option value="1.4">Yazılım Geliştirme</option>
-            <option value="1.25">Güvenlik Danışmanlığı</option>
-            <option value="1.8">Birleşik Operasyon Paketi</option>
-          </select>
-          <select id="estimate-scale" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-            <option value="1">Küçük Ölçek</option>
-            <option value="1.5">Orta Ölçek</option>
-            <option value="2.1">Büyük Ölçek</option>
-          </select>
-          <button id="estimate-btn" type="button" class="focusable rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white">Tahmini Aralığı Hesapla</button>
-        </div>
-        <p id="estimate-output" class="mt-3 text-sm text-slate/80">Tahmini bütçe aralığını görmek için seçim yapın.</p>
-      </div>
     </section>
 
     <section id="surec" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
@@ -495,24 +493,24 @@
         <div class="mt-4 overflow-hidden rounded-2xl border border-slate/10 bg-slate/[0.02]">
           <div id="testimonial-track" class="flex transition-transform duration-700 ease-out will-change-transform">
             <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"ALAT ekibiyle 3 ay içinde hem lansman hızımız hem de dönüşüm performansımız belirgin şekilde iyileşti. Raporlama disiplini sayesinde yönetim tarafında karar almak çok kolaylaştı."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy">Operasyon Direktörü, B2B Teknoloji Şirketi</figcaption>
+              <blockquote class="text-sm leading-relaxed text-slate/85">"Onboarding sürecimiz dağınıktı. Ekip, ilk ayda süreçleri sadeleştirip içerik ve teknik teslimleri tek takvime topladı. Özellikle toplantı verimi ve karar alma hızı görünür biçimde arttı."</blockquote>
+              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Operasyon Ekibi, Orta Ölçekli Teknoloji Firması</figcaption>
             </figure>
             <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Tek ekiple tüm dijital operasyonu yönetebilmek hem maliyeti düşürdü hem koordinasyonu hızlandırdı. Her hafta net bir yol haritamız vardı."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy">Pazarlama Müdürü, E-Ticaret Markası</figcaption>
+              <blockquote class="text-sm leading-relaxed text-slate/85">"Kampanya yönetimi, tasarım ve teknik tarafı aynı masada yürütmek bize ciddi zaman kazandırdı. Haftalık rapor yapısı sayesinde neyin çalıştığını anlık takip edebildik."</blockquote>
+              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Pazarlama Birimi, E-Ticaret Operasyonu</figcaption>
             </figure>
             <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Landing page ve reklam akışı birlikte optimize edilince form dönüşümlerimiz ikinci ayda ciddi şekilde yükseldi."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy">Büyüme Lideri, SaaS Girişimi</figcaption>
+              <blockquote class="text-sm leading-relaxed text-slate/85">"Landing page tarafında yapılan sadeleştirme ve reklam mesajlarının eşleştirilmesiyle ikinci ayda form kalitesi yükseldi. Satış ekibi daha nitelikli talepler almaya başladı."</blockquote>
+              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Büyüme Ekibi, B2B Yazılım Girişimi</figcaption>
             </figure>
             <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Yazılım ve içerik ekibinin tek hedefte buluşması sayesinde ürün lansmanını planladığımız tarihten önce tamamladık."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy">Ürün Yöneticisi, Lojistik Platformu</figcaption>
+              <blockquote class="text-sm leading-relaxed text-slate/85">"Ürün sayfaları, teknik iyileştirmeler ve içerik üretimi aynı sprint içinde ilerledi. Bu yaklaşım lansman süresini kısalttı ve ekipler arası iletişimi netleştirdi."</blockquote>
+              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Ürün Takımı, Lojistik Teknoloji Şirketi</figcaption>
             </figure>
             <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Güvenlik checklistleri ve süreç disiplini özellikle kurumsal müşteri onboarding tarafında bize çok zaman kazandırdı."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy">BT Koordinatörü, Sağlık Teknolojileri Şirketi</figcaption>
+              <blockquote class="text-sm leading-relaxed text-slate/85">"Güvenlik checklistlerinin operasyona dahil edilmesiyle denetim hazırlığımız çok daha düzenli hale geldi. Özellikle kurumsal müşteri kabul süreçlerinde risk yönetimi güçlendi."</blockquote>
+              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Bilgi Teknolojileri Ekibi, Sağlık Teknolojisi Kurumu</figcaption>
             </figure>
           </div>
         </div>
@@ -679,10 +677,6 @@
     const whatsappLink = document.getElementById("whatsapp-link");
     const leadForm = document.getElementById("lead-form");
     const formStatus = document.getElementById("form-status");
-    const estimateService = document.getElementById("estimate-service");
-    const estimateScale = document.getElementById("estimate-scale");
-    const estimateBtn = document.getElementById("estimate-btn");
-    const estimateOutput = document.getElementById("estimate-output");
     const ceplogDays = document.getElementById("ceplog-days");
     const ceplogHours = document.getElementById("ceplog-hours");
     const ceplogMinutes = document.getElementById("ceplog-minutes");
@@ -950,19 +944,6 @@
         if (faqEmpty) {
           faqEmpty.classList.toggle("hidden", visibleCount > 0);
         }
-      });
-    }
-
-    if (estimateBtn && estimateService && estimateScale && estimateOutput) {
-      estimateBtn.addEventListener("click", () => {
-        const base = 45000;
-        const serviceFactor = Number(estimateService.value || 1);
-        const scaleFactor = Number(estimateScale.value || 1);
-        const mid = Math.round(base * serviceFactor * scaleFactor);
-        const low = Math.round(mid * 0.85);
-        const high = Math.round(mid * 1.25);
-        const format = (value) => `₺${value.toLocaleString("tr-TR")}`;
-        estimateOutput.textContent = `Tahmini bütçe aralığı: ${format(low)} - ${format(high)} (nihai teklif kapsam analizinden sonra netleşir).`;
       });
     }
 

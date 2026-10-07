@@ -1,11 +1,11 @@
-﻿<!-- /* ALAT Medya | Tech - Digital Ghost Module */ -->
+<!-- /* ALAT Medya — Bağımsız Ürün ve Teknoloji Girişimi */ -->
 <!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ALAT Medya | Tech</title>
-  <meta name="description" content="ALAT Medya | Tech - Medya, yazılım ve güvenlik operasyonlarını ölçülebilir iş sonuçlarına dönüştüren kurumsal çözüm ortağı." />
+  <title>ALAT Medya — Bağımsız Ürün ve Teknoloji Girişimi</title>
+  <meta name="description" content="ALAT Medya, 2026'da Türkiye'de başlayan bağımsız bir ürün ve teknoloji girişimidir. Ana ürünümüz kişisel finans uygulaması CepLog aktif geliştirme ve özel test aşamasındadır." />
   <meta name="robots" content="index, follow" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <link rel="canonical" href="https://alatmedya.tech/" />
@@ -13,15 +13,15 @@
   <link rel="apple-touch-icon" href="ALAT_LOGO.png" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ALAT Medya | Tech" />
-  <meta property="og:title" content="ALAT Medya | Tech" />
-  <meta property="og:description" content="Medya, yazılım ve güvenlik operasyonlarında hız, ölçeklenebilirlik ve ölçülebilir büyüme." />
+  <meta property="og:site_name" content="ALAT Medya" />
+  <meta property="og:title" content="ALAT Medya — Bağımsız Ürün ve Teknoloji Girişimi" />
+  <meta property="og:description" content="Türkiye'de kurulan bağımsız ürün ve teknoloji girişimi. Amiral ürünümüz CepLog, kişisel finans uygulaması olarak aktif geliştirme ve özel test sürecindedir." />
   <meta property="og:url" content="https://alatmedya.tech/" />
   <meta property="og:image" content="https://alatmedya.tech/assets/social/og-cover-1200x630.jpg" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="ALAT Medya | Tech" />
-  <meta name="twitter:description" content="Medya, yazılım ve güvenlik operasyonlarında hız, ölçeklenebilirlik ve ölçülebilir büyüme." />
+  <meta name="twitter:title" content="ALAT Medya — Bağımsız Ürün ve Teknoloji Girişimi" />
+  <meta name="twitter:description" content="Türkiye'de kurulan bağımsız ürün ve teknoloji girişimi. Ana ürünümüz CepLog kişisel finans uygulaması aktif geliştirme aşamasındadır." />
   <meta name="twitter:image" content="https://alatmedya.tech/assets/social/og-cover-1200x630.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -49,9 +49,8 @@
     window.ALAT_CONFIG = {
       leadWebhookUrl: "",
       leadEmail: "destek@alatmedya.tech",
-      calendlyUrl: "https://calendly.com",
       whatsappNumber: "905075385671",
-      whatsappDefaultMessage: "Merhaba, ALAT Medya | Tech için proje görüşmesi planlamak istiyorum."
+      whatsappDefaultMessage: "Merhaba, ALAT Medya hakkında bilgi almak istiyorum."
     };
   </script>
   <style>
@@ -118,15 +117,6 @@
       opacity: 1;
       transform: translateY(0);
     }
-    .logo-marquee {
-      display: flex;
-      min-width: max-content;
-      animation: marquee 28s linear infinite;
-    }
-    @keyframes marquee {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       .reveal-target {
@@ -134,7 +124,6 @@
         transform: none;
         transition: none;
       }
-      .logo-marquee { animation: none; }
     }
   </style>
 
@@ -142,10 +131,12 @@
   {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "ALAT Medya | Tech",
+    "name": "ALAT Medya",
     "url": "https://alatmedya.tech/",
     "logo": "https://alatmedya.tech/ALAT_LOGO.png",
-    "email": "destek@alatmedya.tech"
+    "email": "destek@alatmedya.tech",
+    "foundingDate": "2026",
+    "description": "Bağımsız erken aşama ürün ve teknoloji girişimi. Ana ürün: CepLog kişisel finans uygulaması."
   }
   </script>
 </head>
@@ -156,19 +147,15 @@
     <nav class="mx-auto flex w-full max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Ana Menü">
       <a href="#main" class="focusable inline-flex items-center gap-3 text-sm font-extrabold tracking-tight text-navy md:text-base">
         <img src="ALAT_LOGO.png" alt="ALAT Medya logosu" class="h-9 w-9 rounded-md object-cover" fetchpriority="high" decoding="async" width="36" height="36" />
-        <span class="hidden sm:inline">ALAT Medya | Tech</span>
+        <span class="hidden sm:inline">ALAT Medya</span>
       </a>
 
       <button id="menu-toggle" type="button" class="focusable rounded-lg border border-slate/20 bg-surface px-3 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-navy md:hidden" aria-expanded="false" aria-controls="mobile-menu">Menü</button>
 
       <ul class="hidden items-center gap-6 text-sm font-medium text-slate/90 md:flex">
-        <li><a href="index.html#genel" class="focusable transition hover:text-navy" data-i18n="navGeneral">Genel</a></li>
-        <li><a href="hizmetler.html" class="focusable transition hover:text-navy" data-i18n="navServices">Hizmetler</a></li>
-        <li><a href="hizmetler.html" class="focusable transition hover:text-navy" data-i18n="navProducts">Ürünler</a></li>
-        <li><a href="projeler.html" class="focusable transition hover:text-navy" data-i18n="navCases">Vaka</a></li>
-        <li><a href="#projeler" class="focusable transition hover:text-navy" data-i18n="navProjects">Projeler</a></li>
-        <li><a href="index.html#paketler" class="focusable transition hover:text-navy" data-i18n="navPackages">Paketler</a></li>
-        <li><a href="iletisim.html" class="focusable transition hover:text-navy" data-i18n="navFaq">SSS</a></li>
+        <li><a href="#hakkimizda" class="focusable transition hover:text-navy" data-i18n="navAbout">Hakkımızda</a></li>
+        <li><a href="#ceplog" class="focusable transition hover:text-navy" data-i18n="navProduct">CepLog</a></li>
+        <li><a href="hizmetler.html" class="focusable transition hover:text-navy" data-i18n="navCapabilities">Yetenekler</a></li>
         <li><a href="iletisim.html" class="focusable transition hover:text-navy" data-i18n="navContact">İletişim</a></li>
         <li>
           <div class="inline-flex rounded-lg border border-slate/20 bg-surface p-1 text-[11px] font-semibold tracking-[0.08em]">
@@ -187,13 +174,9 @@
             <button id="lang-en-mobile" type="button" class="focusable rounded-md px-2 py-1 text-navy">EN</button>
           </div>
         </li>
-        <li><a href="#genel" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navGeneral">Genel</a></li>
-        <li><a href="hizmetler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navServices">Hizmetler</a></li>
-        <li><a href="hizmetler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProducts">Ürünler</a></li>
-        <li><a href="projeler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navCases">Vaka</a></li>
-        <li><a href="#projeler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProjects">Projeler</a></li>
-        <li><a href="#paketler" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navPackages">Paketler</a></li>
-        <li><a href="iletisim.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navFaq">SSS</a></li>
+        <li><a href="#hakkimizda" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navAbout">Hakkımızda</a></li>
+        <li><a href="#ceplog" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navProduct">CepLog</a></li>
+        <li><a href="hizmetler.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navCapabilities">Yetenekler</a></li>
         <li><a href="iletisim.html" class="focusable block rounded-lg px-3 py-2 hover:bg-slate/[0.06]" data-i18n="navContact">İletişim</a></li>
       </ul>
     </div>
@@ -203,26 +186,27 @@
     <section class="route-grid mt-6 rounded-3xl border border-slate/10 p-3 sm:p-4">
       <div class="grid gap-2 md:grid-cols-4">
         <a href="index.html" data-route-link class="route-pill active focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Ana Merkez</a>
-        <a href="hizmetler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Cozumler</a>
-        <a href="projeler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Vaka Merkezi</a>
-        <a href="iletisim.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Planlama</a>
+        <a href="hizmetler.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">Yetenekler</a>
+        <a href="#ceplog" class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">CepLog</a>
+        <a href="iletisim.html" data-route-link class="route-pill focusable inline-flex items-center justify-center rounded-xl border border-slate/20 bg-surface px-4 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-navy transition hover:border-navy">İletişim</a>
       </div>
     </section>
 
+    <!-- HERO -->
     <section class="hero-bg mt-6 overflow-hidden rounded-3xl border border-slate/10 p-6 md:p-10">
       <div class="grid items-center gap-8 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <p class="inline-flex rounded-full border border-slate/15 bg-slate/[0.03] px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate/70">Medya, Yazılım, Güvenlik</p>
-          <h1 class="mt-6 text-3xl font-extrabold leading-tight text-navy sm:text-5xl">Kurumsal Operasyonları Tek Çatı Altında Hızlandırın</h1>
-          <p class="mt-5 max-w-2xl text-sm leading-relaxed text-slate/80 sm:text-base">ALAT Medya | Tech; medya, yazılım ve güvenlik ekiplerini tek ritimde çalıştırarak daha hızlı lansman, daha düşük operasyon maliyeti ve daha yüksek dönüşüm sağlar.</p>
+          <p class="inline-flex rounded-full border border-slate/15 bg-slate/[0.03] px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-slate/70" data-i18n="heroBadge">Bağımsız Ürün ve Teknoloji Girişimi · 2026</p>
+          <h1 class="mt-6 text-3xl font-extrabold leading-tight text-navy sm:text-5xl" data-i18n="heroTitle">Kullanıcıya Gerçek Fayda Sağlayan Dijital Ürünler Geliştiriyoruz</h1>
+          <p class="mt-5 max-w-2xl text-sm leading-relaxed text-slate/80 sm:text-base" data-i18n="heroDesc">ALAT Medya, 2026'da Türkiye'de başlayan bağımsız bir ürün ve teknoloji girişimidir. Güvenli, yapay zekâ destekli ve kullanıcıya gerçek değer katan dijital ürünler geliştirmeye odaklanıyoruz. Şu an amiral ürünümüz kişisel finans uygulaması CepLog'un aktif geliştirme ve özel test sürecindeyiz.</p>
           <div class="mt-7 flex flex-wrap gap-3">
-            <a href="#teklif" class="focusable rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-900">30 Dakika Strateji Görüşmesi</a>
-            <a href="#projeler" class="focusable rounded-full border border-slate/20 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy">Canlı Proje Örnekleri</a>
+            <a href="#ceplog" class="focusable rounded-full bg-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-slate-900" data-i18n="heroCta1">CepLog'u İncele</a>
+            <a href="iletisim.html" class="focusable rounded-full border border-slate/20 px-6 py-3 text-sm font-semibold text-navy transition hover:border-navy" data-i18n="heroCta2">İletişime Geç</a>
           </div>
           <div class="mt-6 grid gap-2 text-xs text-slate/75 sm:grid-cols-3">
-            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Sözleşmeli Teslim Disiplini</span>
-            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Haftalık Performans Raporu</span>
-            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">KVKK ve Süreç Uyum Kontrolü</span>
+            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="heroBadge1">Kuruluş: 2026</span>
+            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="heroBadge2">Türkiye · Bağımsız</span>
+            <span class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="heroBadge3">Erken Aşama Girişim</span>
           </div>
         </div>
         <div class="rounded-2xl border border-slate/15 bg-surface p-3">
@@ -231,425 +215,196 @@
       </div>
     </section>
 
-    <section id="genel" class="mt-10 reveal-target">
-      <div class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Aktif Kurumsal Hesap</p><p class="mt-2 text-2xl font-bold text-navy"><span data-counter-target="45" data-counter-suffix="+">0</span></p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Tamamlanan Teslim</p><p class="mt-2 text-2xl font-bold text-navy"><span data-counter-target="128" data-counter-suffix="+">0</span></p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">Ortalama Dönüşüm Artışı</p><p class="mt-2 text-2xl font-bold text-navy">%<span data-counter-target="32" data-counter-decimals="0">0</span></p></article>
-        <article class="rounded-2xl border border-slate/10 bg-surface p-5"><p class="text-xs uppercase tracking-[0.16em] text-slate/60">SLA Uyum Oranı</p><p class="mt-2 text-2xl font-bold text-navy">%<span data-counter-target="99.9" data-counter-decimals="1">0</span></p></article>
+    <!-- HAKKIMIZDA -->
+    <section id="hakkimizda" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
+      <div class="grid gap-8 lg:grid-cols-2">
+        <div>
+          <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="aboutLabel">Hakkımızda</p>
+          <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl" data-i18n="aboutTitle">Bağımsız Bir Ürün ve Teknoloji Girişimi</h2>
+          <p class="mt-4 text-sm leading-relaxed text-slate/80" data-i18n="aboutDesc">ALAT Medya, 2026'da Türkiye'de başlayan bağımsız bir ürün ve teknoloji girişimidir. Kullanıcıya gerçek fayda sağlayan, gizlilik odaklı ve yapay zekâ destekli dijital ürünler geliştirmeye odaklanır. Şu an ana ürünümüz kişisel finans uygulaması CepLog'un geliştirme ve özel test sürecindeyiz.</p>
+          <p class="mt-3 text-sm leading-relaxed text-slate/80" data-i18n="aboutDescEn" hidden>ALAT Medya is an independent early-stage product and technology venture founded in Türkiye in 2026. We focus on building useful, privacy-conscious and AI-enabled digital products. Our current flagship product is CepLog, a personal finance application in active development and private testing.</p>
+        </div>
+        <div class="grid gap-3 content-start">
+          <div class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+            <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="aboutFocusLabel">Odak Alanı</p>
+            <ul class="mt-3 grid gap-2 text-sm text-slate/85">
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="focus1">Ürün geliştirme ve tasarım</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="focus2">Mobil uygulama mimarisi (Flutter)</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="focus3">Yapay zekâ destekli kullanıcı deneyimi</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="focus4">Gizlilik ve güvenlik odaklı yazılım</li>
+            </ul>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+              <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="foundedLabel">Kuruluş</p>
+              <p class="mt-2 text-2xl font-bold text-navy">2026</p>
+            </div>
+            <div class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
+              <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="stageLabel">Aşama</p>
+              <p class="mt-2 text-sm font-bold text-navy" data-i18n="stageValue">Erken Aşama</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="guven-rozetleri" class="mt-6 rounded-3xl border border-slate/10 bg-surface p-4 md:p-6 reveal-target">
-      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Güven Rozetleri</p>
-      <div class="mt-3 grid gap-2 text-sm text-slate/85 sm:grid-cols-2 lg:grid-cols-4">
-        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">KVKK Uyum Süreç Kontrolü</span>
-        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">SLA Odaklı Teslim Disiplini</span>
-        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Haftalık Ölçülebilir Raporlama</span>
-        <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Risk Öncelikli Operasyon Modeli</span>
+    <!-- CEPLOG — ANA ÜRÜN -->
+    <section id="ceplog" class="mt-10 rounded-3xl border border-navy/10 bg-navy text-white p-6 md:p-10 reveal-target">
+      <div class="flex flex-wrap items-center gap-3">
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-white/60" data-i18n="ceplogLabel">Amiral Ürün</p>
+        <span class="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.12em] text-white/80" data-i18n="ceplogStatus">Özel Test · Aktif Geliştirme</span>
+      </div>
+      <h2 class="mt-4 text-3xl font-extrabold leading-tight sm:text-4xl">CepLog</h2>
+      <p class="mt-4 max-w-3xl text-sm leading-relaxed text-white/80 sm:text-base" data-i18n="ceplogDesc">CepLog; işlemleri, bütçeleri, birikimleri, hedefleri, düzenli ödemeleri ve finansal analizleri tek bir kişisel çalışma alanında birleştiren yeni nesil kişisel finans uygulamasıdır.</p>
+      <p class="mt-2 max-w-3xl text-sm leading-relaxed text-white/70" data-i18n="ceplogDescEn" hidden>CepLog is a personal finance application designed to turn everyday financial activity into a clear and understandable financial picture. It brings transactions, budgets, savings, goals, recurring obligations and financial analytics into a personalized workspace.</p>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60" data-i18n="ceplogCoreLabel">Temel Özellikler</p>
+          <ul class="mt-3 grid gap-2 text-sm text-white/85">
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="cf1">İşlem takibi ve kategorizasyon</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="cf2">Gelir / gider yönetimi</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="cf3">Bütçe ve hedef takibi</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="cf4">Birikim takibi</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="cf5">Düzenli ödeme takibi</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60" data-i18n="ceplogAnalyticsLabel">Finansal Analitik</p>
+          <ul class="mt-3 grid gap-2 text-sm text-white/85">
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="ca1">Nakit akış analizi</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="ca2">Harcama analizi</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="ca3">Kişiselleştirilmiş finansal içgörüler</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="ca4">Finansal raporlama</li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2" data-i18n="ca5">Merchant kategorizasyonu</li>
+          </ul>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-white/[0.06] p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60" data-i18n="ceplogRoadmapLabel">Yol Haritası</p>
+          <ul class="mt-3 grid gap-2 text-sm text-white/85">
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2">
+              <span class="mr-1 text-[10px] font-bold uppercase tracking-widest text-white/40" data-i18n="roadmapTag">Planlanan</span>
+              <span data-i18n="cr1">AI Finance Coach</span>
+            </li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2">
+              <span class="mr-1 text-[10px] font-bold uppercase tracking-widest text-white/40" data-i18n="roadmapTag">Planlanan</span>
+              <span data-i18n="cr2">Gelişmiş finansal içgörüler</span>
+            </li>
+            <li class="rounded-lg border border-white/10 bg-white/5 px-3 py-2">
+              <span class="mr-1 text-[10px] font-bold uppercase tracking-widest text-white/40" data-i18n="roadmapTag">Planlanan</span>
+              <span data-i18n="cr3">Kişiselleştirilmiş finansal zekâ katmanı</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+        <p class="text-xs font-semibold uppercase tracking-[0.14em] text-white/60" data-i18n="ceplogAILabel">Yapay Zekâ Mimarisi</p>
+        <p class="mt-2 text-sm leading-relaxed text-white/75" data-i18n="ceplogAIDesc">CepLog'un deterministik finansal hizmetleri; bakiyeleri, işlemleri ve finansal gerçekleri hesaplar. Yapay zekâ destekli finansal açıklama ve etkileşim katmanı geliştirilmektedir — kullanıcıların bu finansal gerçekleri doğal bir şekilde anlayabilmesi ve sorgulayabilmesi için.</p>
+      </div>
+
+      <div class="mt-6 flex flex-wrap gap-3">
+        <div class="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white/90" data-i18n="ceplogTech">Flutter · Mobil Uygulama</div>
+        <div class="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white/90" data-i18n="ceplogAuth">Kullanıcı Kimlik Doğrulama</div>
+        <div class="rounded-xl border border-white/20 bg-white/10 px-4 py-3 text-sm font-semibold text-white/90" data-i18n="ceplogPrivate">Özel Test Aşaması</div>
       </div>
     </section>
 
+    <!-- YETENEKLERİMİZ -->
     <section id="icerik" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-4 md:p-6 reveal-target">
-      <div class="flex flex-wrap gap-2" role="tablist" aria-label="İçerik Sekmeleri">
-        <button type="button" class="focusable tab-btn active rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="true" aria-controls="panel-hizmetler" data-tab="hizmetler">Hizmetler</button>
-        <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-urunler" data-tab="urunler">Ürünler</button>
-        <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-vaka" data-tab="vaka">Vaka</button>
-        <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-guvenlik" data-tab="guvenlik">Güvenlik</button>
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="capLabel">Teknik Yetenekler</p>
+      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl" data-i18n="capTitle">Ürün ve Teknoloji Odaklı Yapımız</h2>
+      <div class="mt-5 flex flex-wrap gap-2" role="tablist" aria-label="Yetenek Sekmeleri">
+        <button type="button" class="focusable tab-btn active rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="true" aria-controls="panel-yazilim" data-tab="yazilim" data-i18n="tabSoftware">Yazılım Geliştirme</button>
+        <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-medya" data-tab="medya" data-i18n="tabMedia">Medya Üretimi</button>
+        <button type="button" class="focusable tab-btn rounded-xl border border-slate/20 px-4 py-2 text-sm font-semibold text-slate" role="tab" aria-selected="false" aria-controls="panel-guvenlik" data-tab="guvenlik" data-i18n="tabSecurity">Güvenlik</button>
       </div>
 
       <div class="mt-5">
-        <section id="panel-hizmetler" class="tab-panel" role="tabpanel" aria-label="Hizmetler">
-          <div id="hizmetler" class="grid gap-4 md:grid-cols-3">
+        <section id="panel-yazilim" class="tab-panel" role="tabpanel" aria-label="Yazılım Geliştirme">
+          <div class="grid gap-4 md:grid-cols-3">
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <h3 class="text-lg font-semibold text-navy">Kurumsal Medya Üretimi</h3>
-              <p class="mt-3 text-sm text-slate/80">Kanal stratejisi, kreatif üretim ve yayın operasyonunu tek ekipte birleştirerek daha düşük edinme maliyeti sağlar.</p>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="sw1Title">Mobil Uygulama Geliştirme</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="sw1Desc">Flutter mimarisiyle çapraz platform mobil uygulamalar; kullanıcı kimlik doğrulama, veri yönetimi ve kişiselleştirilmiş deneyim akışları.</p>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <h3 class="text-lg font-semibold text-navy">Yazılım Geliştirme</h3>
-              <p class="mt-3 text-sm text-slate/80">Web ve mobil ürünleri iş hedeflerinize göre MVP'den kurumsal ölçeğe taşır, entegrasyon ve bakım sürecini standartlaştırır.</p>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="sw2Title">Ürün Mimarisi ve MVP</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="sw2Desc">Kullanıcı ihtiyaçlarından yola çıkarak ürün kapsamı belirleme, teknik mimari tasarımı ve MVP geliştirme süreci.</p>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <h3 class="text-lg font-semibold text-navy">Siber Güvenlik Danışmanlığı</h3>
-              <p class="mt-3 text-sm text-slate/80">Risk önceliklendirme, temel sertleştirme ve operasyonel kontrol setleriyle sürekliliği güvenceye alır.</p>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="sw3Title">Yapay Zekâ Entegrasyonu</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="sw3Desc">Deterministik hesaplama katmanları üzerine inşa edilen AI destekli açıklama ve etkileşim katmanları; kullanıcının finansal gerçekleri doğal dilde anlaması için.</p>
             </article>
           </div>
         </section>
 
-        <section id="panel-urunler" class="tab-panel" role="tabpanel" aria-label="Ürünler" hidden>
-          <div id="urunler" class="grid gap-4">
-            <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-6">
-              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-slate/60">Ürünler</p>
-              <h3 class="mt-2 text-2xl font-bold text-navy">CepLog</h3>
-              <p class="mt-3 max-w-3xl text-sm text-slate/80">CepLog, kurumsal ve bireysel veri günlüğü yönetimini sade bir akışla sunan mobil ürün serisidir.</p>
-              <div class="mt-4 rounded-xl border border-slate/10 bg-white p-4">
-                <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate/60">1 Mayıs Canlı Sayaç</p>
-                <div class="mt-2 grid grid-cols-4 gap-2 text-center text-navy">
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="ceplog-days" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Gün</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="ceplog-hours" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Saat</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="ceplog-minutes" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Dakika</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="ceplog-seconds" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Saniye</p>
-                  </div>
-                </div>
-                <p id="ceplog-countdown-note" class="mt-2 text-xs text-slate/70">CepLog için geri sayım aktif.</p>
-              </div>
-              <ul class="mt-4 grid gap-2 text-sm text-slate/85 sm:grid-cols-2">
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Kayıt ve etkinlik zaman çizelgesi</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Temel raporlama çıktıları</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Ekip içi paylaşım senaryoları</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Süreç izleme kolaylığı</li>
-              </ul>
-              <div class="mt-5 flex flex-col gap-2 sm:flex-row">
-                <a id="ceplog-appstore-link" href="https://apps.apple.com" data-store-url="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="focusable inline-flex min-w-[180px] items-center justify-center rounded-xl border border-slate/20 bg-surface px-5 py-3 text-sm font-semibold text-navy hover:border-navy">App Store</a>
-                <a id="ceplog-playstore-link" href="https://play.google.com/store" data-store-url="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="focusable inline-flex min-w-[180px] items-center justify-center rounded-xl border border-slate/20 bg-surface px-5 py-3 text-sm font-semibold text-navy hover:border-navy">Google Play</a>
-              </div>
-            </article>
-
-            <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-6">
-              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-slate/60">Ürünler</p>
-              <h3 class="mt-2 text-2xl font-bold text-navy">Digital Ghost</h3>
-              <p class="mt-3 max-w-3xl text-sm text-slate/80">Digital Ghost, adli bilişim yaklaşımıyla dijital ayak izini analiz eden ve gizlilik risklerini sadeleştiren mobil güvenlik asistanıdır.</p>
-              <div class="mt-4 rounded-xl border border-slate/10 bg-white p-4">
-                <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate/60">15 Mayıs Canlı Sayaç</p>
-                <div class="mt-2 grid grid-cols-4 gap-2 text-center text-navy">
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="digital-ghost-product-days" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Gün</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="digital-ghost-product-hours" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Saat</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="digital-ghost-product-minutes" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Dakika</p>
-                  </div>
-                  <div class="rounded-lg border border-slate/10 bg-slate/[0.02] px-2 py-2">
-                    <p id="digital-ghost-product-seconds" class="text-xl font-bold">00</p>
-                    <p class="text-[10px] uppercase tracking-[0.1em] text-slate/60">Saniye</p>
-                  </div>
-                </div>
-                <p id="digital-ghost-product-countdown-note" class="mt-2 text-xs text-slate/70">Digital Ghost için geri sayım aktif.</p>
-              </div>
-              <ul class="mt-4 grid gap-2 text-sm text-slate/85 sm:grid-cols-2">
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Veri sızıntısı risk taraması</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Uygulama izin denetimi</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Gizlilik farkındalık rehberi</li>
-                <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Kişisel güvenlik aksiyon önerileri</li>
-              </ul>
-              <div class="mt-5 flex flex-col gap-2 sm:flex-row">
-                <a id="digital-ghost-product-appstore-link" href="https://apps.apple.com" data-store-url="https://apps.apple.com" target="_blank" rel="noopener noreferrer" class="focusable inline-flex min-w-[180px] items-center justify-center rounded-xl border border-slate/20 bg-surface px-5 py-3 text-sm font-semibold text-navy hover:border-navy">App Store</a>
-                <a id="digital-ghost-product-playstore-link" href="https://play.google.com/store" data-store-url="https://play.google.com/store" target="_blank" rel="noopener noreferrer" class="focusable inline-flex min-w-[180px] items-center justify-center rounded-xl border border-slate/20 bg-surface px-5 py-3 text-sm font-semibold text-navy hover:border-navy">Google Play</a>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <section id="panel-vaka" class="tab-panel" role="tabpanel" aria-label="Vaka" hidden>
-          <div id="vaka" class="grid gap-4 md:grid-cols-3">
+        <section id="panel-medya" class="tab-panel" role="tabpanel" aria-label="Medya Üretimi" hidden>
+          <div class="grid gap-4 md:grid-cols-3">
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <p class="text-xs uppercase tracking-[0.12em] text-slate/60">B2B Yazılım Lansmanı</p>
-              <p class="mt-2 text-3xl font-bold text-navy">%41</p>
-              <p class="mt-1 text-sm text-slate/80">90 günde lead artış etkisi.</p>
-              <button type="button" data-case-open="b2b-launch" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="me1Title">Dijital İçerik Üretimi</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="me1Desc">Ürün odaklı içerik stratejisi, kreatif üretim ve yayın operasyonu. Ürün hikayesini dijital kanalda anlatmak için.</p>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Kurumsal Medya Kampanyası</p>
-              <p class="mt-2 text-3xl font-bold text-navy">2.7x</p>
-              <p class="mt-1 text-sm text-slate/80">Dönüşüm çarpanı iyileşmesi.</p>
-              <button type="button" data-case-open="media-campaign" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="me2Title">Marka ve Görsel Kimlik</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="me2Desc">Ürün kimliğini destekleyen görsel tasarım, tipografi ve marka dili oluşturma.</p>
             </article>
             <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-              <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Teknik Optimizasyon</p>
-              <p class="mt-2 text-3xl font-bold text-navy">-38%</p>
-              <p class="mt-1 text-sm text-slate/80">İlk etkileşim süresi azalması.</p>
-              <button type="button" data-case-open="tech-optimization" class="focusable mt-3 rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.1em] text-navy hover:border-navy">Detayı Gör</button>
+              <h3 class="text-lg font-semibold text-navy" data-i18n="me3Title">Kullanıcı İletişimi</h3>
+              <p class="mt-3 text-sm text-slate/80" data-i18n="me3Desc">Ürün lansmanı, kullanıcı onboarding ve sürekli iletişim için içerik planlaması.</p>
             </article>
           </div>
         </section>
 
         <section id="panel-guvenlik" class="tab-panel" role="tabpanel" aria-label="Güvenlik" hidden>
           <div class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-6">
-            <h3 class="text-xl font-bold text-navy">Operasyonel Güvenlik Prensipleri</h3>
+            <h3 class="text-xl font-bold text-navy" data-i18n="secTitle">Operasyonel Güvenlik Prensipleri</h3>
             <ul class="mt-4 grid gap-2 text-sm text-slate/85 sm:grid-cols-2">
-              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Minimum yetki ve rol temelli erişim</li>
-              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Düzenli yedek ve geri dönüş planları</li>
-              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Harici bağlantı doğrulama kontrolleri</li>
-              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2">Temel olay kaydı ve izleme süreçleri</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec1">Minimum yetki ve rol temelli erişim</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec2">Düzenli yedek ve geri dönüş planları</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec3">Harici bağlantı doğrulama kontrolleri</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec4">Temel olay kaydı ve izleme süreçleri</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec5">KVKK uyumlu veri işleme disiplini</li>
+              <li class="rounded-lg border border-slate/10 bg-white px-3 py-2" data-i18n="sec6">Kullanıcı verisi gizliliği odaklı mimari</li>
             </ul>
           </div>
         </section>
       </div>
     </section>
 
-    <section id="projeler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Canlı Proje Örnekleri</p>
-          <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Gerçek İş Hedeflerine Göre Kurgulanmış Senaryolar</h2>
-        </div>
-        <a href="#teklif" class="focusable inline-flex items-center rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">Benzer Proje Kurgulayalım</a>
-      </div>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Lojistik Dashboard</p>
-          <h3 class="mt-2 text-lg font-semibold text-navy">Saha Takibi + Operasyon Medyası</h3>
-          <p class="mt-2 text-sm text-slate/80">Teslim süreçleri için panel, mobil bildirim ve performans odaklı içerik akışı birlikte tasarlandı.</p>
-        </article>
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Sağlık İletişim Platformu</p>
-          <h3 class="mt-2 text-lg font-semibold text-navy">Gizlilik Uyumlu Hasta Deneyimi</h3>
-          <p class="mt-2 text-sm text-slate/80">Kurumsal içerik altyapısı, güvenlik kontrol listesi ve kullanıcı deneyimi akışı entegre edildi.</p>
-        </article>
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">E-Ticaret Büyüme Kiti</p>
-          <h3 class="mt-2 text-lg font-semibold text-navy">Kreatif Funnel + Hız Optimizasyonu</h3>
-          <p class="mt-2 text-sm text-slate/80">Kampanya kreatifleri, dönüşüm sayfaları ve hız iyileştirme adımları tek planla yönetildi.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="referanslar" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Referans Markalar</p>
-      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Birlikte Çalıştığımız Sektörlerden Örnekler</h2>
-      <div class="mt-5 overflow-hidden rounded-2xl border border-slate/10 bg-slate/[0.02] py-4">
-        <div class="logo-marquee gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate/70">
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Atlas Logistics</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">MediNova Health</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Northline Commerce</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Helix B2B Cloud</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Orion Retail Group</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">BluePort Mobility</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Atlas Logistics</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">MediNova Health</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Northline Commerce</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Helix B2B Cloud</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">Orion Retail Group</span>
-          <span class="rounded-lg border border-slate/10 bg-white px-3 py-2">BluePort Mobility</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="insights" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Insight Notları</p>
-      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Büyüme ve Güvenlikten Kısa İçgörüler</h2>
-      <div class="mt-5 grid gap-4 md:grid-cols-3">
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Büyüme</p>
-          <h3 class="mt-2 text-base font-semibold text-navy">Dönüşüm için ilk 7 gün planı</h3>
-          <p class="mt-2 text-sm text-slate/80">Yeni kampanya sonrası landing page, form akışı ve takip tetiklerini ilk hafta optimize etmek kazanımı hızlandırır.</p>
-        </article>
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Güvenlik</p>
-          <h3 class="mt-2 text-base font-semibold text-navy">İzin yönetimi neden kritik?</h3>
-          <p class="mt-2 text-sm text-slate/80">Rol bazlı erişim ve minimum yetki politikası, operasyonel hata kaynaklı veri riskini ciddi ölçüde azaltır.</p>
-        </article>
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Operasyon</p>
-          <h3 class="mt-2 text-base font-semibold text-navy">Rapor ritmi kararları hızlandırır</h3>
-          <p class="mt-2 text-sm text-slate/80">Haftalık KPI özeti ve aksiyon listesiyle ekip içi karar süreci daha az toplantı ile ilerler.</p>
-        </article>
-      </div>
-    </section>
-
-    <section id="paketler" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <div class="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-        <div>
-          <p class="text-xs uppercase tracking-[0.16em] text-slate/60">ALAT Medya Sosyal Medya Çözüm Paketleri</p>
-          <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">İşletme Ölçeğine Göre 3 Yönetim Paketi</h2>
-        </div>
-        <p class="text-sm text-slate/70">Paket içerikleri hedef, sektör ve operasyon yoğunluğuna göre keşif sonrasında netleştirilir.</p>
-      </div>
-      <div class="mt-5 grid gap-4 lg:grid-cols-3">
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">Giriş Seviyesi • Dijital Varlık</p>
-          <p class="mt-2 text-lg font-extrabold text-navy">Küçük Ölçek İşletmeler</p>
-          <ul class="mt-3 grid gap-2 text-sm text-slate/85">
-            <li>Aylık 8 post + 12 story paylaşımı</li>
-            <li>Profil optimizasyonu (bio, öne çıkan kapaklar, iletişim butonları)</li>
-            <li>Marka renklerine uygun temel grafik tasarım şablonları</li>
-            <li>Yorum ve DM takibi için temel moderasyon</li>
-            <li>Aylık özet performans raporu</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl border border-navy/30 bg-navy text-white p-5 shadow-lg">
-          <p class="text-xs uppercase tracking-[0.12em] text-white/80">Gelişmiş • Marka Görünürlüğü</p>
-          <p class="mt-2 text-lg font-extrabold">Orta Ölçek Büyüme Modeli</p>
-          <ul class="mt-3 grid gap-2 text-sm text-white/90">
-            <li>Aylık 12 post + 20 story + 6 reels üretimi</li>
-            <li>Rakip analizi sonrası aylık stratejik içerik takvimi</li>
-            <li>Kampanya kurgusu (indirim, çekiliş, özel dönem planı)</li>
-            <li>Meta Ads temel kurulum ve bütçe optimizasyonu</li>
-            <li>Haftalık performans takibi ve toplantı notları</li>
-          </ul>
-        </article>
-        <article class="rounded-2xl border border-slate/10 bg-slate/[0.02] p-5">
-          <p class="text-xs uppercase tracking-[0.12em] text-slate/60">VIP • Entegre Dijital Mimari</p>
-          <p class="mt-2 text-lg font-extrabold text-navy">Büyük Ölçek Liderlik Paketi</p>
-          <ul class="mt-3 grid gap-2 text-sm text-slate/85">
-            <li>Aylık 16 post + 30 story + 10 reels + 2 yerinde çekim günü</li>
-            <li>Instagram, Facebook, LinkedIn ve TikTok için entegre yönetim</li>
-            <li>Premium prodüksiyon (profesyonel ışık, ses ve 4K çekim)</li>
-            <li>Kriz ve itibar yönetimi + veri güvenliği danışmanlığı</li>
-            <li>Landing page optimizasyonu ve detaylı ROI raporlama</li>
-          </ul>
-        </article>
-      </div>
-    </section>
-
-    <section id="surec" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Çalışma Sürecimiz</p>
-      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Şeffaf, Ölçülebilir ve Hızlı İlerleme</h2>
-      <div class="mt-5 grid gap-4 md:grid-cols-4">
-        <article class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">1. Keşif</p><p class="mt-2 text-sm text-slate/85">Hedef, bütçe ve teknik kapsam netleştirilir.</p></article>
-        <article class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">2. Yol Haritası</p><p class="mt-2 text-sm text-slate/85">Haftalık teslim planı ve KPI seti oluşturulur.</p></article>
-        <article class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">3. Uygulama</p><p class="mt-2 text-sm text-slate/85">Medya, yazılım ve güvenlik işleri paralel yürütülür.</p></article>
-        <article class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4"><p class="text-xs font-semibold text-slate/60">4. Raporlama</p><p class="mt-2 text-sm text-slate/85">Sonuçlar dashboard ve karar notlarıyla sunulur.</p></article>
-      </div>
-    </section>
-
-    <section class="mt-10 grid gap-4 md:grid-cols-2">
-      <article class="rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
-        <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Müşteri Görüşleri</p>
-        <div class="mt-4 overflow-hidden rounded-2xl border border-slate/10 bg-slate/[0.02]">
-          <div id="testimonial-track" class="flex transition-transform duration-700 ease-out will-change-transform">
-            <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Onboarding sürecimiz dağınıktı. Ekip, ilk ayda süreçleri sadeleştirip içerik ve teknik teslimleri tek takvime topladı. Özellikle toplantı verimi ve karar alma hızı görünür biçimde arttı."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Operasyon Ekibi, Orta Ölçekli Teknoloji Firması</figcaption>
-            </figure>
-            <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Kampanya yönetimi, tasarım ve teknik tarafı aynı masada yürütmek bize ciddi zaman kazandırdı. Haftalık rapor yapısı sayesinde neyin çalıştığını anlık takip edebildik."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Pazarlama Birimi, E-Ticaret Operasyonu</figcaption>
-            </figure>
-            <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Landing page tarafında yapılan sadeleştirme ve reklam mesajlarının eşleştirilmesiyle ikinci ayda form kalitesi yükseldi. Satış ekibi daha nitelikli talepler almaya başladı."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Büyüme Ekibi, B2B Yazılım Girişimi</figcaption>
-            </figure>
-            <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Ürün sayfaları, teknik iyileştirmeler ve içerik üretimi aynı sprint içinde ilerledi. Bu yaklaşım lansman süresini kısalttı ve ekipler arası iletişimi netleştirdi."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Ürün Takımı, Lojistik Teknoloji Şirketi</figcaption>
-            </figure>
-            <figure class="min-w-full p-4 md:p-5">
-              <blockquote class="text-sm leading-relaxed text-slate/85">"Güvenlik checklistlerinin operasyona dahil edilmesiyle denetim hazırlığımız çok daha düzenli hale geldi. Özellikle kurumsal müşteri kabul süreçlerinde risk yönetimi güçlendi."</blockquote>
-              <figcaption class="mt-3 text-sm font-semibold text-navy break-words">Bilgi Teknolojileri Ekibi, Sağlık Teknolojisi Kurumu</figcaption>
-            </figure>
-          </div>
-        </div>
-        <div class="mt-4 flex items-center justify-between gap-3">
-          <div class="flex items-center gap-2">
-            <button id="testimonial-prev" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-navy hover:border-navy">Geri</button>
-            <button id="testimonial-next" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-xs font-semibold uppercase tracking-[0.12em] text-navy hover:border-navy">İleri</button>
-          </div>
-          <div id="testimonial-dots" class="flex items-center gap-1.5" aria-label="Müşteri görüşü seçici">
-            <button type="button" data-testimonial-dot="0" class="focusable h-2.5 w-2.5 rounded-full bg-navy" aria-label="1. müşteri görüşü"></button>
-            <button type="button" data-testimonial-dot="1" class="focusable h-2.5 w-2.5 rounded-full bg-slate/25" aria-label="2. müşteri görüşü"></button>
-            <button type="button" data-testimonial-dot="2" class="focusable h-2.5 w-2.5 rounded-full bg-slate/25" aria-label="3. müşteri görüşü"></button>
-            <button type="button" data-testimonial-dot="3" class="focusable h-2.5 w-2.5 rounded-full bg-slate/25" aria-label="4. müşteri görüşü"></button>
-            <button type="button" data-testimonial-dot="4" class="focusable h-2.5 w-2.5 rounded-full bg-slate/25" aria-label="5. müşteri görüşü"></button>
-          </div>
-        </div>
-      </article>
-      <article class="rounded-3xl border border-slate/10 bg-surface p-6 md:p-8">
-        <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Hızlı Güven Unsurları</p>
-        <ul class="mt-3 grid gap-2 text-sm text-slate/85">
-          <li class="rounded-lg border border-slate/10 bg-slate/[0.02] px-3 py-2">Sözleşmeli teslim ve kapsam yönetimi</li>
-          <li class="rounded-lg border border-slate/10 bg-slate/[0.02] px-3 py-2">Haftalık rapor ve toplantı ritmi</li>
-          <li class="rounded-lg border border-slate/10 bg-slate/[0.02] px-3 py-2">KVKK ve gizlilik odaklı süreç disiplini</li>
-          <li class="rounded-lg border border-slate/10 bg-slate/[0.02] px-3 py-2">Tek ekip, tek sorumluluk, net iletişim</li>
-          <li class="rounded-lg border border-slate/10 bg-slate/[0.02] px-3 py-2">Talep takip ve önceliklendirme görünürlüğü</li>
-        </ul>
-      </article>
-    </section>
-
+    <!-- SSS -->
     <section id="sss" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
-      <p class="text-xs uppercase tracking-[0.16em] text-slate/60">Sık Sorulan Sorular</p>
-      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl">Karar Sürecini Hızlandıran Net Yanıtlar</h2>
-      <div class="mt-4 rounded-xl border border-slate/10 bg-slate/[0.02] p-3">
-        <input id="faq-search" type="search" placeholder="SSS içinde ara (ör. raporlama, bütçe, başlangıç)" class="focusable w-full rounded-lg border border-slate/20 bg-white px-3 py-2 text-sm text-navy" />
-        <p id="faq-empty" class="mt-2 hidden text-xs text-slate/70">Aramanızla eşleşen soru bulunamadı.</p>
-      </div>
+      <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="faqLabel">Sık Sorulan Sorular</p>
+      <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl" data-i18n="faqTitle">ALAT Medya ve CepLog Hakkında</h2>
       <div class="mt-5 space-y-3">
         <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4" open>
-          <summary class="cursor-pointer text-sm font-semibold text-navy">Proje başlangıcı ne kadar sürer?</summary>
-          <p class="mt-2 text-sm text-slate/80">Keşif görüşmesinden sonra ortalama 3-5 iş günü içinde proje başlangıç planını çıkarırız.</p>
+          <summary class="cursor-pointer text-sm font-semibold text-navy" data-i18n="faq1q">CepLog nedir?</summary>
+          <p class="mt-2 text-sm text-slate/80" data-i18n="faq1a">CepLog; işlemleri, bütçeleri, birikimleri, hedefleri, düzenli ödemeleri ve finansal analizleri tek bir kişisel çalışma alanında birleştiren kişisel finans uygulamasıdır. Flutter ile geliştirilmektedir ve aktif geliştirme ve özel test aşamasındadır.</p>
         </details>
         <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
-          <summary class="cursor-pointer text-sm font-semibold text-navy">Sadece medya veya sadece yazılım hizmeti alabilir miyim?</summary>
-          <p class="mt-2 text-sm text-slate/80">Evet. İhtiyacınıza göre tek hizmet veya birleşik operasyon modeli sunabiliriz.</p>
+          <summary class="cursor-pointer text-sm font-semibold text-navy" data-i18n="faq2q">CepLog ne zaman halka açılacak?</summary>
+          <p class="mt-2 text-sm text-slate/80" data-i18n="faq2a">CepLog aktif geliştirme ve özel test aşamasındadır. Genel kullanıma açılma tarihi henüz netleşmemiştir. Güncel bilgi için iletişime geçebilirsiniz.</p>
         </details>
         <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
-          <summary class="cursor-pointer text-sm font-semibold text-navy">Raporlamayı nasıl paylaşıyorsunuz?</summary>
-          <p class="mt-2 text-sm text-slate/80">Haftalık performans özeti, aylık stratejik rapor ve düzenli toplantılarla tüm çıktıları görünür kılıyoruz.</p>
+          <summary class="cursor-pointer text-sm font-semibold text-navy" data-i18n="faq3q">ALAT Medya hangi aşamadadır?</summary>
+          <p class="mt-2 text-sm text-slate/80" data-i18n="faq3a">ALAT Medya, 2026'da kurulan erken aşama ve henüz bağımsız bir ürün ve teknoloji girişimidir. Dış yatırım ya da hibe almamıştır. Odak noktamız CepLog ürününü geliştirmek ve test etmektir.</p>
         </details>
         <details data-faq-item class="rounded-xl border border-slate/10 bg-slate/[0.02] p-4">
-          <summary class="cursor-pointer text-sm font-semibold text-navy">Sözleşme kapsamı değişirse ne olur?</summary>
-          <p class="mt-2 text-sm text-slate/80">Ek kapsam maddeleri şeffaf şekilde revize edilir, iş planı ve bütçe onayınızla güncellenir.</p>
+          <summary class="cursor-pointer text-sm font-semibold text-navy" data-i18n="faq4q">İletişim için en iyi yol nedir?</summary>
+          <p class="mt-2 text-sm text-slate/80">E-posta: <a href="mailto:destek@alatmedya.tech" class="focusable font-medium text-navy hover:underline">destek@alatmedya.tech</a></p>
         </details>
       </div>
     </section>
 
-    <section id="teklif" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
+    <!-- İLETİŞİM CTA -->
+    <section id="iletisim-cta" class="mt-10 rounded-3xl border border-slate/10 bg-surface p-6 md:p-8 reveal-target">
       <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-        <h2 class="text-2xl font-bold text-navy md:text-3xl">Projeniz İçin Yol Haritasını Birlikte Çıkartalım</h2>
-        <a id="calendly-link" href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="focusable inline-flex items-center justify-center rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">Ücretsiz Ön Değerlendirme Toplantısı</a>
+        <div>
+          <p class="text-xs uppercase tracking-[0.16em] text-slate/60" data-i18n="ctaLabel">İletişim</p>
+          <h2 class="mt-2 text-2xl font-bold text-navy md:text-3xl" data-i18n="ctaTitle">CepLog Hakkında Konuşalım</h2>
+          <p class="mt-3 max-w-xl text-sm text-slate/80" data-i18n="ctaDesc">Ürün, test süreci veya iş birliği hakkında bilgi almak için e-posta ile ulaşabilirsiniz.</p>
+        </div>
+        <a href="mailto:destek@alatmedya.tech" class="focusable inline-flex items-center justify-center rounded-lg border border-slate/20 px-5 py-3 text-sm font-semibold text-navy hover:border-navy" data-i18n="ctaBtn">destek@alatmedya.tech</a>
       </div>
-      <div class="mt-5 rounded-xl border border-slate/10 bg-slate/[0.02] p-3">
-        <p class="text-xs font-semibold uppercase tracking-[0.12em] text-slate/60">Adım <span id="form-step-current">1</span>/3</p>
-        <div class="mt-2 h-2 overflow-hidden rounded-full bg-slate/10">
-          <div id="form-progress-bar" class="h-full w-1/3 rounded-full bg-navy transition-all duration-300"></div>
-        </div>
-      </div>
-      <form id="lead-form" class="mt-5 grid gap-3 md:grid-cols-2" aria-label="Teklif formu" novalidate>
-        <div data-form-step="1" class="grid gap-3 md:col-span-2 md:grid-cols-2">
-          <input type="text" name="ad_soyad" required placeholder="Ad Soyad" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
-          <input type="email" name="eposta" required placeholder="E-posta" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy" />
-          <input type="tel" name="telefon" placeholder="Telefon" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2" />
-        </div>
-        <div data-form-step="2" class="hidden gap-3 md:col-span-2 md:grid-cols-2">
-          <select name="hizmet" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-            <option>Medya Prodüksiyon</option>
-            <option>Yazılım Geliştirme</option>
-            <option>Güvenlik ve Danışmanlık</option>
-            <option>Birleşik Operasyon Paketi</option>
-          </select>
-          <select name="butce" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy">
-            <option>Bütçe Aralığı Seçin</option>
-            <option>₺45.000 - ₺95.000</option>
-            <option>₺95.000 - ₺200.000</option>
-            <option>₺200.000+</option>
-          </select>
-          <select name="sektor" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy md:col-span-2">
-            <option>Sektör Seçin</option>
-            <option>Lojistik</option>
-            <option>Sağlık</option>
-            <option>E-Ticaret</option>
-            <option>Diğer</option>
-          </select>
-        </div>
-        <div data-form-step="3" class="hidden gap-3 md:col-span-2">
-          <textarea name="proje_detayi" rows="4" placeholder="Projenizi kısaca anlatın" class="focusable rounded-lg border border-slate/20 px-3 py-2 text-sm text-navy"></textarea>
-          <label class="inline-flex items-start gap-2 text-xs text-slate/70"><input type="checkbox" required class="mt-0.5" /> KVKK ve gizlilik metinlerini okudum, onaylıyorum.</label>
-        </div>
-        <div class="md:col-span-2 flex flex-wrap justify-between gap-2">
-          <button id="form-prev" type="button" class="focusable rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">Geri</button>
-          <div class="flex gap-2">
-            <button id="form-next" type="button" class="focusable rounded-lg border border-slate/20 px-4 py-2 text-sm font-semibold text-navy hover:border-navy">İleri</button>
-            <button id="form-submit" type="submit" class="focusable hidden rounded-lg bg-navy px-4 py-2 text-sm font-semibold text-white">Teklif Gönder</button>
-          </div>
-        </div>
-      </form>
-      <p id="form-status" class="mt-3 text-sm text-slate/80" aria-live="polite"></p>
     </section>
   </main>
 
@@ -658,44 +413,23 @@
       <div class="flex items-center gap-3">
         <img src="ALAT_LOGO.png" alt="ALAT Medya altbilgi logosu" class="h-10 w-10 rounded-md object-cover" loading="lazy" decoding="async" width="40" height="40" />
         <div>
-          <p class="text-lg font-semibold text-navy">ALAT Medya | Tech</p>
-          <p class="mt-1 max-w-md">Kurumsal medya üretimi ve güvenli yazılım çözümleri.</p>
+          <p class="text-lg font-semibold text-navy">ALAT Medya</p>
+          <p class="mt-1 max-w-md" data-i18n="footerDesc">Bağımsız ürün ve teknoloji girişimi · 2026</p>
         </div>
       </div>
       <div class="text-left md:text-right">
         <p>İletişim: <a href="mailto:destek@alatmedya.tech" class="focusable font-medium text-navy transition hover:underline">destek@alatmedya.tech</a></p>
-        <p class="mt-1">Telefon: <a href="tel:+905075385671" class="focusable font-medium text-navy transition hover:underline">+90 507 538 56 71</a></p>
-        <p class="mt-1">Çalışma Saatleri: Hafta içi 09:00 - 18:00</p>
         <div class="mt-2 space-x-3">
           <a href="privacy-policy.html" class="focusable inline-block text-xs uppercase tracking-[0.12em] text-slate/60 hover:text-navy">Gizlilik</a>
           <a href="kvkk.html" class="focusable inline-block text-xs uppercase tracking-[0.12em] text-slate/60 hover:text-navy">KVKK</a>
           <a href="cookie-policy.html" class="focusable inline-block text-xs uppercase tracking-[0.12em] text-slate/60 hover:text-navy">Çerez</a>
         </div>
-        <p class="mt-3 text-xs text-slate/60">© <span id="year"></span> ALAT Medya | Tech</p>
+        <p class="mt-3 text-xs text-slate/60">© <span id="year"></span> ALAT Medya</p>
       </div>
     </div>
   </footer>
 
-  <div class="fixed bottom-5 left-5 z-40 hidden sm:block">
-    <div class="rounded-2xl border border-slate/20 bg-surface/95 p-2 shadow-lg backdrop-blur">
-      <a href="tel:+905075385671" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Hızlı Ara</a>
-      <a href="mailto:destek@alatmedya.tech" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Hızlı E-Posta</a>
-      <a href="#teklif" class="focusable block rounded-lg px-3 py-2 text-xs font-semibold text-navy hover:bg-slate/[0.06]">Toplantı Planla</a>
-    </div>
-  </div>
   <a id="whatsapp-link" href="https://wa.me/905075385671" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile iletişime geç" class="focusable fixed bottom-5 right-5 z-40 rounded-full bg-navy px-4 py-3 text-xs font-semibold text-white shadow-lg transition hover:bg-slate-900">WhatsApp</a>
-
-  <div id="case-modal" class="fixed inset-0 z-[70] hidden items-end justify-center bg-navy/50 p-4 sm:items-center" role="dialog" aria-modal="true" aria-labelledby="case-modal-title">
-    <div class="w-full max-w-2xl rounded-2xl border border-slate/10 bg-surface p-5 shadow-2xl">
-      <div class="flex items-start justify-between gap-3">
-        <h3 id="case-modal-title" class="text-xl font-bold text-navy">Vaka Detayı</h3>
-        <button id="case-modal-close" type="button" class="focusable rounded-lg border border-slate/20 px-3 py-1 text-xs font-semibold uppercase tracking-[0.1em] text-navy">Kapat</button>
-      </div>
-      <p id="case-modal-problem" class="mt-4 text-sm text-slate/85"></p>
-      <p id="case-modal-solution" class="mt-2 text-sm text-slate/85"></p>
-      <p id="case-modal-result" class="mt-2 text-sm font-semibold text-navy"></p>
-    </div>
-  </div>
 
   <script>
     window.addEventListener("DOMContentLoaded", () => {
@@ -708,46 +442,7 @@
     const mobileLinks = mobileMenu ? mobileMenu.querySelectorAll("a") : [];
     const tabButtons = document.querySelectorAll(".tab-btn");
     const tabPanels = document.querySelectorAll(".tab-panel");
-    const tabLinks = document.querySelectorAll("[data-tab-link]");
-    const calendlyLink = document.getElementById("calendly-link");
     const whatsappLink = document.getElementById("whatsapp-link");
-    const leadForm = document.getElementById("lead-form");
-    const formStatus = document.getElementById("form-status");
-    const ceplogDays = document.getElementById("ceplog-days");
-    const ceplogHours = document.getElementById("ceplog-hours");
-    const ceplogMinutes = document.getElementById("ceplog-minutes");
-    const ceplogSeconds = document.getElementById("ceplog-seconds");
-    const ceplogCountdownNote = document.getElementById("ceplog-countdown-note");
-    const ceplogAppStoreLink = document.getElementById("ceplog-appstore-link");
-    const ceplogPlayStoreLink = document.getElementById("ceplog-playstore-link");
-    const digitalGhostProductDays = document.getElementById("digital-ghost-product-days");
-    const digitalGhostProductHours = document.getElementById("digital-ghost-product-hours");
-    const digitalGhostProductMinutes = document.getElementById("digital-ghost-product-minutes");
-    const digitalGhostProductSeconds = document.getElementById("digital-ghost-product-seconds");
-    const digitalGhostProductCountdownNote = document.getElementById("digital-ghost-product-countdown-note");
-    const digitalGhostProductAppStoreLink = document.getElementById("digital-ghost-product-appstore-link");
-    const digitalGhostProductPlayStoreLink = document.getElementById("digital-ghost-product-playstore-link");
-    const testimonialTrack = document.getElementById("testimonial-track");
-    const testimonialPrev = document.getElementById("testimonial-prev");
-    const testimonialNext = document.getElementById("testimonial-next");
-    const testimonialDots = document.querySelectorAll("[data-testimonial-dot]");
-    const faqSearch = document.getElementById("faq-search");
-    const faqEmpty = document.getElementById("faq-empty");
-    const faqItems = document.querySelectorAll("[data-faq-item]");
-    const formStepCurrent = document.getElementById("form-step-current");
-    const formProgressBar = document.getElementById("form-progress-bar");
-    const formPrev = document.getElementById("form-prev");
-    const formNext = document.getElementById("form-next");
-    const formSubmit = document.getElementById("form-submit");
-    const formSteps = document.querySelectorAll("[data-form-step]");
-    const caseOpenButtons = document.querySelectorAll("[data-case-open]");
-    const caseModal = document.getElementById("case-modal");
-    const caseModalClose = document.getElementById("case-modal-close");
-    const caseModalTitle = document.getElementById("case-modal-title");
-    const caseModalProblem = document.getElementById("case-modal-problem");
-    const caseModalSolution = document.getElementById("case-modal-solution");
-    const caseModalResult = document.getElementById("case-modal-result");
-    const counterNodes = document.querySelectorAll("[data-counter-target]");
     const revealNodes = document.querySelectorAll(".reveal-target");
     const langButtons = [
       document.getElementById("lang-tr"),
@@ -757,48 +452,210 @@
     ];
     const routeLinks = document.querySelectorAll("a[href$='.html'], a[href*='.html#'], [data-route-link]");
 
-    const safeExternalUrl = (url, fallback) => {
-      try {
-        const parsed = new URL(url);
-        if (parsed.protocol === "https:") {
-          return parsed.toString();
-        }
-        return fallback;
-      } catch (error) {
-        return fallback;
+    const i18n = {
+      tr: {
+        navAbout: "Hakkımızda",
+        navProduct: "CepLog",
+        navCapabilities: "Yetenekler",
+        navContact: "İletişim",
+        heroBadge: "Bağımsız Ürün ve Teknoloji Girişimi · 2026",
+        heroTitle: "Kullanıcıya Gerçek Fayda Sağlayan Dijital Ürünler Geliştiriyoruz",
+        heroDesc: "ALAT Medya, 2026'da Türkiye'de başlayan bağımsız bir ürün ve teknoloji girişimidir. Güvenli, yapay zekâ destekli ve kullanıcıya gerçek değer katan dijital ürünler geliştirmeye odaklanıyoruz. Şu an amiral ürünümüz kişisel finans uygulaması CepLog'un aktif geliştirme ve özel test sürecindeyiz.",
+        heroCta1: "CepLog'u İncele",
+        heroCta2: "İletişime Geç",
+        heroBadge1: "Kuruluş: 2026",
+        heroBadge2: "Türkiye · Bağımsız",
+        heroBadge3: "Erken Aşama Girişim",
+        aboutLabel: "Hakkımızda",
+        aboutTitle: "Bağımsız Bir Ürün ve Teknoloji Girişimi",
+        aboutDesc: "ALAT Medya, 2026'da Türkiye'de başlayan bağımsız bir ürün ve teknoloji girişimidir. Kullanıcıya gerçek fayda sağlayan, gizlilik odaklı ve yapay zekâ destekli dijital ürünler geliştirmeye odaklanır. Şu an ana ürünümüz kişisel finans uygulaması CepLog'un geliştirme ve özel test sürecindeyiz.",
+        aboutFocusLabel: "Odak Alanı",
+        focus1: "Ürün geliştirme ve tasarım",
+        focus2: "Mobil uygulama mimarisi (Flutter)",
+        focus3: "Yapay zekâ destekli kullanıcı deneyimi",
+        focus4: "Gizlilik ve güvenlik odaklı yazılım",
+        foundedLabel: "Kuruluş",
+        stageLabel: "Aşama",
+        stageValue: "Erken Aşama",
+        ceplogLabel: "Amiral Ürün",
+        ceplogStatus: "Özel Test · Aktif Geliştirme",
+        ceplogDesc: "CepLog; işlemleri, bütçeleri, birikimleri, hedefleri, düzenli ödemeleri ve finansal analizleri tek bir kişisel çalışma alanında birleştiren yeni nesil kişisel finans uygulamasıdır.",
+        ceplogCoreLabel: "Temel Özellikler",
+        cf1: "İşlem takibi ve kategorizasyon",
+        cf2: "Gelir / gider yönetimi",
+        cf3: "Bütçe ve hedef takibi",
+        cf4: "Birikim takibi",
+        cf5: "Düzenli ödeme takibi",
+        ceplogAnalyticsLabel: "Finansal Analitik",
+        ca1: "Nakit akış analizi",
+        ca2: "Harcama analizi",
+        ca3: "Kişiselleştirilmiş finansal içgörüler",
+        ca4: "Finansal raporlama",
+        ca5: "Merchant kategorizasyonu",
+        ceplogRoadmapLabel: "Yol Haritası",
+        roadmapTag: "Planlanan",
+        cr1: "AI Finance Coach",
+        cr2: "Gelişmiş finansal içgörüler",
+        cr3: "Kişiselleştirilmiş finansal zekâ katmanı",
+        ceplogAILabel: "Yapay Zekâ Mimarisi",
+        ceplogAIDesc: "CepLog'un deterministik finansal hizmetleri; bakiyeleri, işlemleri ve finansal gerçekleri hesaplar. Yapay zekâ destekli finansal açıklama ve etkileşim katmanı geliştirilmektedir — kullanıcıların bu finansal gerçekleri doğal bir şekilde anlayabilmesi ve sorgulayabilmesi için.",
+        ceplogTech: "Flutter · Mobil Uygulama",
+        ceplogAuth: "Kullanıcı Kimlik Doğrulama",
+        ceplogPrivate: "Özel Test Aşaması",
+        capLabel: "Teknik Yetenekler",
+        capTitle: "Ürün ve Teknoloji Odaklı Yapımız",
+        tabSoftware: "Yazılım Geliştirme",
+        tabMedia: "Medya Üretimi",
+        tabSecurity: "Güvenlik",
+        sw1Title: "Mobil Uygulama Geliştirme",
+        sw1Desc: "Flutter mimarisiyle çapraz platform mobil uygulamalar; kullanıcı kimlik doğrulama, veri yönetimi ve kişiselleştirilmiş deneyim akışları.",
+        sw2Title: "Ürün Mimarisi ve MVP",
+        sw2Desc: "Kullanıcı ihtiyaçlarından yola çıkarak ürün kapsamı belirleme, teknik mimari tasarımı ve MVP geliştirme süreci.",
+        sw3Title: "Yapay Zekâ Entegrasyonu",
+        sw3Desc: "Deterministik hesaplama katmanları üzerine inşa edilen AI destekli açıklama ve etkileşim katmanları.",
+        me1Title: "Dijital İçerik Üretimi",
+        me1Desc: "Ürün odaklı içerik stratejisi, kreatif üretim ve yayın operasyonu.",
+        me2Title: "Marka ve Görsel Kimlik",
+        me2Desc: "Ürün kimliğini destekleyen görsel tasarım, tipografi ve marka dili oluşturma.",
+        me3Title: "Kullanıcı İletişimi",
+        me3Desc: "Ürün lansmanı, kullanıcı onboarding ve sürekli iletişim için içerik planlaması.",
+        secTitle: "Operasyonel Güvenlik Prensipleri",
+        sec1: "Minimum yetki ve rol temelli erişim",
+        sec2: "Düzenli yedek ve geri dönüş planları",
+        sec3: "Harici bağlantı doğrulama kontrolleri",
+        sec4: "Temel olay kaydı ve izleme süreçleri",
+        sec5: "KVKK uyumlu veri işleme disiplini",
+        sec6: "Kullanıcı verisi gizliliği odaklı mimari",
+        faqLabel: "Sık Sorulan Sorular",
+        faqTitle: "ALAT Medya ve CepLog Hakkında",
+        faq1q: "CepLog nedir?",
+        faq1a: "CepLog; işlemleri, bütçeleri, birikimleri, hedefleri, düzenli ödemeleri ve finansal analizleri tek bir kişisel çalışma alanında birleştiren kişisel finans uygulamasıdır. Flutter ile geliştirilmektedir ve aktif geliştirme ve özel test aşamasındadır.",
+        faq2q: "CepLog ne zaman halka açılacak?",
+        faq2a: "CepLog aktif geliştirme ve özel test aşamasındadır. Genel kullanıma açılma tarihi henüz netleşmemiştir. Güncel bilgi için iletişime geçebilirsiniz.",
+        faq3q: "ALAT Medya hangi aşamadadır?",
+        faq3a: "ALAT Medya, 2026'da kurulan erken aşama ve bağımsız bir ürün ve teknoloji girişimidir. Dış yatırım ya da hibe almamıştır.",
+        faq4q: "İletişim için en iyi yol nedir?",
+        ctaLabel: "İletişim",
+        ctaTitle: "CepLog Hakkında Konuşalım",
+        ctaDesc: "Ürün, test süreci veya iş birliği hakkında bilgi almak için e-posta ile ulaşabilirsiniz.",
+        ctaBtn: "destek@alatmedya.tech",
+        footerDesc: "Bağımsız ürün ve teknoloji girişimi · 2026"
+      },
+      en: {
+        navAbout: "About",
+        navProduct: "CepLog",
+        navCapabilities: "Capabilities",
+        navContact: "Contact",
+        heroBadge: "Independent Product & Technology Venture · 2026",
+        heroTitle: "Building Digital Products That Genuinely Help Users",
+        heroDesc: "ALAT Medya is an independent early-stage product and technology venture founded in Türkiye in 2026. We focus on building useful, privacy-conscious and AI-enabled digital products. Our current flagship is CepLog, a personal finance application in active development and private testing.",
+        heroCta1: "Explore CepLog",
+        heroCta2: "Get in Touch",
+        heroBadge1: "Founded: 2026",
+        heroBadge2: "Türkiye · Independent",
+        heroBadge3: "Early-Stage Venture",
+        aboutLabel: "About",
+        aboutTitle: "An Independent Product & Technology Venture",
+        aboutDesc: "ALAT Medya is an independent early-stage product and technology venture founded in Türkiye in 2026. We focus on building useful, privacy-conscious and AI-enabled digital products. Our current flagship product is CepLog, a personal finance application in active development and private testing.",
+        aboutFocusLabel: "Focus Areas",
+        focus1: "Product development and design",
+        focus2: "Mobile application architecture (Flutter)",
+        focus3: "AI-enabled user experiences",
+        focus4: "Privacy and security focused software",
+        foundedLabel: "Founded",
+        stageLabel: "Stage",
+        stageValue: "Early Stage",
+        ceplogLabel: "Flagship Product",
+        ceplogStatus: "Private Test · Active Development",
+        ceplogDesc: "CepLog is a personal finance application designed to turn everyday financial activity into a clear and understandable financial picture. It brings transactions, budgets, savings, goals, recurring obligations and financial analytics into a personalized workspace.",
+        ceplogCoreLabel: "Core Features",
+        cf1: "Transaction tracking and categorization",
+        cf2: "Income / expense management",
+        cf3: "Budget and goal tracking",
+        cf4: "Savings tracking",
+        cf5: "Recurring payment tracking",
+        ceplogAnalyticsLabel: "Financial Analytics",
+        ca1: "Cash flow analysis",
+        ca2: "Spending analysis",
+        ca3: "Personalized financial insights",
+        ca4: "Financial reporting",
+        ca5: "Merchant categorization",
+        ceplogRoadmapLabel: "Roadmap",
+        roadmapTag: "Planned",
+        cr1: "AI Finance Coach",
+        cr2: "Advanced financial insights",
+        cr3: "Personalized financial intelligence layer",
+        ceplogAILabel: "AI Architecture",
+        ceplogAIDesc: "CepLog's deterministic financial services calculate balances, transactions and financial facts. An AI-powered financial explanation and interaction layer is in development — helping users understand and query those facts naturally.",
+        ceplogTech: "Flutter · Mobile Application",
+        ceplogAuth: "User Authentication",
+        ceplogPrivate: "Private Testing Phase",
+        capLabel: "Technical Capabilities",
+        capTitle: "Our Product and Technology Focus",
+        tabSoftware: "Software Development",
+        tabMedia: "Media Production",
+        tabSecurity: "Security",
+        sw1Title: "Mobile Application Development",
+        sw1Desc: "Cross-platform mobile apps with Flutter architecture; user authentication, data management and personalized experience flows.",
+        sw2Title: "Product Architecture & MVP",
+        sw2Desc: "From user needs to technical architecture design and MVP development.",
+        sw3Title: "AI Integration",
+        sw3Desc: "AI-powered explanation and interaction layers built on deterministic computation layers.",
+        me1Title: "Digital Content Production",
+        me1Desc: "Product-focused content strategy, creative production and distribution.",
+        me2Title: "Brand & Visual Identity",
+        me2Desc: "Visual design, typography and brand language that supports product identity.",
+        me3Title: "User Communication",
+        me3Desc: "Content planning for product launches, user onboarding and ongoing communication.",
+        secTitle: "Operational Security Principles",
+        sec1: "Minimum privilege and role-based access",
+        sec2: "Regular backup and recovery plans",
+        sec3: "External connection validation controls",
+        sec4: "Basic incident logging and monitoring",
+        sec5: "GDPR-compatible data processing discipline",
+        sec6: "Privacy-first data architecture",
+        faqLabel: "FAQ",
+        faqTitle: "About ALAT Medya and CepLog",
+        faq1q: "What is CepLog?",
+        faq1a: "CepLog is a personal finance application that brings transactions, budgets, savings, goals, recurring obligations and financial analytics into one personalized workspace. Built with Flutter, currently in active development and private testing.",
+        faq2q: "When will CepLog be publicly available?",
+        faq2a: "CepLog is in active development and private testing. A public release date has not been set. Contact us for the latest updates.",
+        faq3q: "What stage is ALAT Medya at?",
+        faq3a: "ALAT Medya is an early-stage, independent product and technology venture founded in 2026. No external investment or grants have been received.",
+        faq4q: "What is the best way to get in touch?",
+        ctaLabel: "Contact",
+        ctaTitle: "Let's Talk About CepLog",
+        ctaDesc: "Reach out by email for information about the product, testing process or collaboration.",
+        ctaBtn: "destek@alatmedya.tech",
+        footerDesc: "Independent product and technology venture · 2026"
       }
     };
 
-    const setLanguage = (lang) => {
-      const dict = {
-        tr: {
-          navGeneral: "Genel",
-          navServices: "Hizmetler",
-          navProducts: "Ürünler",
-          navCases: "Vaka",
-          navProjects: "Projeler",
-          navPackages: "Paketler",
-          navFaq: "SSS",
-          navContact: "İletişim"
-        },
-        en: {
-          navGeneral: "Overview",
-          navServices: "Services",
-          navProducts: "Products",
-          navCases: "Cases",
-          navProjects: "Projects",
-          navPackages: "Plans",
-          navFaq: "FAQ",
-          navContact: "Contact"
-        }
-      };
+    let currentLang = "tr";
 
-      const active = dict[lang] || dict.tr;
+    const applyLang = (lang) => {
+      currentLang = lang;
+      const dict = i18n[lang] || i18n.tr;
+
       document.querySelectorAll("[data-i18n]").forEach((node) => {
         const key = node.dataset.i18n;
-        if (active[key]) {
-          node.textContent = active[key];
+        if (dict[key] !== undefined) {
+          node.textContent = dict[key];
         }
+      });
+
+      // Show/hide TR/EN descriptive paragraphs
+      document.querySelectorAll("[data-i18n='aboutDesc']").forEach(el => {
+        el.hidden = lang !== "tr";
+      });
+      document.querySelectorAll("[data-i18n='aboutDescEn']").forEach(el => {
+        el.hidden = lang !== "en";
+      });
+      document.querySelectorAll("[data-i18n='ceplogDescEn']").forEach(el => {
+        el.hidden = lang !== "en";
+      });
+      document.querySelectorAll("[data-i18n='ceplogDesc']").forEach(el => {
+        el.hidden = lang === "en";
       });
 
       ["lang-tr", "lang-tr-mobile"].forEach((id) => {
@@ -806,22 +663,24 @@
         if (!node) return;
         node.classList.toggle("bg-navy", lang === "tr");
         node.classList.toggle("text-white", lang === "tr");
+        node.classList.toggle("text-navy", lang !== "tr");
       });
       ["lang-en", "lang-en-mobile"].forEach((id) => {
         const node = document.getElementById(id);
         if (!node) return;
         node.classList.toggle("bg-navy", lang === "en");
         node.classList.toggle("text-white", lang === "en");
+        node.classList.toggle("text-navy", lang !== "en");
       });
     };
 
     langButtons.forEach((button) => {
       if (!button) return;
       button.addEventListener("click", () => {
-        setLanguage(button.id.includes("en") ? "en" : "tr");
+        applyLang(button.id.includes("en") ? "en" : "tr");
       });
     });
-    setLanguage("tr");
+    applyLang("tr");
 
     routeLinks.forEach((link) => {
       link.addEventListener("click", (event) => {
@@ -840,10 +699,6 @@
     const normalizedPhone = String(cfg.whatsappNumber || "").replace(/[^\d]/g, "");
     const whatsappText = encodeURIComponent(cfg.whatsappDefaultMessage || "Merhaba");
 
-    if (calendlyLink) {
-      calendlyLink.href = safeExternalUrl(cfg.calendlyUrl, "https://calendly.com");
-    }
-
     if (whatsappLink && normalizedPhone) {
       whatsappLink.href = `https://wa.me/${normalizedPhone}?text=${whatsappText}`;
     }
@@ -858,12 +713,8 @@
 
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        if (menuToggle) {
-          menuToggle.setAttribute("aria-expanded", "false");
-        }
-        if (mobileMenu) {
-          mobileMenu.classList.add("hidden");
-        }
+        if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+        if (mobileMenu) mobileMenu.classList.add("hidden");
       });
     });
 
@@ -873,7 +724,6 @@
         btn.classList.toggle("active", active);
         btn.setAttribute("aria-selected", String(active));
       });
-
       tabPanels.forEach((panel) => {
         panel.hidden = panel.id !== `panel-${key}`;
       });
@@ -882,10 +732,7 @@
     tabButtons.forEach((button, index) => {
       button.addEventListener("click", () => activateTab(button.dataset.tab));
       button.addEventListener("keydown", (event) => {
-        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") {
-          return;
-        }
-
+        if (event.key !== "ArrowRight" && event.key !== "ArrowLeft") return;
         event.preventDefault();
         const offset = event.key === "ArrowRight" ? 1 : -1;
         const nextIndex = (index + offset + tabButtons.length) % tabButtons.length;
@@ -894,142 +741,7 @@
       });
     });
 
-    tabLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        const key = link.dataset.tabLink;
-        if (key) {
-          activateTab(key);
-        }
-      });
-    });
-
-    const hashToTab = {
-      "#hizmetler": "hizmetler",
-      "#urunler": "urunler",
-      "#vaka": "vaka",
-      "#guvenlik": "guvenlik"
-    };
-
-    const syncTabWithHash = () => {
-      const key = hashToTab[window.location.hash];
-      if (key) {
-        activateTab(key);
-      }
-    };
-
-    syncTabWithHash();
-    if (!hashToTab[window.location.hash]) {
-      activateTab("hizmetler");
-    }
-    window.addEventListener("hashchange", syncTabWithHash);
-
-    if (testimonialTrack && testimonialDots.length) {
-      const slideCount = testimonialDots.length;
-      let activeSlide = 0;
-      let testimonialIntervalId;
-
-      const renderTestimonial = (index) => {
-        const normalized = (index + slideCount) % slideCount;
-        activeSlide = normalized;
-        testimonialTrack.style.transform = `translateX(-${normalized * 100}%)`;
-
-        testimonialDots.forEach((dot, dotIndex) => {
-          const isActive = dotIndex === normalized;
-          dot.classList.toggle("bg-navy", isActive);
-          dot.classList.toggle("bg-slate/25", !isActive);
-          dot.setAttribute("aria-current", isActive ? "true" : "false");
-        });
-      };
-
-      const startTestimonialAutoplay = () => {
-        testimonialIntervalId = setInterval(() => {
-          renderTestimonial(activeSlide + 1);
-        }, 5000);
-      };
-
-      const restartTestimonialAutoplay = () => {
-        clearInterval(testimonialIntervalId);
-        startTestimonialAutoplay();
-      };
-
-      testimonialDots.forEach((dot) => {
-        dot.addEventListener("click", () => {
-          renderTestimonial(Number(dot.dataset.testimonialDot || 0));
-          restartTestimonialAutoplay();
-        });
-      });
-
-      if (testimonialPrev) {
-        testimonialPrev.addEventListener("click", () => {
-          renderTestimonial(activeSlide - 1);
-          restartTestimonialAutoplay();
-        });
-      }
-
-      if (testimonialNext) {
-        testimonialNext.addEventListener("click", () => {
-          renderTestimonial(activeSlide + 1);
-          restartTestimonialAutoplay();
-        });
-      }
-
-      testimonialTrack.addEventListener("mouseenter", () => clearInterval(testimonialIntervalId));
-      testimonialTrack.addEventListener("mouseleave", startTestimonialAutoplay);
-
-      renderTestimonial(0);
-      startTestimonialAutoplay();
-    }
-
-    if (faqSearch && faqItems.length) {
-      faqSearch.addEventListener("input", () => {
-        const query = faqSearch.value.trim().toLowerCase();
-        let visibleCount = 0;
-
-        faqItems.forEach((item) => {
-          const text = item.textContent.toLowerCase();
-          const show = !query || text.includes(query);
-          item.classList.toggle("hidden", !show);
-          if (show) visibleCount += 1;
-        });
-
-        if (faqEmpty) {
-          faqEmpty.classList.toggle("hidden", visibleCount > 0);
-        }
-      });
-    }
-
-    if (counterNodes.length) {
-      const animateCounter = (node) => {
-        const target = Number(node.dataset.counterTarget || 0);
-        const decimals = Number(node.dataset.counterDecimals || 0);
-        const suffix = node.dataset.counterSuffix || "";
-        const duration = 1200;
-        const start = performance.now();
-
-        const tick = (now) => {
-          const progress = Math.min((now - start) / duration, 1);
-          const value = target * progress;
-          const output = decimals > 0 ? value.toFixed(decimals) : Math.round(value).toString();
-          node.textContent = `${output}${suffix}`;
-          if (progress < 1) {
-            requestAnimationFrame(tick);
-          }
-        };
-
-        requestAnimationFrame(tick);
-      };
-
-      const counterObserver = new IntersectionObserver((entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            animateCounter(entry.target);
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.5 });
-
-      counterNodes.forEach((node) => counterObserver.observe(node));
-    }
+    activateTab("yazilim");
 
     if (revealNodes.length) {
       const revealObserver = new IntersectionObserver((entries, obs) => {
@@ -1042,312 +754,6 @@
       }, { threshold: 0.14 });
 
       revealNodes.forEach((node) => revealObserver.observe(node));
-    }
-
-    if (ceplogDays && ceplogHours && ceplogMinutes && ceplogSeconds && ceplogCountdownNote) {
-      const setStoreButtons = (isLive) => {
-        [ceplogAppStoreLink, ceplogPlayStoreLink].forEach((link) => {
-          if (!link) return;
-
-          if (isLive) {
-            const storeUrl = link.dataset.storeUrl || "#";
-            link.href = storeUrl;
-            link.setAttribute("aria-disabled", "false");
-            link.classList.remove("pointer-events-none", "opacity-60");
-          } else {
-            link.href = "#";
-            link.setAttribute("aria-disabled", "true");
-            link.classList.add("pointer-events-none", "opacity-60");
-          }
-        });
-
-        if (ceplogAppStoreLink) {
-          ceplogAppStoreLink.textContent = isLive ? "App Store'dan İndir" : "App Store Çok Yakında";
-        }
-        if (ceplogPlayStoreLink) {
-          ceplogPlayStoreLink.textContent = isLive ? "Google Play'den İndir" : "Google Play Çok Yakında";
-        }
-      };
-
-      const getNextMayFirst = () => {
-        const now = new Date();
-        let target = new Date(now.getFullYear(), 4, 1, 0, 0, 0, 0);
-        if (target <= now) {
-          target = new Date(now.getFullYear() + 1, 4, 1, 0, 0, 0, 0);
-        }
-        return target;
-      };
-
-      const targetDate = getNextMayFirst();
-      const pad = (n) => String(n).padStart(2, "0");
-
-      const updateCeplogCountdown = () => {
-        const now = new Date();
-        const diff = targetDate - now;
-
-        if (diff <= 0) {
-          setStoreButtons(true);
-          ceplogDays.textContent = "00";
-          ceplogHours.textContent = "00";
-          ceplogMinutes.textContent = "00";
-          ceplogSeconds.textContent = "00";
-          ceplogCountdownNote.textContent = "CepLog yayında. Mağaza bağlantıları aktif.";
-          return;
-        }
-
-        setStoreButtons(false);
-        const totalSeconds = Math.floor(diff / 1000);
-        const days = Math.floor(totalSeconds / 86400);
-        const hours = Math.floor((totalSeconds % 86400) / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        ceplogDays.textContent = pad(days);
-        ceplogHours.textContent = pad(hours);
-        ceplogMinutes.textContent = pad(minutes);
-        ceplogSeconds.textContent = pad(seconds);
-        ceplogCountdownNote.textContent = `${targetDate.getDate()} Mayıs için geri sayım aktif.`;
-      };
-
-      updateCeplogCountdown();
-      setInterval(updateCeplogCountdown, 1000);
-    }
-
-    if (digitalGhostProductDays && digitalGhostProductHours && digitalGhostProductMinutes && digitalGhostProductSeconds && digitalGhostProductCountdownNote) {
-      const setDigitalGhostStoreButtons = (isLive) => {
-        [digitalGhostProductAppStoreLink, digitalGhostProductPlayStoreLink].forEach((link) => {
-          if (!link) return;
-
-          if (isLive) {
-            const storeUrl = link.dataset.storeUrl || "#";
-            link.href = storeUrl;
-            link.setAttribute("aria-disabled", "false");
-            link.classList.remove("pointer-events-none", "opacity-60");
-          } else {
-            link.href = "#";
-            link.setAttribute("aria-disabled", "true");
-            link.classList.add("pointer-events-none", "opacity-60");
-          }
-        });
-
-        if (digitalGhostProductAppStoreLink) {
-          digitalGhostProductAppStoreLink.textContent = isLive ? "App Store'dan İndir" : "App Store Çok Yakında";
-        }
-        if (digitalGhostProductPlayStoreLink) {
-          digitalGhostProductPlayStoreLink.textContent = isLive ? "Google Play'den İndir" : "Google Play Çok Yakında";
-        }
-      };
-
-      const getNextMayFifteenth = () => {
-        const now = new Date();
-        let target = new Date(now.getFullYear(), 4, 15, 0, 0, 0, 0);
-        if (target <= now) {
-          target = new Date(now.getFullYear() + 1, 4, 15, 0, 0, 0, 0);
-        }
-        return target;
-      };
-
-      const targetDate = getNextMayFifteenth();
-      const pad = (n) => String(n).padStart(2, "0");
-
-      const updateDigitalGhostProductCountdown = () => {
-        const now = new Date();
-        const diff = targetDate - now;
-
-        if (diff <= 0) {
-          setDigitalGhostStoreButtons(true);
-          digitalGhostProductDays.textContent = "00";
-          digitalGhostProductHours.textContent = "00";
-          digitalGhostProductMinutes.textContent = "00";
-          digitalGhostProductSeconds.textContent = "00";
-          digitalGhostProductCountdownNote.textContent = "Digital Ghost yayında. Mağaza bağlantıları aktif.";
-          return;
-        }
-
-        setDigitalGhostStoreButtons(false);
-        const totalSeconds = Math.floor(diff / 1000);
-        const days = Math.floor(totalSeconds / 86400);
-        const hours = Math.floor((totalSeconds % 86400) / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        digitalGhostProductDays.textContent = pad(days);
-        digitalGhostProductHours.textContent = pad(hours);
-        digitalGhostProductMinutes.textContent = pad(minutes);
-        digitalGhostProductSeconds.textContent = pad(seconds);
-        digitalGhostProductCountdownNote.textContent = `${targetDate.getDate()} Mayıs için geri sayım aktif.`;
-      };
-
-      updateDigitalGhostProductCountdown();
-      setInterval(updateDigitalGhostProductCountdown, 1000);
-    }
-
-    if (caseOpenButtons.length && caseModal && caseModalTitle && caseModalProblem && caseModalSolution && caseModalResult) {
-      const caseDetails = {
-        "b2b-launch": {
-          title: "B2B Yazılım Lansmanı",
-          problem: "Problem: Dağınık kanal iletişimi nedeniyle MQL üretimi hedefin altında kalıyordu.",
-          solution: "Çözüm: Yeni landing page, lead scoring ve haftalık kreatif optimizasyon tek ritimde birleştirildi.",
-          result: "Sonuç: 90 gün içinde %41 lead artışı ve daha düşük edinme maliyeti."
-        },
-        "media-campaign": {
-          title: "Kurumsal Medya Kampanyası",
-          problem: "Problem: Kampanyalar erişim alıyor fakat dönüşüm oranı düşük kalıyordu.",
-          solution: "Çözüm: Hedef kitle kırılımı, teklif mesajı ve dönüşüm odaklı içerik akışı yeniden kurgulandı.",
-          result: "Sonuç: Dönüşüm çarpanı 2.7x seviyesine yükseldi."
-        },
-        "tech-optimization": {
-          title: "Teknik Optimizasyon",
-          problem: "Problem: İlk etkileşim süresi uzun olduğu için reklam trafiği verimsizleşiyordu.",
-          solution: "Çözüm: Önbellek stratejisi, kritik kaynak optimizasyonu ve gereksiz script temizliği uygulandı.",
-          result: "Sonuç: İlk etkileşim süresinde %38 iyileşme sağlandı."
-        }
-      };
-
-      const closeCaseModal = () => {
-        caseModal.classList.add("hidden");
-      };
-
-      caseOpenButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          const key = button.dataset.caseOpen;
-          const data = caseDetails[key];
-          if (!data) return;
-
-          caseModalTitle.textContent = data.title;
-          caseModalProblem.textContent = data.problem;
-          caseModalSolution.textContent = data.solution;
-          caseModalResult.textContent = data.result;
-          caseModal.classList.remove("hidden");
-        });
-      });
-
-      if (caseModalClose) {
-        caseModalClose.addEventListener("click", closeCaseModal);
-      }
-
-      caseModal.addEventListener("click", (event) => {
-        if (event.target === caseModal) {
-          closeCaseModal();
-        }
-      });
-
-      window.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          closeCaseModal();
-        }
-      });
-    }
-
-    if (leadForm && formSteps.length) {
-      let currentStep = 1;
-
-      const showStep = (step) => {
-        currentStep = Math.max(1, Math.min(3, step));
-
-        formSteps.forEach((panel) => {
-          const panelStep = Number(panel.dataset.formStep || 1);
-          panel.classList.toggle("hidden", panelStep !== currentStep);
-          panel.classList.toggle("grid", panelStep === currentStep);
-        });
-
-        if (formStepCurrent) {
-          formStepCurrent.textContent = String(currentStep);
-        }
-        if (formProgressBar) {
-          formProgressBar.style.width = `${(currentStep / 3) * 100}%`;
-        }
-
-        if (formPrev) {
-          formPrev.disabled = currentStep === 1;
-          formPrev.classList.toggle("opacity-50", currentStep === 1);
-        }
-
-        if (formNext && formSubmit) {
-          const isLast = currentStep === 3;
-          formNext.classList.toggle("hidden", isLast);
-          formSubmit.classList.toggle("hidden", !isLast);
-        }
-      };
-
-      const validateCurrentStep = () => {
-        const currentPanel = document.querySelector(`[data-form-step="${currentStep}"]`);
-        if (!currentPanel) return true;
-
-        const controls = currentPanel.querySelectorAll("input, select, textarea");
-        for (const control of controls) {
-          if (!control.checkValidity()) {
-            control.reportValidity();
-            return false;
-          }
-        }
-        return true;
-      };
-
-      if (formPrev) {
-        formPrev.addEventListener("click", () => showStep(currentStep - 1));
-      }
-
-      if (formNext) {
-        formNext.addEventListener("click", () => {
-          if (!validateCurrentStep()) return;
-          showStep(currentStep + 1);
-        });
-      }
-
-      showStep(1);
-
-      leadForm.addEventListener("submit", async (event) => {
-        event.preventDefault();
-
-        if (!leadForm.checkValidity()) {
-          formStatus.textContent = "Lütfen zorunlu alanları doldurun.";
-          formStatus.className = "mt-3 text-sm text-red-700";
-          return;
-        }
-
-        const webhookUrl = safeExternalUrl(cfg.leadWebhookUrl, "");
-        const leadEmail = String(cfg.leadEmail || "").trim();
-        const formSubmitUrl = leadEmail ? `https://formsubmit.co/ajax/${encodeURIComponent(leadEmail)}` : "";
-        const submitUrl = webhookUrl || formSubmitUrl;
-
-        if (!submitUrl) {
-          formStatus.textContent = "Form hedefi ayarlanmadı. Lütfen site yöneticisiyle iletişime geçin.";
-          formStatus.className = "mt-3 text-sm text-red-700";
-          return;
-        }
-
-        const formData = new FormData(leadForm);
-        const payload = Object.fromEntries(formData.entries());
-
-        if (!webhookUrl && formSubmitUrl) {
-          payload._subject = "ALAT Medya | Tech - Yeni Teklif Talebi";
-          payload._template = "table";
-        }
-
-        try {
-          const resp = await fetch(submitUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              "Accept": "application/json"
-            },
-            body: JSON.stringify(payload)
-          });
-
-          if (!resp.ok) {
-            throw new Error("request_failed");
-          }
-
-          formStatus.textContent = "Talebiniz alındı. Kısa sürede dönüş yapacağız.";
-          formStatus.className = "mt-3 text-sm text-emerald-700";
-          leadForm.reset();
-          showStep(1);
-        } catch (error) {
-          formStatus.textContent = "Gönderimde sorun oluştu. Lütfen e-posta veya WhatsApp üzerinden ulaşın.";
-          formStatus.className = "mt-3 text-sm text-red-700";
-        }
-      });
     }
 
     const yearNode = document.getElementById("year");

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alatmedya.tech/sitemap.xml

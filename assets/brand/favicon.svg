@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">ALAT Medya</title>
+  <rect width="256" height="256" rx="56" fill="#101114"/>
+  <g transform="translate(25, 58) scale(0.67)" fill="#D4FC3B">
+    <path d="M 0 174 L 124 2 Q 128.5 -3 133 2 L 215.5 130 H 306 L 281 174 H 190 L 128 75 L 58 174 Z"/>
+    <path d="M 133.5 115 L 170 174 H 98 Z"/>
+    <path d="M 155 0 H 226 V 111 Z"/>
+  </g>
+</svg>

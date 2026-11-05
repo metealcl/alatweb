@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="210 270 604 420" role="img" aria-labelledby="title desc">
+  <title id="title">ALAT Medya</title>
+  <desc id="desc">ALAT Medya dikey amblem ve logo</desc>
+  <!-- AL Geometric Emblem (top center) -->
+  <g fill="#D4FC3B">
+    <!-- Main A+L Ribbon -->
+    <path d="M 380 474 L 504 302 Q 508.5 297 513 302 L 595.5 430 H 686 L 661 474 H 570 L 508 375 L 438 474 Z"/>
+    <!-- Inner Bottom Triangle -->
+    <path d="M 513.5 415 L 550 474 H 478 Z"/>
+    <!-- Upper-Right L Wedge -->
+    <path d="M 535 300 H 606 V 411 Z"/>
+  </g>
+  <!-- ALAT Custom Geometric Wordmark -->
+  <g fill="#F8F8FA">
+    <!-- First A (Chevron) -->
+    <path d="M 248 596 L 303 518 Q 312 509 320.5 509 Q 329 509 338 518 L 393 596 H 363 L 320.5 534 L 278 596 Z"/>
+    <!-- L -->
+    <path d="M 408 511 H 434 V 577 H 518 L 508 596 H 422 Q 408 596 408 582 Z"/>
+    <!-- Second A (Chevron) -->
+    <path d="M 528 596 L 583 518 Q 592 509 600.5 509 Q 609 509 618 518 L 673 596 H 643 L 600.5 534 L 558 596 Z"/>
+    <!-- T -->
+    <path d="M 676 511 H 790 L 779 530 H 738 V 596 H 712 V 530 H 666 Z"/>
+  </g>
+  <!-- — M E D Y A — Subtitle -->
+  <g>
+    <rect x="234" y="643" width="61" height="4" fill="#D4FC3B"/>
+    <rect x="728" y="643" width="61" height="4" fill="#D4FC3B"/>
+    <!-- M (338..374, Y=630..660) -->
+    <path fill="#F2F0E9" d="M 338 660 V 630 H 344 L 356 647.5 L 368 630 H 374 V 660 H 368.5 V 639.5 L 357.2 655.5 H 354.8 L 343.5 639.5 V 660 Z"/>
+    <!-- E (424..451, Y=630..660) -->
+    <path fill="#F2F0E9" d="M 424 660 V 630 H 451 V 635 H 429.6 V 642.4 H 448 V 647.2 H 429.6 V 655 H 451.5 V 660 Z"/>
+    <!-- D (501..534, Y=630..660) -->
+    <path fill="#F2F0E9" d="M 501 660 V 630 H 516 C 526.5 630 533.5 636.2 533.5 645 C 533.5 653.8 526.5 660 516 660 Z M 506.6 655 H 515.6 C 523 655 527.6 651 527.6 645 C 527.6 639 523 635 515.6 635 H 506.6 Z"/>
+    <!-- Y (579..611, Y=630..660) -->
+    <path fill="#F2F0E9" d="M 592.2 660 V 648.2 L 579 630 H 585.6 L 595 643.2 L 604.4 630 H 611 L 597.8 648.2 V 660 Z"/>
+    <!-- A (651..685, Y=630..660) -->
+    <path fill="#F2F0E9" d="M 651 660 L 665 630 H 671 L 685 660 H 679 L 675.8 652.8 H 660.2 L 657 660 Z M 662.3 648 H 673.7 L 668 635.6 Z"/>
+  </g>
+</svg>

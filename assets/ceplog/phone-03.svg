@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-labelledby="p3-title p3-desc">
+  <title id="p3-title">CepLog Düzenli Ödemeler ve Finansal İçgörüler Ekranı</title>
+  <desc id="p3-desc">Tekrarlanan ödemeler takvimi ve deterministik hesaplama üzerine kurulu finansal içgörüler (örnek veri)</desc>
+  <defs>
+    <linearGradient id="p3-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17191f"/>
+      <stop offset="100%" stop-color="#101114"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="url(#p3-bg)" stroke="#2e313b" stroke-width="3"/>
+  <rect x="14" y="14" width="332" height="692" rx="38" fill="#101114" stroke="#ffffff14" stroke-width="1"/>
+  <rect x="132" y="26" width="96" height="22" rx="11" fill="#07080a"/>
+  <circle cx="212" cy="37" r="4" fill="#1d2230"/>
+  <text x="38" y="41" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700">09:41</text>
+  <rect x="292" y="32" width="22" height="10" rx="3" fill="none" stroke="#f2f0e9" stroke-width="1.2"/>
+  <rect x="294" y="34" width="15" height="6" rx="1.5" fill="#d4fc3b"/>
+
+  <!-- Header -->
+  <text x="34" y="80" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.4">ANALİZ &amp; TAKVİM</text>
+  <text x="34" y="104" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">Düzenli &amp; İçgörü</text>
+
+  <!-- Upcoming recurring obligations -->
+  <rect x="30" y="122" width="300" height="162" rx="20" fill="#181a20" stroke="#ffffff14"/>
+  <text x="48" y="146" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.2">YAKLAŞAN DÜZENLİ ÖDEMELER</text>
+  <text x="312" y="146" text-anchor="end" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9">AYLIK ₺4.280</text>
+
+  <rect x="46" y="160" width="268" height="48" rx="11" fill="#121419"/>
+  <rect x="56" y="170" width="34" height="28" rx="7" fill="#d4fc3b"/>
+  <text x="73" y="188" text-anchor="middle" fill="#101114" font-family="Space Grotesk, Arial, sans-serif" font-size="12" font-weight="700">12</text>
+  <text x="102" y="182" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700">Bulut Depolama &amp; Araçlar</text>
+  <text x="102" y="196" fill="#8d8e93" font-family="DM Mono, monospace" font-size="8">HER AYIN 12'Sİ · OTOMATİK</text>
+  <text x="300" y="188" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">₺490</text>
+
+  <rect x="46" y="216" width="268" height="48" rx="11" fill="#121419"/>
+  <rect x="56" y="226" width="34" height="28" rx="7" fill="#7c75ff"/>
+  <text x="73" y="244" text-anchor="middle" fill="#faf9f5" font-family="Space Grotesk, Arial, sans-serif" font-size="12" font-weight="700">15</text>
+  <text x="102" y="238" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="12" font-weight="700">Konut &amp; Aidat</text>
+  <text x="102" y="252" fill="#8d8e93" font-family="DM Mono, monospace" font-size="8">HER AYIN 15'İ · HATIRLATICI AÇIK</text>
+  <text x="300" y="244" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">₺3.200</text>
+
+  <!-- Deterministic Insight Card -->
+  <rect x="30" y="300" width="300" height="170" rx="20" fill="#1b1929" stroke="#7c75ff66"/>
+  <rect x="48" y="318" width="136" height="22" rx="11" fill="#7c75ff33"/>
+  <text x="116" y="333" text-anchor="middle" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="8" letter-spacing="0.9">FİNANSAL İÇGÖRÜ · ÖZET</text>
+  <text x="48" y="364" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="16" font-weight="700">Sabit gider oranın %28 seviyesinde.</text>
+  <text x="48" y="388" fill="#c7c5d8" font-family="Manrope, Arial, sans-serif" font-size="11">Bu ay düzenli ödemelerin toplam gelirin</text>
+  <text x="48" y="404" fill="#c7c5d8" font-family="Manrope, Arial, sans-serif" font-size="11">üçte birinin altında kaldı. Ay sonu hedef</text>
+  <text x="48" y="420" fill="#c7c5d8" font-family="Manrope, Arial, sans-serif" font-size="11">birikim için ₺3.400 ek alan görünüyor.</text>
+  <text x="48" y="450" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="8">KAYNAK: KAYITLI İŞLEM &amp; BÜTÇE HESAPLAMASI</text>
+
+  <!-- Privacy & architecture badge card -->
+  <rect x="30" y="486" width="300" height="148" rx="20" fill="#181a20" stroke="#ffffff14"/>
+  <text x="48" y="512" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.2">MİMARİ PRENSİP</text>
+  <text x="48" y="536" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="15" font-weight="700">Kesin hesap, anlaşılır açıklama.</text>
+  <text x="48" y="558" fill="#9b9b9c" font-family="Manrope, Arial, sans-serif" font-size="11">Bakiye ve toplamlar deterministik servislerle</text>
+  <text x="48" y="574" fill="#9b9b9c" font-family="Manrope, Arial, sans-serif" font-size="11">hesaplanır; dil katmanı yalnızca bu kesin</text>
+  <text x="48" y="590" fill="#9b9b9c" font-family="Manrope, Arial, sans-serif" font-size="11">veriyi doğal dilde özetlemek için çalışır.</text>
+  <text x="48" y="616" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="8">FLUTTER · KULLANICI KAPSAMLI VERİ İZOLASYONU</text>
+
+  <!-- Bottom nav bar -->
+  <rect x="30" y="650" width="300" height="42" rx="21" fill="#181a20" stroke="#ffffff18"/>
+  <text x="72" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">ÖZET</text>
+  <text x="142" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">BÜTÇE</text>
+  <text x="210" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">HEDEF</text>
+  <rect x="246" y="656" width="76" height="30" rx="15" fill="#d4fc3b"/>
+  <text x="284" y="675" text-anchor="middle" fill="#101114" font-family="DM Mono, monospace" font-size="9" font-weight="700">ANALİZ</text>
+</svg>

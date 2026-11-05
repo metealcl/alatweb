@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-labelledby="p1-title p1-desc">
+  <title id="p1-title">CepLog Özet ve Nakit Akışı Ekranı</title>
+  <desc id="p1-desc">CepLog mobil uygulamasında aylık net bakiye, gelir, gider ve son işlemler görünümü (örnek veri)</desc>
+  <defs>
+    <linearGradient id="p1-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17191f"/>
+      <stop offset="100%" stop-color="#101114"/>
+    </linearGradient>
+    <linearGradient id="p1-card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4fc3b"/>
+      <stop offset="100%" stop-color="#b8e619"/>
+    </linearGradient>
+  </defs>
+  <!-- Phone frame -->
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="url(#p1-bg)" stroke="#2e313b" stroke-width="3"/>
+  <rect x="14" y="14" width="332" height="692" rx="38" fill="#101114" stroke="#ffffff14" stroke-width="1"/>
+  <!-- Dynamic island -->
+  <rect x="132" y="26" width="96" height="22" rx="11" fill="#07080a"/>
+  <circle cx="212" cy="37" r="4" fill="#1d2230"/>
+  <!-- Status bar -->
+  <text x="38" y="41" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700">09:41</text>
+  <rect x="292" y="32" width="22" height="10" rx="3" fill="none" stroke="#f2f0e9" stroke-width="1.2"/>
+  <rect x="294" y="34" width="15" height="6" rx="1.5" fill="#d4fc3b"/>
+
+  <!-- Header -->
+  <text x="34" y="80" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.4">KASIM · KİŞİSEL ALAN</text>
+  <text x="34" y="102" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="20" font-weight="700">CepLog<tspan fill="#d4fc3b">.</tspan></text>
+  <rect x="256" y="76" width="70" height="26" rx="13" fill="#1c1e24" stroke="#ffffff1f"/>
+  <text x="291" y="93" text-anchor="middle" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9" letter-spacing="0.8">ÖZEL TEST</text>
+
+  <!-- Net Balance Hero Card -->
+  <rect x="30" y="122" width="300" height="148" rx="22" fill="url(#p1-card)"/>
+  <text x="50" y="148" fill="#151814" font-family="DM Mono, monospace" font-size="10" font-weight="500" letter-spacing="1.2">AYLIK NET GÖRÜNÜM</text>
+  <text x="50" y="186" fill="#101114" font-family="Space Grotesk, Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="-1">₺42.850<tspan font-size="18" font-weight="600">,00</tspan></text>
+  <rect x="50" y="204" width="124" height="48" rx="12" fill="#10111414"/>
+  <text x="62" y="222" fill="#151814" font-family="DM Mono, monospace" font-size="9" letter-spacing="0.8">GELİR ↑</text>
+  <text x="62" y="241" fill="#101114" font-family="Space Grotesk, Arial, sans-serif" font-size="15" font-weight="700">₺64.200</text>
+  <rect x="186" y="204" width="124" height="48" rx="12" fill="#10111414"/>
+  <text x="198" y="222" fill="#151814" font-family="DM Mono, monospace" font-size="9" letter-spacing="0.8">GİDER ↓</text>
+  <text x="198" y="241" fill="#101114" font-family="Space Grotesk, Arial, sans-serif" font-size="15" font-weight="700">₺21.350</text>
+
+  <!-- Cash flow mini chart -->
+  <rect x="30" y="286" width="300" height="122" rx="18" fill="#181a20" stroke="#ffffff14"/>
+  <text x="48" y="310" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.2">HAFTALIK NAKİT AKIŞI</text>
+  <text x="312" y="310" text-anchor="end" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9">PLAN DÂHİLİNDE</text>
+  <!-- Bars -->
+  <g transform="translate(48,324)">
+    <rect x="0" y="34" width="22" height="32" rx="5" fill="#2b2e38"/>
+    <rect x="38" y="18" width="22" height="48" rx="5" fill="#2b2e38"/>
+    <rect x="76" y="26" width="22" height="40" rx="5" fill="#7c75ff"/>
+    <rect x="114" y="8" width="22" height="58" rx="5" fill="#d4fc3b"/>
+    <rect x="152" y="22" width="22" height="44" rx="5" fill="#2b2e38"/>
+    <rect x="190" y="14" width="22" height="52" rx="5" fill="#2b2e38"/>
+    <rect x="228" y="28" width="22" height="38" rx="5" fill="#2b2e38"/>
+    <text x="11" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">PZT</text>
+    <text x="49" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">SAL</text>
+    <text x="87" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">ÇAR</text>
+    <text x="125" y="78" text-anchor="middle" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="8">PER</text>
+    <text x="163" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">CUM</text>
+    <text x="201" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">CMT</text>
+    <text x="239" y="78" text-anchor="middle" fill="#7c7d82" font-family="DM Mono, monospace" font-size="8">PAZ</text>
+  </g>
+
+  <!-- Recent transactions -->
+  <text x="34" y="434" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.2">SON HAREKETLER</text>
+  <text x="326" y="434" text-anchor="end" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="10">TÜMÜ →</text>
+
+  <!-- Row 1 -->
+  <rect x="30" y="446" width="300" height="58" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <circle cx="58" cy="475" r="16" fill="#7c75ff26"/>
+  <text x="58" y="479" text-anchor="middle" fill="#b5a9ff" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">M</text>
+  <text x="84" y="471" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Market &amp; Mutfak</text>
+  <text x="84" y="487" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">GIDA · BUGÜN 18:20</text>
+  <text x="312" y="479" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700">-₺1.420</text>
+
+  <!-- Row 2 -->
+  <rect x="30" y="512" width="300" height="58" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <circle cx="58" cy="541" r="16" fill="#d4fc3b22"/>
+  <text x="58" y="545" text-anchor="middle" fill="#d4fc3b" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">B</text>
+  <text x="84" y="537" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Acil Durum Fonu</text>
+  <text x="84" y="553" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">BİRİKİM AKTARIMI · DÜN</text>
+  <text x="312" y="545" text-anchor="end" fill="#d4fc3b" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700">+₺5.000</text>
+
+  <!-- Row 3 -->
+  <rect x="30" y="578" width="300" height="58" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <circle cx="58" cy="607" r="16" fill="#ffffff12"/>
+  <text x="58" y="611" text-anchor="middle" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">İ</text>
+  <text x="84" y="603" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Fiber İnternet</text>
+  <text x="84" y="619" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">DÜZENLİ ÖDEME · 03 KAS</text>
+  <text x="312" y="611" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="14" font-weight="700">-₺590</text>
+
+  <!-- Bottom nav bar -->
+  <rect x="30" y="650" width="300" height="42" rx="21" fill="#181a20" stroke="#ffffff18"/>
+  <rect x="38" y="656" width="76" height="30" rx="15" fill="#d4fc3b"/>
+  <text x="76" y="675" text-anchor="middle" fill="#101114" font-family="DM Mono, monospace" font-size="9" font-weight="700">ÖZET</text>
+  <text x="150" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">BÜTÇE</text>
+  <text x="218" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">HEDEF</text>
+  <text x="284" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">ANALİZ</text>
+</svg>

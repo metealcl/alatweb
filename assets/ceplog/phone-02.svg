@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-labelledby="p2-title p2-desc">
+  <title id="p2-title">CepLog Bütçe ve Hedef Takibi Ekranı</title>
+  <desc id="p2-desc">Kategori bütçeleri, birikim hedefleri ve ilerleme çubukları (örnek veri)</desc>
+  <defs>
+    <linearGradient id="p2-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#17191f"/>
+      <stop offset="100%" stop-color="#101114"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="url(#p2-bg)" stroke="#2e313b" stroke-width="3"/>
+  <rect x="14" y="14" width="332" height="692" rx="38" fill="#101114" stroke="#ffffff14" stroke-width="1"/>
+  <rect x="132" y="26" width="96" height="22" rx="11" fill="#07080a"/>
+  <circle cx="212" cy="37" r="4" fill="#1d2230"/>
+  <text x="38" y="41" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="11" font-weight="700">09:41</text>
+  <rect x="292" y="32" width="22" height="10" rx="3" fill="none" stroke="#f2f0e9" stroke-width="1.2"/>
+  <rect x="294" y="34" width="15" height="6" rx="1.5" fill="#d4fc3b"/>
+
+  <!-- Header -->
+  <text x="34" y="80" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.4">PLANLAMA · KASIM</text>
+  <text x="34" y="104" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="22" font-weight="700">Bütçe &amp; Hedefler</text>
+
+  <!-- Monthly budget summary card -->
+  <rect x="30" y="122" width="300" height="114" rx="20" fill="#181a20" stroke="#d4fc3b45"/>
+  <text x="48" y="146" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9" letter-spacing="1.2">AYLIK HARCAMA SINIRI</text>
+  <text x="48" y="176" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="26" font-weight="700">₺21.350 <tspan fill="#8d8e93" font-size="15" font-weight="500">/ ₺30.000</tspan></text>
+  <rect x="48" y="192" width="264" height="10" rx="5" fill="#282b34"/>
+  <rect x="48" y="192" width="188" height="10" rx="5" fill="#d4fc3b"/>
+  <text x="48" y="220" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="9">%71 KULLANILDI · KALAN ₺8.650</text>
+
+  <!-- Category budgets -->
+  <text x="34" y="264" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.2">KATEGORİ BÜTÇELERİ</text>
+
+  <!-- Cat 1 -->
+  <rect x="30" y="276" width="300" height="68" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <text x="48" y="300" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Ev &amp; Faturalar</text>
+  <text x="312" y="300" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">₺9.200 / ₺10.000</text>
+  <rect x="48" y="314" width="264" height="7" rx="3.5" fill="#282b34"/>
+  <rect x="48" y="314" width="242" height="7" rx="3.5" fill="#7c75ff"/>
+  <text x="48" y="335" fill="#8d8e93" font-family="DM Mono, monospace" font-size="8">4 DÜZENLİ ÖDEME EŞLEŞTİ</text>
+
+  <!-- Cat 2 -->
+  <rect x="30" y="352" width="300" height="68" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <text x="48" y="376" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Gıda &amp; Market</text>
+  <text x="312" y="376" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">₺6.400 / ₺9.500</text>
+  <rect x="48" y="390" width="264" height="7" rx="3.5" fill="#282b34"/>
+  <rect x="48" y="390" width="176" height="7" rx="3.5" fill="#d4fc3b"/>
+  <text x="48" y="411" fill="#8d8e93" font-family="DM Mono, monospace" font-size="8">NORMAL SEYİRDE · 18 İŞLEM</text>
+
+  <!-- Cat 3 -->
+  <rect x="30" y="428" width="300" height="68" rx="14" fill="#181a20" stroke="#ffffff12"/>
+  <text x="48" y="452" fill="#f2f0e9" font-family="Manrope, Arial, sans-serif" font-size="13" font-weight="700">Ulaşım &amp; Günlük</text>
+  <text x="312" y="452" text-anchor="end" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="13" font-weight="700">₺3.150 / ₺5.000</text>
+  <rect x="48" y="466" width="264" height="7" rx="3.5" fill="#282b34"/>
+  <rect x="48" y="466" width="166" height="7" rx="3.5" fill="#d4fc3b"/>
+  <text x="48" y="487" fill="#8d8e93" font-family="DM Mono, monospace" font-size="8">KALAN ₺1.850</text>
+
+  <!-- Savings goals -->
+  <text x="34" y="522" fill="#9b9b9c" font-family="DM Mono, monospace" font-size="10" letter-spacing="1.2">BİRİKİM HEDEFLERİ</text>
+  <rect x="30" y="534" width="144" height="102" rx="16" fill="#7c75ff" stroke="#b5a9ff55"/>
+  <text x="46" y="556" fill="#101114" font-family="DM Mono, monospace" font-size="9" font-weight="700">ACİL FON</text>
+  <text x="46" y="584" fill="#faf9f5" font-family="Space Grotesk, Arial, sans-serif" font-size="20" font-weight="700">₺45.000</text>
+  <text x="46" y="602" fill="#e5e1ff" font-family="DM Mono, monospace" font-size="9">HEDEF: ₺60.000</text>
+  <rect x="46" y="612" width="112" height="6" rx="3" fill="#10111440"/>
+  <rect x="46" y="612" width="84" height="6" rx="3" fill="#d4fc3b"/>
+
+  <rect x="186" y="534" width="144" height="102" rx="16" fill="#181a20" stroke="#ffffff14"/>
+  <text x="202" y="556" fill="#d4fc3b" font-family="DM Mono, monospace" font-size="9">YENİ EKİPMAN</text>
+  <text x="202" y="584" fill="#f2f0e9" font-family="Space Grotesk, Arial, sans-serif" font-size="20" font-weight="700">₺18.500</text>
+  <text x="202" y="602" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">HEDEF: ₺35.000</text>
+  <rect x="202" y="612" width="112" height="6" rx="3" fill="#282b34"/>
+  <rect x="202" y="612" width="59" height="6" rx="3" fill="#d4fc3b"/>
+
+  <!-- Bottom nav bar -->
+  <rect x="30" y="650" width="300" height="42" rx="21" fill="#181a20" stroke="#ffffff18"/>
+  <text x="76" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">ÖZET</text>
+  <rect x="112" y="656" width="76" height="30" rx="15" fill="#d4fc3b"/>
+  <text x="150" y="675" text-anchor="middle" fill="#101114" font-family="DM Mono, monospace" font-size="9" font-weight="700">BÜTÇE</text>
+  <text x="218" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">HEDEF</text>
+  <text x="284" y="675" text-anchor="middle" fill="#8d8e93" font-family="DM Mono, monospace" font-size="9">ANALİZ</text>
+</svg>

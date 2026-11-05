@@ -1,81 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="EduNext etkileşimli ders ve modül oynatıcı ekranı">
   <defs>
     <linearGradient id="enBg1" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#151621"/>
-      <stop offset="100%" stop-color="#0d0e15"/>
+      <stop offset="0%" stop-color="#251116"/>
+      <stop offset="100%" stop-color="#170b0e"/>
     </linearGradient>
     <linearGradient id="enVideo" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#292456"/>
-      <stop offset="100%" stop-color="#171926"/>
+      <stop offset="0%" stop-color="#572330"/>
+      <stop offset="100%" stop-color="#291419"/>
     </linearGradient>
   </defs>
-  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#391b22" stroke="#612d3a" stroke-width="2"/>
   <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#enBg1)"/>
-  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#0f0709"/>
   <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">14:15</text>
-  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <circle cx="308" cy="36" r="4" fill="#e5486d"/>
   <!-- Header -->
   <g transform="translate(28, 64)">
-    <rect x="0" y="0" width="28" height="28" rx="8" fill="#1e222d" stroke="#d4fc3b" stroke-width="1.2"/>
-    <polygon points="14,7 22,12 14,17 6,12" fill="#d4fc3b"/>
+    <rect x="0" y="0" width="28" height="28" rx="8" fill="#33181f" stroke="#e5486d" stroke-width="1.2"/>
+    <polygon points="14,7 22,12 14,17 6,12" fill="#e5486d"/>
     <text x="38" y="12" fill="#8b90a0" font-family="monospace" font-size="9" letter-spacing="1">EDUNEXT · KURUMSAL AKADEMİ</text>
     <text x="38" y="27" fill="#f4f3ee" font-family="sans-serif" font-size="15" font-weight="700">Ürün Tasarım Sistemleri</text>
-    <rect x="236" y="4" width="68" height="22" rx="11" fill="#1d261a" stroke="#d4fc3b"/>
-    <text x="247" y="18" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">%78 BİTTİ</text>
+    <rect x="236" y="4" width="68" height="22" rx="11" fill="#2c141a" stroke="#e5486d"/>
+    <text x="247" y="18" fill="#e5486d" font-family="monospace" font-size="9" font-weight="700">%78 BİTTİ</text>
   </g>
   <!-- Video Player Card -->
   <g transform="translate(28, 106)">
-    <rect width="304" height="172" rx="16" fill="url(#enVideo)" stroke="#383466"/>
-    <circle cx="152" cy="76" r="26" fill="#d4fc3b"/>
-    <polygon points="146,65 146,87 164,76" fill="#101114"/>
-    <rect x="16" y="14" width="108" height="20" rx="10" fill="#101114b8"/>
-    <text x="26" y="27" fill="#d4fc3b" font-family="monospace" font-size="8.5" font-weight="700">MODÜL 04 / DERS 02</text>
+    <rect width="304" height="172" rx="16" fill="url(#enVideo)" stroke="#6d2d3d"/>
+    <circle cx="152" cy="76" r="26" fill="#e5486d"/>
+    <polygon points="146,65 146,87 164,76" fill="#14060c"/>
+    <rect x="16" y="14" width="108" height="20" rx="10" fill="#14060cb8"/>
+    <text x="26" y="27" fill="#e5486d" font-family="monospace" font-size="8.5" font-weight="700">MODÜL 04 / DERS 02</text>
     <!-- Scrubber -->
     <text x="16" y="138" fill="#e2e4ec" font-family="sans-serif" font-size="12" font-weight="700">02. Bileşen Mimarisi ve Token Yapısı</text>
-    <rect x="16" y="148" width="272" height="5" rx="2.5" fill="#32354a"/>
-    <rect x="16" y="148" width="188" height="5" rx="2.5" fill="#d4fc3b"/>
-    <circle cx="204" cy="150.5" r="5" fill="#d4fc3b"/>
+    <rect x="16" y="148" width="272" height="5" rx="2.5" fill="#542833"/>
+    <rect x="16" y="148" width="188" height="5" rx="2.5" fill="#e5486d"/>
+    <circle cx="204" cy="150.5" r="5" fill="#e5486d"/>
   </g>
   <!-- Module Syllabus List -->
   <g transform="translate(28, 294)">
     <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="1">MÜFREDAT AKIŞI &amp; KONTROL NOKTALARI</text>
     <!-- Lesson 1 -->
     <g transform="translate(0, 22)">
-      <rect width="304" height="62" rx="12" fill="#181b24" stroke="#282c3a"/>
-      <circle cx="26" cy="31" r="10" fill="#d4fc3b"/>
-      <text x="22" y="35" fill="#101114" font-family="monospace" font-size="11" font-weight="700">✓</text>
+      <rect width="304" height="62" rx="12" fill="#291319" stroke="#431f28"/>
+      <circle cx="26" cy="31" r="10" fill="#e5486d"/>
+      <text x="22" y="35" fill="#14060c" font-family="monospace" font-size="11" font-weight="700">✓</text>
       <text x="48" y="27" fill="#d2d4dc" font-family="sans-serif" font-size="12" font-weight="700">01. Tasarım İlkeleri ve Ölçeklenebilirlik</text>
       <text x="48" y="45" fill="#8b90a0" font-family="monospace" font-size="9.5">18:40 Video  ·  Tamamlandı</text>
     </g>
     <!-- Lesson 2 (Active) -->
     <g transform="translate(0, 92)">
-      <rect width="304" height="62" rx="12" fill="#1c202c" stroke="#d4fc3b" stroke-width="1.2"/>
-      <circle cx="26" cy="31" r="10" fill="#7c75ff"/>
+      <rect width="304" height="62" rx="12" fill="#31171e" stroke="#e5486d" stroke-width="1.2"/>
+      <circle cx="26" cy="31" r="10" fill="#b0b5c4"/>
       <polygon points="24,26 24,36 31,31" fill="#f4f3ee"/>
       <text x="48" y="27" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="700">02. Bileşen Mimarisi ve Token Yapısı</text>
-      <text x="48" y="45" fill="#d4fc3b" font-family="monospace" font-size="9.5">24:10 Video  ·  Şu an izleniyor</text>
+      <text x="48" y="45" fill="#e5486d" font-family="monospace" font-size="9.5">24:10 Video  ·  Şu an izleniyor</text>
     </g>
     <!-- Lesson 3 (Quiz Checkpoint) -->
     <g transform="translate(0, 162)">
-      <rect width="304" height="62" rx="12" fill="#181b24" stroke="#282c3a"/>
-      <circle cx="26" cy="31" r="10" fill="#252836"/>
-      <text x="22" y="35" fill="#b5a9ff" font-family="monospace" font-size="10" font-weight="700">?</text>
+      <rect width="304" height="62" rx="12" fill="#291319" stroke="#431f28"/>
+      <circle cx="26" cy="31" r="10" fill="#3e1d25"/>
+      <text x="22" y="35" fill="#ced1da" font-family="monospace" font-size="10" font-weight="700">?</text>
       <text x="48" y="27" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="700">03. Uygulamalı Değerlendirme Testi</text>
-      <text x="48" y="45" fill="#b5a9ff" font-family="monospace" font-size="9.5">12 Soru  ·  Sertifika Barajı: %80</text>
+      <text x="48" y="45" fill="#ced1da" font-family="monospace" font-size="9.5">12 Soru  ·  Sertifika Barajı: %80</text>
     </g>
   </g>
   <!-- Downloadable Resources Card -->
   <g transform="translate(28, 534)">
-    <rect width="304" height="84" rx="14" fill="#171923" stroke="#2c3040"/>
-    <text x="16" y="24" fill="#d4fc3b" font-family="monospace" font-size="9.5" font-weight="700">DERS KAYNAKLARI &amp; ÇALIŞMA DOSYASI</text>
+    <rect width="304" height="84" rx="14" fill="#271318" stroke="#49232c"/>
+    <text x="16" y="24" fill="#e5486d" font-family="monospace" font-size="9.5" font-weight="700">DERS KAYNAKLARI &amp; ÇALIŞMA DOSYASI</text>
     <text x="16" y="44" fill="#c7cad4" font-family="sans-serif" font-size="11">Örnek Figma bileşen kütüphanesi ve kontrol listesi</text>
-    <text x="16" y="64" fill="#b5a9ff" font-family="monospace" font-size="9.5">⬇ Design_Tokens_Kit_v2.zip (4.2 MB)</text>
+    <text x="16" y="64" fill="#ced1da" font-family="monospace" font-size="9.5">⬇ Design_Tokens_Kit_v2.zip (4.2 MB)</text>
   </g>
   <!-- Bottom Nav -->
   <g transform="translate(28, 636)">
-    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
-    <rect x="8" y="6" width="82" height="36" rx="18" fill="#d4fc3b"/>
-    <text x="24" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Derslerim</text>
+    <rect width="304" height="48" rx="24" fill="#291319" stroke="#49232c"/>
+    <rect x="8" y="6" width="82" height="36" rx="18" fill="#e5486d"/>
+    <text x="24" y="28" fill="#14060c" font-family="sans-serif" font-size="10" font-weight="800">Derslerim</text>
     <text x="110" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Ödev &amp; Quiz</text>
     <text x="186" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Sertifika</text>
     <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Rapor</text>

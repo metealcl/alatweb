@@ -1,70 +1,70 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="Eventify saha QR kapı kontrol ve bilet doğrulama ekranı">
   <defs>
     <linearGradient id="evBg2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#15141f"/>
-      <stop offset="100%" stop-color="#0d0d13"/>
+      <stop offset="0%" stop-color="#231015"/>
+      <stop offset="100%" stop-color="#160a0d"/>
     </linearGradient>
   </defs>
-  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#391b22" stroke="#612d3a" stroke-width="2"/>
   <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#evBg2)"/>
-  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#0f0709"/>
   <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">19:48</text>
-  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <circle cx="308" cy="36" r="4" fill="#e5486d"/>
   <!-- Header -->
   <g transform="translate(28, 64)">
-    <text x="0" y="12" fill="#d4fc3b" font-family="monospace" font-size="9.5" letter-spacing="1">SAHA KAPI KONTROL · GİRİŞ A</text>
+    <text x="0" y="12" fill="#e5486d" font-family="monospace" font-size="9.5" letter-spacing="1">SAHA KAPI KONTROL · GİRİŞ A</text>
     <text x="0" y="32" fill="#f4f3ee" font-family="sans-serif" font-size="19" font-weight="800">Hızlı QR Doğrulama</text>
-    <rect x="198" y="8" width="106" height="22" rx="11" fill="#1d261a" stroke="#d4fc3b"/>
-    <text x="210" y="22" fill="#d4fc3b" font-family="monospace" font-size="8.5" font-weight="700">OFFLINE SYNC ✓</text>
+    <rect x="198" y="8" width="106" height="22" rx="11" fill="#2c141a" stroke="#e5486d"/>
+    <text x="210" y="22" fill="#e5486d" font-family="monospace" font-size="8.5" font-weight="700">OFFLINE SYNC ✓</text>
   </g>
   <!-- QR Scanner Viewport -->
   <g transform="translate(28, 112)">
-    <rect width="304" height="216" rx="20" fill="#11131a" stroke="#2c3040" stroke-width="1.5"/>
+    <rect width="304" height="216" rx="20" fill="#1d0e12" stroke="#49232c" stroke-width="1.5"/>
     <!-- Corner Reticles -->
-    <path d="M54 58 V36 H76" fill="none" stroke="#d4fc3b" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M250 58 V36 H228" fill="none" stroke="#d4fc3b" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M54 158 V180 H76" fill="none" stroke="#d4fc3b" stroke-width="3.5" stroke-linecap="round"/>
-    <path d="M250 158 V180 H228" fill="none" stroke="#d4fc3b" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M54 58 V36 H76" fill="none" stroke="#e5486d" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M250 58 V36 H228" fill="none" stroke="#e5486d" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M54 158 V180 H76" fill="none" stroke="#e5486d" stroke-width="3.5" stroke-linecap="round"/>
+    <path d="M250 158 V180 H228" fill="none" stroke="#e5486d" stroke-width="3.5" stroke-linecap="round"/>
     <!-- Simulated QR Graphic -->
     <rect x="108" y="64" width="88" height="88" rx="10" fill="#f4f3ee"/>
-    <rect x="118" y="74" width="22" height="22" fill="#101114"/>
-    <rect x="164" y="74" width="22" height="22" fill="#101114"/>
-    <rect x="118" y="120" width="22" height="22" fill="#101114"/>
-    <rect x="146" y="102" width="16" height="16" fill="#101114"/>
-    <rect x="168" y="124" width="16" height="16" fill="#101114"/>
+    <rect x="118" y="74" width="22" height="22" fill="#14060c"/>
+    <rect x="164" y="74" width="22" height="22" fill="#14060c"/>
+    <rect x="118" y="120" width="22" height="22" fill="#14060c"/>
+    <rect x="146" y="102" width="16" height="16" fill="#14060c"/>
+    <rect x="168" y="124" width="16" height="16" fill="#14060c"/>
     <!-- Laser Scan Line -->
-    <line x1="60" y1="108" x2="244" y2="108" stroke="#d4fc3b" stroke-width="2.5"/>
+    <line x1="60" y1="108" x2="244" y2="108" stroke="#e5486d" stroke-width="2.5"/>
     <text x="78" y="200" fill="#9aa0ae" font-family="monospace" font-size="9.5">OKUMA SÜRESİ: 0.14 SN · ÇİFT GİRİŞ KORUMALI</text>
   </g>
   <!-- Verified Attendee Badge -->
   <g transform="translate(28, 344)">
-    <rect width="304" height="132" rx="16" fill="#1b2618" stroke="#d4fc3b" stroke-width="1.5"/>
-    <circle cx="34" cy="36" r="14" fill="#d4fc3b"/>
-    <text x="29" y="41" fill="#101114" font-family="monospace" font-size="14" font-weight="800">✓</text>
-    <text x="58" y="30" fill="#d4fc3b" font-family="monospace" font-size="10" font-weight="700">GİRİŞ ONAYLANDI · VIP PASS #1048</text>
+    <rect width="304" height="132" rx="16" fill="#2a1419" stroke="#e5486d" stroke-width="1.5"/>
+    <circle cx="34" cy="36" r="14" fill="#e5486d"/>
+    <text x="29" y="41" fill="#14060c" font-family="monospace" font-size="14" font-weight="800">✓</text>
+    <text x="58" y="30" fill="#e5486d" font-family="monospace" font-size="10" font-weight="700">GİRİŞ ONAYLANDI · VIP PASS #1048</text>
     <text x="58" y="52" fill="#f4f3ee" font-family="sans-serif" font-size="17" font-weight="800">Emre Çelik</text>
     <text x="58" y="74" fill="#c7cad4" font-family="sans-serif" font-size="11.5">Kurucu Ortak · Studio Nord</text>
-    <rect x="18" y="92" width="132" height="24" rx="8" fill="#101114"/>
-    <text x="28" y="108" fill="#d4fc3b" font-family="monospace" font-size="9">VIP + BACKSTAGE ERİŞİM</text>
-    <rect x="158" y="92" width="128" height="24" rx="8" fill="#101114"/>
-    <text x="168" y="108" fill="#b5a9ff" font-family="monospace" font-size="9">YAKA KARTI BASILDI ✓</text>
+    <rect x="18" y="92" width="132" height="24" rx="8" fill="#14060c"/>
+    <text x="28" y="108" fill="#e5486d" font-family="monospace" font-size="9">VIP + BACKSTAGE ERİŞİM</text>
+    <rect x="158" y="92" width="128" height="24" rx="8" fill="#14060c"/>
+    <text x="168" y="108" fill="#ced1da" font-family="monospace" font-size="9">YAKA KARTI BASILDI ✓</text>
   </g>
   <!-- Gate Live Counter -->
   <g transform="translate(28, 492)">
-    <rect width="304" height="124" rx="16" fill="#181b24" stroke="#2b3040"/>
+    <rect width="304" height="124" rx="16" fill="#291319" stroke="#49222c"/>
     <text x="16" y="24" fill="#8b90a0" font-family="monospace" font-size="9.5">ANLIK SALON GİRİŞ DURUMU</text>
     <text x="16" y="56" fill="#f4f3ee" font-family="sans-serif" font-size="26" font-weight="800">1.420 / 1.800</text>
-    <text x="234" y="54" fill="#d4fc3b" font-family="monospace" font-size="13" font-weight="700">%78,8</text>
-    <rect x="16" y="70" width="272" height="8" rx="4" fill="#252936"/>
-    <rect x="16" y="70" width="214" height="8" rx="4" fill="#d4fc3b"/>
+    <text x="234" y="54" fill="#e5486d" font-family="monospace" font-size="13" font-weight="700">%78,8</text>
+    <rect x="16" y="70" width="272" height="8" rx="4" fill="#3e1d25"/>
+    <rect x="16" y="70" width="214" height="8" rx="4" fill="#e5486d"/>
     <text x="16" y="102" fill="#9aa0ae" font-family="sans-serif" font-size="11">Son 15 dk: 312 giriş  ·  Mükerrer QR Reddi: 4</text>
   </g>
   <!-- Bottom Nav -->
   <g transform="translate(28, 636)">
-    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <rect width="304" height="48" rx="24" fill="#291319" stroke="#49232c"/>
     <text x="24" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Etkinlik</text>
-    <rect x="90" y="6" width="76" height="36" rx="18" fill="#d4fc3b"/>
-    <text x="108" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">QR Kapı</text>
+    <rect x="90" y="6" width="76" height="36" rx="18" fill="#e5486d"/>
+    <text x="108" y="28" fill="#14060c" font-family="sans-serif" font-size="10" font-weight="800">QR Kapı</text>
     <text x="178" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Katılımcı</text>
     <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Canlı</text>
   </g>

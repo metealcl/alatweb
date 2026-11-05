@@ -1,81 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="KlinikPlus hasta kartı ve tedavi süreç yönetimi ekranı">
   <defs>
     <linearGradient id="kpBg2" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#141720"/>
-      <stop offset="100%" stop-color="#0d0f14"/>
+      <stop offset="0%" stop-color="#231115"/>
+      <stop offset="100%" stop-color="#160b0e"/>
     </linearGradient>
   </defs>
-  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#391b22" stroke="#612d3a" stroke-width="2"/>
   <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#kpBg2)"/>
-  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#0f0709"/>
   <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">09:34</text>
-  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <circle cx="308" cy="36" r="4" fill="#e5486d"/>
   <!-- Header -->
   <g transform="translate(28, 64)">
-    <text x="0" y="12" fill="#d4fc3b" font-family="monospace" font-size="9.5" letter-spacing="1">HASTA KARTI · #KP-4092</text>
+    <text x="0" y="12" fill="#e5486d" font-family="monospace" font-size="9.5" letter-spacing="1">HASTA KARTI · #KP-4092</text>
     <text x="0" y="32" fill="#f4f3ee" font-family="sans-serif" font-size="19" font-weight="800">Ayşe Demir (34)</text>
-    <rect x="206" y="8" width="98" height="22" rx="11" fill="#201e34" stroke="#7c75ff"/>
-    <text x="218" y="22" fill="#b5a9ff" font-family="monospace" font-size="8.5" font-weight="700">KVKK · YETKİLİ</text>
+    <rect x="206" y="8" width="98" height="22" rx="11" fill="#3a1820" stroke="#b0b5c4"/>
+    <text x="218" y="22" fill="#ced1da" font-family="monospace" font-size="8.5" font-weight="700">KVKK · YETKİLİ</text>
   </g>
   <!-- Clinical Alert / Anamnesis Summary -->
   <g transform="translate(28, 112)">
-    <rect width="304" height="78" rx="14" fill="#191c26" stroke="#2d3244"/>
+    <rect width="304" height="78" rx="14" fill="#2b141a" stroke="#4d242e"/>
     <text x="16" y="22" fill="#8b90a0" font-family="monospace" font-size="9">KLİNİK ÖZET &amp; HASSASİYET BİLGİSİ</text>
     <text x="16" y="42" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="700">Kan Grubu: A Rh(+) · Penisilin Alerjisi Mevcut</text>
-    <rect x="16" y="52" width="116" height="18" rx="9" fill="#2d1c22"/>
+    <rect x="16" y="52" width="116" height="18" rx="9" fill="#32171e"/>
     <text x="26" y="64" fill="#ff8e75" font-family="monospace" font-size="8.5" font-weight="700">ALERJİ UYARISI AÇIK</text>
-    <rect x="140" y="52" width="138" height="18" rx="9" fill="#1d261a"/>
-    <text x="150" y="64" fill="#d4fc3b" font-family="monospace" font-size="8.5" font-weight="700">AÇIK RIZA ONAYLI ✓</text>
+    <rect x="140" y="52" width="138" height="18" rx="9" fill="#2c141a"/>
+    <text x="150" y="64" fill="#e5486d" font-family="monospace" font-size="8.5" font-weight="700">AÇIK RIZA ONAYLI ✓</text>
   </g>
   <!-- Treatment Protocol Progress -->
   <g transform="translate(28, 204)">
-    <rect width="304" height="176" rx="16" fill="#181b24" stroke="#2b3040"/>
-    <text x="16" y="24" fill="#d4fc3b" font-family="monospace" font-size="9.5" font-weight="700">AKTİF TEDAVİ PROTOKOLÜ (4 ADIM)</text>
+    <rect width="304" height="176" rx="16" fill="#291319" stroke="#49222c"/>
+    <text x="16" y="24" fill="#e5486d" font-family="monospace" font-size="9.5" font-weight="700">AKTİF TEDAVİ PROTOKOLÜ (4 ADIM)</text>
     <text x="248" y="24" fill="#f4f3ee" font-family="monospace" font-size="10" font-weight="700">%75</text>
-    <rect x="16" y="34" width="272" height="6" rx="3" fill="#262a38"/>
-    <rect x="16" y="34" width="204" height="6" rx="3" fill="#d4fc3b"/>
+    <rect x="16" y="34" width="272" height="6" rx="3" fill="#401e27"/>
+    <rect x="16" y="34" width="204" height="6" rx="3" fill="#e5486d"/>
     <!-- Steps -->
-    <circle cx="26" cy="64" r="6" fill="#d4fc3b"/>
+    <circle cx="26" cy="64" r="6" fill="#e5486d"/>
     <text x="42" y="68" fill="#d2d4dc" font-family="sans-serif" font-size="11.5">1. İlk Muayene &amp; Dijital Görüntüleme</text>
     <text x="246" y="68" fill="#8b90a0" font-family="monospace" font-size="9">12 EKİ</text>
 
-    <circle cx="26" cy="94" r="6" fill="#d4fc3b"/>
+    <circle cx="26" cy="94" r="6" fill="#e5486d"/>
     <text x="42" y="98" fill="#d2d4dc" font-family="sans-serif" font-size="11.5">2. Laboratuvar &amp; Plan Onayı</text>
     <text x="246" y="98" fill="#8b90a0" font-family="monospace" font-size="9">19 EKİ</text>
 
-    <circle cx="26" cy="124" r="6" fill="#7c75ff"/>
+    <circle cx="26" cy="124" r="6" fill="#b0b5c4"/>
     <text x="42" y="128" fill="#f4f3ee" font-family="sans-serif" font-size="11.5" font-weight="700">3. Uygulama Seansı (Bugün · Oda 01)</text>
-    <text x="246" y="128" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">AKTİF</text>
+    <text x="246" y="128" fill="#e5486d" font-family="monospace" font-size="9" font-weight="700">AKTİF</text>
 
-    <circle cx="26" cy="154" r="6" fill="#2c3040"/>
+    <circle cx="26" cy="154" r="6" fill="#49232c"/>
     <text x="42" y="158" fill="#8b90a0" font-family="sans-serif" font-size="11.5">4. Kontrol &amp; Kapanış Değerlendirmesi</text>
     <text x="246" y="158" fill="#8b90a0" font-family="monospace" font-size="9">18 KAS</text>
   </g>
   <!-- Clinical Notes & Attachments -->
   <g transform="translate(28, 396)">
     <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="1">HEKİM NOTU &amp; EK DOSYALAR</text>
-    <rect x="0" y="22" width="304" height="106" rx="14" fill="#181b24" stroke="#2b3040"/>
+    <rect x="0" y="22" width="304" height="106" rx="14" fill="#291319" stroke="#49222c"/>
     <text x="16" y="44" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="700">Uzm. Dr. Selin Kaya · Seans Notu</text>
     <text x="16" y="64" fill="#afb3c0" font-family="sans-serif" font-size="11">İşlem komplikasyonsuz tamamlandı. Reçete ve bakım</text>
     <text x="16" y="80" fill="#afb3c0" font-family="sans-serif" font-size="11">talimatı hasta paneline dijital olarak aktarıldı.</text>
-    <rect x="16" y="92" width="124" height="24" rx="8" fill="#222634"/>
-    <text x="26" y="108" fill="#d4fc3b" font-family="monospace" font-size="9">📄 Tetkik_Raporu.pdf</text>
-    <rect x="148" y="92" width="132" height="24" rx="8" fill="#222634"/>
-    <text x="158" y="108" fill="#b5a9ff" font-family="monospace" font-size="9">🧾 E-Recete_#884.xml</text>
+    <rect x="16" y="92" width="124" height="24" rx="8" fill="#3a1c23"/>
+    <text x="26" y="108" fill="#e5486d" font-family="monospace" font-size="9">📄 Tetkik_Raporu.pdf</text>
+    <rect x="148" y="92" width="132" height="24" rx="8" fill="#3a1c23"/>
+    <text x="158" y="108" fill="#ced1da" font-family="monospace" font-size="9">🧾 E-Recete_#884.xml</text>
   </g>
   <!-- Role-based Security Footer Card -->
   <g transform="translate(28, 540)">
-    <rect width="304" height="78" rx="14" fill="#151821" stroke="#d4fc3b" stroke-width="1"/>
-    <text x="16" y="24" fill="#d4fc3b" font-family="monospace" font-size="9.5" font-weight="700">GİZLİLİK &amp; ERİŞİM KAYDI (AUDIT LOG)</text>
+    <rect width="304" height="78" rx="14" fill="#251116" stroke="#e5486d" stroke-width="1"/>
+    <text x="16" y="24" fill="#e5486d" font-family="monospace" font-size="9.5" font-weight="700">GİZLİLİK &amp; ERİŞİM KAYDI (AUDIT LOG)</text>
     <text x="16" y="44" fill="#c7cad4" font-family="sans-serif" font-size="11">Tıbbi notlar yalnızca atanmış hekim rolüne açıktır.</text>
     <text x="16" y="61" fill="#8b90a0" font-family="monospace" font-size="9">BANKO ROLÜ: YALNIZCA RANDEVU &amp; FATURA GÖRÜR</text>
   </g>
   <!-- Bottom Nav -->
   <g transform="translate(28, 636)">
-    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <rect width="304" height="48" rx="24" fill="#291319" stroke="#49232c"/>
     <text x="26" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Takvim</text>
-    <rect x="86" y="6" width="82" height="36" rx="18" fill="#d4fc3b"/>
-    <text x="106" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Hastalar</text>
+    <rect x="86" y="6" width="82" height="36" rx="18" fill="#e5486d"/>
+    <text x="106" y="28" fill="#14060c" font-family="sans-serif" font-size="10" font-weight="800">Hastalar</text>
     <text x="184" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Protokol</text>
     <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Analiz</text>
   </g>

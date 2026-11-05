@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="KlinikPlus operasyonel raporlama ve performans analizi ekranı">
+  <defs>
+    <linearGradient id="kpBg3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141720"/>
+      <stop offset="100%" stop-color="#0d0f14"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#kpBg3)"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">09:38</text>
+  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <!-- Header -->
+  <g transform="translate(28, 64)">
+    <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="1">OPERASYON &amp; PERFORMANS · KASIM</text>
+    <text x="0" y="32" fill="#f4f3ee" font-family="sans-serif" font-size="19" font-weight="800">Klinik Analitik</text>
+    <rect x="218" y="8" width="86" height="22" rx="11" fill="#1c2619" stroke="#d4fc3b"/>
+    <text x="230" y="22" fill="#d4fc3b" font-family="monospace" font-size="8.5" font-weight="700">SON 30 GÜN</text>
+  </g>
+  <!-- KPI Cards Row -->
+  <g transform="translate(28, 112)">
+    <rect x="0" y="0" width="146" height="90" rx="14" fill="#181b24" stroke="#2c3040"/>
+    <text x="14" y="22" fill="#8b90a0" font-family="monospace" font-size="9">TAMAMLANAN RANDEVU</text>
+    <text x="14" y="54" fill="#d4fc3b" font-family="sans-serif" font-size="28" font-weight="800">1.184</text>
+    <text x="14" y="74" fill="#7ce892" font-family="monospace" font-size="9.5">▲ +%18 geçen aya göre</text>
+
+    <rect x="158" y="0" width="146" height="90" rx="14" fill="#181b24" stroke="#2c3040"/>
+    <text x="172" y="22" fill="#8b90a0" font-family="monospace" font-size="9">GELMEME (NO-SHOW)</text>
+    <text x="172" y="54" fill="#f4f3ee" font-family="sans-serif" font-size="28" font-weight="800">%3,2</text>
+    <text x="172" y="74" fill="#d4fc3b" font-family="monospace" font-size="9.5">▼ -%38 SMS onayıyla</text>
+  </g>
+  <!-- Weekly Occupancy Bar Chart -->
+  <g transform="translate(28, 218)">
+    <rect width="304" height="176" rx="16" fill="#181b24" stroke="#2b3040"/>
+    <text x="16" y="24" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Poliklinik Kapasite Kullanımı</text>
+    <text x="228" y="24" fill="#d4fc3b" font-family="monospace" font-size="10" font-weight="700">ORT. %89</text>
+    <!-- Bars -->
+    <g transform="translate(24, 46)">
+      <rect x="0" y="26" width="24" height="74" rx="6" fill="#7c75ff"/>
+      <rect x="44" y="12" width="24" height="88" rx="6" fill="#d4fc3b"/>
+      <rect x="88" y="18" width="24" height="82" rx="6" fill="#d4fc3b"/>
+      <rect x="132" y="6" width="24" height="94" rx="6" fill="#d4fc3b"/>
+      <rect x="176" y="16" width="24" height="84" rx="6" fill="#d4fc3b"/>
+      <rect x="220" y="34" width="24" height="66" rx="6" fill="#7c75ff"/>
+      <text x="3" y="116" fill="#8b90a0" font-family="monospace" font-size="9">PZT</text>
+      <text x="47" y="116" fill="#8b90a0" font-family="monospace" font-size="9">SAL</text>
+      <text x="91" y="116" fill="#8b90a0" font-family="monospace" font-size="9">ÇAR</text>
+      <text x="135" y="116" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">PER</text>
+      <text x="179" y="116" fill="#8b90a0" font-family="monospace" font-size="9">CUM</text>
+      <text x="223" y="116" fill="#8b90a0" font-family="monospace" font-size="9">CMT</text>
+    </g>
+  </g>
+  <!-- Department Breakdown -->
+  <g transform="translate(28, 410)">
+    <rect width="304" height="124" rx="16" fill="#181b24" stroke="#2b3040"/>
+    <text x="16" y="24" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="0.8">BİRİM BAZLI İŞLEM DAĞILIMI</text>
+    <text x="16" y="50" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="600">Muayene &amp; Tanı</text>
+    <text x="254" y="50" fill="#d4fc3b" font-family="monospace" font-size="11" font-weight="700">%46</text>
+    <rect x="16" y="58" width="272" height="6" rx="3" fill="#252936"/>
+    <rect x="16" y="58" width="136" height="6" rx="3" fill="#d4fc3b"/>
+
+    <text x="16" y="86" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="600">Tedavi &amp; Uygulama Protokolleri</text>
+    <text x="254" y="86" fill="#b5a9ff" font-family="monospace" font-size="11" font-weight="700">%39</text>
+    <rect x="16" y="94" width="272" height="6" rx="3" fill="#252936"/>
+    <rect x="16" y="94" width="112" height="6" rx="3" fill="#7c75ff"/>
+  </g>
+  <!-- Export / Backup Status -->
+  <g transform="translate(28, 550)">
+    <rect width="304" height="68" rx="14" fill="#161922" stroke="#2c3040"/>
+    <text x="16" y="26" fill="#d4fc3b" font-family="monospace" font-size="9.5" font-weight="700">ŞİFRELİ YEDEKLEME &amp; MUHASEBE AKTARIMI</text>
+    <text x="16" y="46" fill="#b8bcc8" font-family="sans-serif" font-size="11">Gün sonu mutabakatı ve şifreli klinik yedeği tamamlandı.</text>
+  </g>
+  <!-- Bottom Nav -->
+  <g transform="translate(28, 636)">
+    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <text x="26" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Takvim</text>
+    <text x="102" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Hastalar</text>
+    <text x="174" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Protokol</text>
+    <rect x="226" y="6" width="70" height="36" rx="18" fill="#d4fc3b"/>
+    <text x="246" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Analiz</text>
+  </g>
+</svg>

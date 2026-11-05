@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="EduNext müfredat ve kohort yönetim ekranı">
+  <defs>
+    <linearGradient id="enBg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#151621"/>
+      <stop offset="100%" stop-color="#0d0e15"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#enBg2)"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">14:18</text>
+  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <!-- Header -->
+  <g transform="translate(28, 64)">
+    <text x="0" y="12" fill="#d4fc3b" font-family="monospace" font-size="9.5" letter-spacing="1">EĞİTMEN &amp; KURUM PANELİ</text>
+    <text x="0" y="32" fill="#f4f3ee" font-family="sans-serif" font-size="19" font-weight="800">Kohort &amp; Ölçme</text>
+    <rect x="206" y="8" width="98" height="22" rx="11" fill="#201e34" stroke="#7c75ff"/>
+    <text x="218" y="22" fill="#b5a9ff" font-family="monospace" font-size="8.5" font-weight="700">148 KATILIMCI</text>
+  </g>
+  <!-- Cohort Progress Summary -->
+  <g transform="translate(28, 112)">
+    <rect width="304" height="94" rx="16" fill="#181b24" stroke="#2c3040"/>
+    <text x="16" y="24" fill="#8b90a0" font-family="monospace" font-size="9">DÖNEM TAMAMLAMA ORANI · GÜZ KOHORTU</text>
+    <text x="16" y="56" fill="#d4fc3b" font-family="sans-serif" font-size="28" font-weight="800">%84,6</text>
+    <text x="122" y="54" fill="#afb3c0" font-family="sans-serif" font-size="11">Ortalama Test Başarısı: 88 / 100</text>
+    <rect x="16" y="70" width="272" height="8" rx="4" fill="#252936"/>
+    <rect x="16" y="70" width="230" height="8" rx="4" fill="#d4fc3b"/>
+  </g>
+  <!-- Active Quiz / Assignment Queue -->
+  <g transform="translate(28, 222)">
+    <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="1">DEĞERLENDİRME &amp; CANLI OTURUMLAR</text>
+    <g transform="translate(0, 22)">
+      <rect width="304" height="76" rx="14" fill="#181b24" stroke="#d4fc3b" stroke-width="1"/>
+      <text x="16" y="25" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">CANLI ATÖLYE · BUGÜN 16:00</text>
+      <text x="16" y="45" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Vaka Analizi &amp; Soru-Cevap Oturumu</text>
+      <text x="16" y="63" fill="#9aa0ae" font-family="sans-serif" font-size="11">Kayıtlı: 132 Katılımcı · Otomatik Yoklama Açık</text>
+    </g>
+    <g transform="translate(0, 108)">
+      <rect width="304" height="76" rx="14" fill="#181b24" stroke="#2b3040"/>
+      <text x="16" y="25" fill="#b5a9ff" font-family="monospace" font-size="9" font-weight="700">PROJE TESLİMLERİ · MODÜL 03</text>
+      <text x="16" y="45" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Uygulamalı Arayüz Denetimi Ödevi</text>
+      <text x="16" y="63" fill="#9aa0ae" font-family="sans-serif" font-size="11">141 Teslim Alındı · 7 İnceleme Bekliyor</text>
+    </g>
+  </g>
+  <!-- Department Competency Matrix -->
+  <g transform="translate(28, 424)">
+    <rect width="304" height="194" rx="16" fill="#181b24" stroke="#2b3040"/>
+    <text x="16" y="24" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="0.8">EKİP YETKİNLİK GELİŞİMİ</text>
+    <text x="16" y="52" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="600">Ürün &amp; Tasarım Ekibi</text>
+    <text x="254" y="52" fill="#d4fc3b" font-family="monospace" font-size="11" font-weight="700">%92</text>
+    <rect x="16" y="60" width="272" height="6" rx="3" fill="#252936"/>
+    <rect x="16" y="60" width="250" height="6" rx="3" fill="#d4fc3b"/>
+
+    <text x="16" y="92" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="600">Yazılım &amp; QA Ekibi</text>
+    <text x="254" y="92" fill="#b5a9ff" font-family="monospace" font-size="11" font-weight="700">%86</text>
+    <rect x="16" y="100" width="272" height="6" rx="3" fill="#252936"/>
+    <rect x="16" y="100" width="234" height="6" rx="3" fill="#7c75ff"/>
+
+    <text x="16" y="132" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="600">Müşteri Operasyonları</text>
+    <text x="254" y="132" fill="#7ce892" font-family="monospace" font-size="11" font-weight="700">%79</text>
+    <rect x="16" y="140" width="272" height="6" rx="3" fill="#252936"/>
+    <rect x="16" y="140" width="214" height="6" rx="3" fill="#7ce892"/>
+
+    <text x="16" y="174" fill="#8b90a0" font-family="monospace" font-size="9">HR &amp; LMS RAPORU CSV / PDF OLARAK İNDİRİLEBİLİR</text>
+  </g>
+  <!-- Bottom Nav -->
+  <g transform="translate(28, 636)">
+    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <text x="24" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Derslerim</text>
+    <rect x="92" y="6" width="84" height="36" rx="18" fill="#d4fc3b"/>
+    <text x="104" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Ödev &amp; Quiz</text>
+    <text x="188" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Sertifika</text>
+    <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Rapor</text>
+  </g>
+</svg>

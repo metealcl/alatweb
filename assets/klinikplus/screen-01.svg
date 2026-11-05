@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="KlinikPlus randevu ve poliklinik takvimi ekranı">
+  <defs>
+    <linearGradient id="kpBg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141720"/>
+      <stop offset="100%" stop-color="#0d0f14"/>
+    </linearGradient>
+    <linearGradient id="kpAccent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d4fc3b"/>
+      <stop offset="100%" stop-color="#a5e619"/>
+    </linearGradient>
+  </defs>
+  <!-- Device Frame -->
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#kpBg1)"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <!-- Status Bar -->
+  <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">09:30</text>
+  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <!-- App Header -->
+  <g transform="translate(28, 64)">
+    <rect x="0" y="0" width="28" height="28" rx="8" fill="#1e222d" stroke="#d4fc3b" stroke-width="1.2"/>
+    <path d="M14 8v12M8 14h12" stroke="#d4fc3b" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="38" y="13" fill="#8b90a0" font-family="monospace" font-size="9" letter-spacing="1">KLİNİKPLUS · MERKEZ ŞUBE</text>
+    <text x="38" y="27" fill="#f4f3ee" font-family="sans-serif" font-size="15" font-weight="700">Poliklinik &amp; Randevu</text>
+    <rect x="234" y="4" width="70" height="22" rx="11" fill="#1b2618" stroke="#d4fc3b" stroke-width="1"/>
+    <text x="246" y="18" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">CANLI · 4 ODA</text>
+  </g>
+  <!-- Daily Metrics Strip -->
+  <g transform="translate(28, 108)">
+    <rect width="304" height="92" rx="18" fill="url(#kpAccent)"/>
+    <text x="18" y="24" fill="#101114" font-family="monospace" font-size="9" font-weight="700" letter-spacing="0.8">BUGÜNKÜ RANDEVU YOĞUNLUĞU</text>
+    <text x="18" y="56" fill="#101114" font-family="sans-serif" font-size="30" font-weight="800">42 / 46 Hasta</text>
+    <rect x="218" y="16" width="70" height="24" rx="12" fill="#101114"/>
+    <text x="231" y="32" fill="#d4fc3b" font-family="monospace" font-size="10" font-weight="700">%91 DOLU</text>
+    <text x="18" y="78" fill="#1d2014" font-family="sans-serif" font-size="11" font-weight="700">Bekleyen: 3  ·  Muayenede: 4  ·  Tamamlanan: 35</text>
+  </g>
+  <!-- Doctor Filter Pills -->
+  <g transform="translate(28, 214)">
+    <rect x="0" y="0" width="88" height="26" rx="13" fill="#d4fc3b"/>
+    <text x="14" y="17" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Tüm Hekimler</text>
+    <rect x="96" y="0" width="98" height="26" rx="13" fill="#1a1d26" stroke="#2d3140"/>
+    <text x="110" y="17" fill="#c4c7d0" font-family="sans-serif" font-size="10" font-weight="600">Dr. Selin K. (14)</text>
+    <rect x="202" y="0" width="102" height="26" rx="13" fill="#1a1d26" stroke="#2d3140"/>
+    <text x="214" y="17" fill="#c4c7d0" font-family="sans-serif" font-size="10" font-weight="600">Dr. Mert A. (16)</text>
+  </g>
+  <!-- Time Slot Cards -->
+  <g transform="translate(28, 254)">
+    <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="10" letter-spacing="1">AKTİF AKIŞ · ÇAKIŞMA KORUMASI AÇIK</text>
+    <!-- Slot 1 -->
+    <g transform="translate(0, 24)">
+      <rect width="304" height="74" rx="14" fill="#181b24" stroke="#d4fc3b" stroke-width="1.2"/>
+      <rect x="12" y="14" width="52" height="46" rx="10" fill="#21261a"/>
+      <text x="20" y="34" fill="#d4fc3b" font-family="monospace" font-size="11" font-weight="700">09:30</text>
+      <text x="20" y="50" fill="#9aa0ae" font-family="monospace" font-size="9">ODA 01</text>
+      <text x="76" y="29" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Ayşe Demir · İlk Muayene &amp; Plan</text>
+      <text x="76" y="47" fill="#9aa0ae" font-family="sans-serif" font-size="11">Uzm. Dr. Selin Kaya · 45 dk blok</text>
+      <rect x="218" y="14" width="74" height="20" rx="10" fill="#d4fc3b"/>
+      <text x="229" y="27" fill="#101114" font-family="monospace" font-size="8.5" font-weight="700">MUAYENEDE</text>
+    </g>
+    <!-- Slot 2 -->
+    <g transform="translate(0, 108)">
+      <rect width="304" height="74" rx="14" fill="#181b24" stroke="#282c3a"/>
+      <rect x="12" y="14" width="52" height="46" rx="10" fill="#1e202c"/>
+      <text x="20" y="34" fill="#b5a9ff" font-family="monospace" font-size="11" font-weight="700">10:15</text>
+      <text x="20" y="50" fill="#9aa0ae" font-family="monospace" font-size="9">ODA 02</text>
+      <text x="76" y="29" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Kerem Yılmaz · Kontrol &amp; Tetkik</text>
+      <text x="76" y="47" fill="#9aa0ae" font-family="sans-serif" font-size="11">Dr. Mert Aksoy · SMS Onaylı ✓</text>
+      <rect x="224" y="14" width="68" height="20" rx="10" fill="#252338"/>
+      <text x="236" y="27" fill="#b5a9ff" font-family="monospace" font-size="8.5" font-weight="700">BEKLİYOR</text>
+    </g>
+    <!-- Slot 3 -->
+    <g transform="translate(0, 192)">
+      <rect width="304" height="74" rx="14" fill="#181b24" stroke="#282c3a"/>
+      <rect x="12" y="14" width="52" height="46" rx="10" fill="#1e202c"/>
+      <text x="20" y="34" fill="#f4f3ee" font-family="monospace" font-size="11" font-weight="700">11:00</text>
+      <text x="20" y="50" fill="#9aa0ae" font-family="monospace" font-size="9">ODA 01</text>
+      <text x="76" y="29" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Zeynep Arslan · Tedavi Seansı #3</text>
+      <text x="76" y="47" fill="#9aa0ae" font-family="sans-serif" font-size="11">Uzm. Dr. Selin Kaya · Ön ödeme alındı</text>
+      <rect x="224" y="14" width="68" height="20" rx="10" fill="#1f2c22"/>
+      <text x="238" y="27" fill="#7ce892" font-family="monospace" font-size="8.5" font-weight="700">ONAYLI</text>
+    </g>
+  </g>
+  <!-- Smart Conflict Guard Banner -->
+  <g transform="translate(28, 536)">
+    <rect width="304" height="82" rx="14" fill="#171922" stroke="#7c75ff" stroke-width="1.2"/>
+    <circle cx="26" cy="28" r="10" fill="#7c75ff"/>
+    <text x="23" y="32" fill="#101114" font-family="monospace" font-size="11" font-weight="700">!</text>
+    <text x="46" y="26" fill="#d4fc3b" font-family="monospace" font-size="9.5" font-weight="700">OTOMATİK HATIRLATMA &amp; BOŞLUK TELAFİSİ</text>
+    <text x="46" y="45" fill="#d2d4dc" font-family="sans-serif" font-size="11">14:30 iptali için bekleme listesindeki 2 hastaya</text>
+    <text x="46" y="61" fill="#d2d4dc" font-family="sans-serif" font-size="11">otomatik randevu teklifi iletildi.</text>
+  </g>
+  <!-- Bottom Nav -->
+  <g transform="translate(28, 636)">
+    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <rect x="8" y="6" width="76" height="36" rx="18" fill="#d4fc3b"/>
+    <text x="26" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Takvim</text>
+    <text x="108" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Hastalar</text>
+    <text x="180" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Protokol</text>
+    <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Analiz</text>
+  </g>
+</svg>

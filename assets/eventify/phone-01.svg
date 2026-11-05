@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 720" role="img" aria-label="Eventify etkinlik oluşturma ve bilet kayıt ekranı">
+  <defs>
+    <linearGradient id="evBg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15141f"/>
+      <stop offset="100%" stop-color="#0d0d13"/>
+    </linearGradient>
+    <linearGradient id="evHero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5338d8"/>
+      <stop offset="55%" stop-color="#2b1e5a"/>
+      <stop offset="100%" stop-color="#171824"/>
+    </linearGradient>
+  </defs>
+  <rect x="6" y="6" width="348" height="708" rx="46" fill="#232631" stroke="#3c4052" stroke-width="2"/>
+  <rect x="14" y="14" width="332" height="692" rx="40" fill="url(#evBg1)"/>
+  <rect x="128" y="24" width="104" height="22" rx="11" fill="#090a0d"/>
+  <text x="36" y="40" fill="#a8acb8" font-family="monospace" font-size="11" font-weight="700">19:45</text>
+  <circle cx="308" cy="36" r="4" fill="#d4fc3b"/>
+  <!-- Header -->
+  <g transform="translate(28, 64)">
+    <rect x="0" y="0" width="28" height="28" rx="8" fill="#1e222d" stroke="#d4fc3b" stroke-width="1.2"/>
+    <rect x="7" y="8" width="14" height="12" rx="2" fill="none" stroke="#d4fc3b" stroke-width="1.8"/>
+    <text x="38" y="12" fill="#8b90a0" font-family="monospace" font-size="9" letter-spacing="1">EVENTIFY · ETKİNLİK &amp; BİLET</text>
+    <text x="38" y="27" fill="#f4f3ee" font-family="sans-serif" font-size="15" font-weight="700">Sound &amp; Future ’26</text>
+    <rect x="228" y="4" width="76" height="22" rx="11" fill="#1d261a" stroke="#d4fc3b"/>
+    <text x="240" y="18" fill="#d4fc3b" font-family="monospace" font-size="8.5" font-weight="700">SATIŞTA ✓</text>
+  </g>
+  <!-- Event Hero Banner -->
+  <g transform="translate(28, 106)">
+    <rect width="304" height="164" rx="18" fill="url(#evHero)" stroke="#7c75ff"/>
+    <circle cx="250" cy="48" r="54" fill="#d4fc3b" opacity="0.16"/>
+    <rect x="18" y="18" width="124" height="22" rx="11" fill="#101114b8"/>
+    <text x="28" y="32" fill="#d4fc3b" font-family="monospace" font-size="9" font-weight="700">24 KASIM · İSTANBUL</text>
+    <text x="18" y="76" fill="#f4f3ee" font-family="sans-serif" font-size="23" font-weight="800">Sound &amp; Design</text>
+    <text x="18" y="102" fill="#d4fc3b" font-family="sans-serif" font-size="23" font-weight="800">Summit 2026</text>
+    <text x="18" y="132" fill="#d2d0ea" font-family="sans-serif" font-size="11">3 Sahne · 18 Konuşmacı · 1.800 Kontenjan</text>
+    <text x="18" y="150" fill="#b5a9ff" font-family="monospace" font-size="9.5">📍 Zorlu PSM · Kapı Açılış: 18:00</text>
+  </g>
+  <!-- Ticket Tiers -->
+  <g transform="translate(28, 286)">
+    <text x="0" y="12" fill="#8b90a0" font-family="monospace" font-size="9.5" letter-spacing="1">KADEMELİ BİLET &amp; KONTENJAN DURUMU</text>
+    <!-- Tier 1 -->
+    <g transform="translate(0, 22)">
+      <rect width="304" height="72" rx="14" fill="#181b24" stroke="#d4fc3b" stroke-width="1.2"/>
+      <text x="16" y="26" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">Genel Katılım · 2. Dönem</text>
+      <text x="16" y="45" fill="#9aa0ae" font-family="sans-serif" font-size="11">Ana sahne + fuaye alanı + dijital katılım belgesi</text>
+      <text x="16" y="61" fill="#d4fc3b" font-family="monospace" font-size="9.5">KALAN KONTENJAN: 142 BİLET</text>
+      <rect x="218" y="18" width="72" height="34" rx="10" fill="#d4fc3b"/>
+      <text x="231" y="39" fill="#101114" font-family="sans-serif" font-size="12" font-weight="800">₺850</text>
+    </g>
+    <!-- Tier 2 -->
+    <g transform="translate(0, 104)">
+      <rect width="304" height="72" rx="14" fill="#181b24" stroke="#2b3040"/>
+      <text x="16" y="26" fill="#f4f3ee" font-family="sans-serif" font-size="13" font-weight="700">VIP &amp; Backstage Lounge</text>
+      <text x="16" y="45" fill="#9aa0ae" font-family="sans-serif" font-size="11">Ön sıra erişimi + konuşmacı networking + hızlı geçiş</text>
+      <text x="16" y="61" fill="#b5a9ff" font-family="monospace" font-size="9.5">KALAN KONTENJAN: 19 BİLET</text>
+      <rect x="218" y="18" width="72" height="34" rx="10" fill="#232138" stroke="#7c75ff"/>
+      <text x="228" y="39" fill="#f4f3ee" font-family="sans-serif" font-size="12" font-weight="800">₺2.400</text>
+    </g>
+    <!-- Tier 3 -->
+    <g transform="translate(0, 186)">
+      <rect width="304" height="58" rx="14" fill="#14161e" stroke="#242734"/>
+      <text x="16" y="25" fill="#777b88" font-family="sans-serif" font-size="12" font-weight="700">Erken Dönem (Early Bird)</text>
+      <text x="16" y="43" fill="#686c78" font-family="monospace" font-size="9.5">500 / 500 BİLET TÜKENDİ</text>
+      <rect x="218" y="16" width="72" height="26" rx="8" fill="#1e2029"/>
+      <text x="230" y="33" fill="#777b88" font-family="monospace" font-size="9" font-weight="700">TÜKENDİ</text>
+    </g>
+  </g>
+  <!-- Primary CTA -->
+  <g transform="translate(28, 554)">
+    <rect width="304" height="56" rx="28" fill="#d4fc3b"/>
+    <text x="64" y="34" fill="#101114" font-family="sans-serif" font-size="14" font-weight="800">Kayıt Ol &amp; QR Bilet Al ↗</text>
+  </g>
+  <!-- Bottom Nav -->
+  <g transform="translate(28, 636)">
+    <rect width="304" height="48" rx="24" fill="#181b24" stroke="#2c3040"/>
+    <rect x="8" y="6" width="82" height="36" rx="18" fill="#d4fc3b"/>
+    <text x="24" y="28" fill="#101114" font-family="sans-serif" font-size="10" font-weight="800">Etkinlik</text>
+    <text x="108" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">QR Kapı</text>
+    <text x="178" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Katılımcı</text>
+    <text x="248" y="28" fill="#8b90a0" font-family="sans-serif" font-size="10" font-weight="600">Canlı</text>
+  </g>
+</svg>

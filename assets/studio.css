@@ -302,3 +302,116 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-offset:4px}
   .hero-preview-meta { margin-top: 12px; }
   .nav.open .nav-cta, .nav.open .nav-cta[aria-current=page] { background: var(--crimson); }
 }
+
+/* Partners share one track; the second group continues the first at the loop point. */
+.partners {
+  --partner-gap: 12px;
+  margin-block: clamp(40px, 6vw, 76px) 0;
+}
+.partners-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  margin-bottom: 16px;
+}
+.partners-heading h2 {
+  margin: 0;
+  color: var(--paper);
+  font-size: clamp(24px, 4.1vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+}
+.partner-rail {
+  container-type: inline-size;
+  overflow: hidden;
+}
+.partner-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--partner-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.partner-group--repeat { display: none; }
+.partner-card {
+  display: grid;
+  min-width: 0;
+  min-height: 112px;
+  place-items: center;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #211016;
+}
+.partner-logo {
+  position: relative;
+  display: block;
+  width: min(100%, var(--logo-width));
+  aspect-ratio: var(--logo-aspect);
+  overflow: hidden;
+}
+.partner-logo img {
+  position: absolute;
+  top: var(--source-top, 0);
+  left: var(--source-left, 0);
+  width: var(--source-width, 100%);
+  max-width: none;
+  height: auto;
+}
+.partner-logo--cevik {
+  --logo-width: 120px;
+  --logo-aspect: 824 / 553;
+  --source-width: 124.27%;
+  --source-left: -12.14%;
+  --source-top: -34.36%;
+}
+.partner-logo--neova {
+  --logo-width: 134px;
+  --logo-aspect: 944 / 543;
+  --source-width: 135.59%;
+  --source-left: -17.8%;
+  --source-top: -9.21%;
+}
+.partner-logo--celiksan {
+  --logo-width: 142px;
+  --logo-aspect: 334 / 145;
+  --source-width: 350%;
+  --source-left: -16.77%;
+  --source-top: -27.59%;
+}
+.partner-logo--eksem {
+  --logo-width: 164px;
+  --logo-aspect: 1280 / 426;
+}
+.partner-logo--neova,
+.partner-logo--celiksan,
+.partner-logo--eksem { mix-blend-mode: lighten; }
+
+@media (max-width: 560px) {
+  .partner-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .partner-card { min-height: 96px; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .js .partner-track {
+    display: flex;
+    width: max-content;
+    animation: partner-loop 25s linear infinite;
+  }
+  .js .partner-group {
+    display: flex;
+    flex: 0 0 auto;
+    min-width: min(var(--max), 100vw);
+    min-width: 100cqi;
+    padding-inline-end: var(--partner-gap);
+  }
+  .js .partner-group--repeat { display: flex; }
+  .js .partner-card { flex: 1 0 152px; }
+}
+
+@keyframes partner-loop {
+  to { transform: translateX(-50%); }
+}

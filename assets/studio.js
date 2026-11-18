@@ -31,11 +31,15 @@ document.querySelectorAll("[data-copy-email]").forEach(btn=>{btn.addEventListene
 document.querySelectorAll('.nav a').forEach(a=>{if(a.pathname===location.pathname||(location.pathname==='/'&&a.getAttribute('href')==='index.html'))a.setAttribute('aria-current','page')});
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});document.querySelectorAll('[data-category]').forEach(x=>x.hidden=b.dataset.filter!=='all'&&x.dataset.category!==b.dataset.filter)}));
 const word=document.querySelector('#lab-word'),output=document.querySelector('#lab-output'),color=document.querySelector('#lab-color');if(word&&output)word.addEventListener('input',()=>output.textContent=word.value.trim()||'MERAK');if(color)color.addEventListener('change',()=>document.querySelector('.type-playground').dataset.tone=color.value);
-const motion = document.querySelector("[data-motion]");
-const motionLabel = motion?.querySelector("[data-motion-label]");
-if (motionLabel) {
-  motion.addEventListener("click", () => {
+const motionButtons = document.querySelectorAll("[data-motion]");
+
+motionButtons.forEach(button => {
+  button.addEventListener("click", () => {
     const paused = document.body.classList.toggle("motion-paused");
-    motionLabel.textContent = paused ? "Hareketi sürdür" : "Hareketi durdur";
+
+    motionButtons.forEach(control => {
+      control.querySelector("[data-motion-label]").textContent =
+        paused ? "Hareketi sürdür" : "Hareketi durdur";
+    });
   });
-}
+});

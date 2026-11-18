@@ -1,4 +1,24 @@
-document.documentElement.classList.add("js");const nav=document.querySelector(".nav"),menu=document.querySelector(".menu");if(menu&&nav){menu.addEventListener("click",()=>{const o=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(o));menu.textContent=o?"×":"☰"});nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.textContent="☰"}))}if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll(".reveal").forEach(x=>io.observe(x))}else{document.querySelectorAll(".reveal").forEach(x=>x.classList.add("in"))}document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());const form=document.querySelector("[data-mailto-form]");
+document.documentElement.classList.add("js");
+const nav=document.querySelector(".nav"),menu=document.querySelector(".menu");
+if(menu&&nav){
+ const header=menu.closest(".header"),mobile=window.matchMedia("(max-width: 860px)"),label=menu.querySelector(".menu-label");
+ const setMenu=(open,restoreFocus=false)=>{
+  nav.classList.toggle("open",open);
+  menu.setAttribute("aria-expanded",String(open));
+  menu.setAttribute("aria-label",open?"Menüyü kapat":"Menüyü aç");
+  if(label)label.textContent=open?"Kapat":"Menü";
+  if(restoreFocus)menu.focus();
+ };
+ menu.addEventListener("click",()=>setMenu(!nav.classList.contains("open")));
+ nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+ document.addEventListener("keydown",e=>{if(e.key==="Escape"&&nav.classList.contains("open"))setMenu(false,true)});
+ document.addEventListener("click",e=>{if(nav.classList.contains("open")&&!header.contains(e.target))setMenu(false)});
+ document.addEventListener("focusin",e=>{if(nav.classList.contains("open")&&!header.contains(e.target))setMenu(false)});
+ const reset=()=>setMenu(false);
+ if(mobile.addEventListener)mobile.addEventListener("change",reset);else mobile.addListener(reset);
+ window.addEventListener("pageshow",reset);
+}
+if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:0,rootMargin:"0px 0px -24px 0px"});document.querySelectorAll(".reveal").forEach(x=>io.observe(x))}else{document.querySelectorAll(".reveal").forEach(x=>x.classList.add("in"))}document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());const form=document.querySelector("[data-mailto-form]");
 function buildBrief(data){return "Ad: "+(data.get("name")||"")+"\nE-posta: "+(data.get("email")||"")+"\nFirma: "+(data.get("company")||"-")+"\nKonu: "+(data.get("topic")||"-")+"\nZaman: "+(data.get("timing")||"-")+"\nÖncelik: "+(data.get("priority")||"-")+"\n\n"+(data.get("message")||"");}
 if(form){const status=document.querySelector("[data-brief-status]"),out=document.querySelector("[data-brief-output]"),panel=document.querySelector("[data-brief-panel]");
 const topicParam=new URLSearchParams(location.search).get("konu");
@@ -9,7 +29,6 @@ document.querySelector("[data-brief-copy]")?.addEventListener("click",async()=>{
 document.querySelectorAll("[data-copy-email]").forEach(btn=>{btn.addEventListener("click",async()=>{const email=btn.getAttribute("data-copy-email")||"destek@alatmedya.tech";const copyStatus=document.querySelector("[data-copy-status]");try{await navigator.clipboard.writeText(email);if(copyStatus)copyStatus.textContent="E-posta adresi panoya kopyalandı: "+email;btn.textContent="Kopyalandı ✓";}catch{if(copyStatus)copyStatus.textContent="Adres: "+email;}})});
 
 document.querySelectorAll('.nav a').forEach(a=>{if(a.pathname===location.pathname||(location.pathname==='/'&&a.getAttribute('href')==='index.html'))a.setAttribute('aria-current','page')});
-document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav&&menu){nav.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}});
 document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active))});document.querySelectorAll('[data-category]').forEach(x=>x.hidden=b.dataset.filter!=='all'&&x.dataset.category!==b.dataset.filter)}));
 const word=document.querySelector('#lab-word'),output=document.querySelector('#lab-output'),color=document.querySelector('#lab-color');if(word&&output)word.addEventListener('input',()=>output.textContent=word.value.trim()||'MERAK');if(color)color.addEventListener('change',()=>document.querySelector('.type-playground').dataset.tone=color.value);
 const motion=document.querySelector('[data-motion]');if(motion)motion.addEventListener('click',()=>{const paused=document.body.classList.toggle('motion-paused');motion.setAttribute('aria-pressed',String(paused));motion.textContent=paused?'Hareketi oynat ▷':'Hareketi durdur Ⅱ'});

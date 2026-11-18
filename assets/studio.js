@@ -18,14 +18,90 @@ if(menu&&nav){
  if(mobile.addEventListener)mobile.addEventListener("change",reset);else mobile.addListener(reset);
  window.addEventListener("pageshow",reset);
 }
-if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:0,rootMargin:"0px 0px -24px 0px"});document.querySelectorAll(".reveal").forEach(x=>io.observe(x))}else{document.querySelectorAll(".reveal").forEach(x=>x.classList.add("in"))}document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());const form=document.querySelector("[data-mailto-form]");
-function buildBrief(data){return "Ad: "+(data.get("name")||"")+"\nE-posta: "+(data.get("email")||"")+"\nFirma: "+(data.get("company")||"-")+"\nKonu: "+(data.get("topic")||"-")+"\nZaman: "+(data.get("timing")||"-")+"\nÖncelik: "+(data.get("priority")||"-")+"\n\n"+(data.get("message")||"");}
-if(form){const status=document.querySelector("[data-brief-status]"),out=document.querySelector("[data-brief-output]"),panel=document.querySelector("[data-brief-panel]");
-const topicParam=new URLSearchParams(location.search).get("konu");
-if(topicParam){const sel=form.querySelector("#topic");if(sel){for(const opt of sel.options){if(opt.value.toLowerCase()===topicParam.toLowerCase()||opt.textContent.toLowerCase().includes(topicParam.toLowerCase())){sel.value=opt.value||opt.textContent;break;}}}}
-form.addEventListener("submit",e=>{e.preventDefault();if(!form.reportValidity())return;const d=new FormData(form);location.href="mailto:destek@alatmedya.tech?subject="+encodeURIComponent("ALAT Medya — "+d.get("topic"))+"&body="+encodeURIComponent(buildBrief(d));if(status)status.textContent="E-posta uygulamanızda taslak açılması istendi. Mesaj henüz gönderilmedi. Açılmadıysa özeti kopyalayıp destek@alatmedya.tech adresine yazabilirsiniz.";});
-document.querySelector("[data-brief-preview]")?.addEventListener("click",()=>{out.textContent=buildBrief(new FormData(form));panel.hidden=false;status.textContent="Önizleme hazır. Bilgiler gönderilmedi.";});
-document.querySelector("[data-brief-copy]")?.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(buildBrief(new FormData(form)));status.textContent="Proje özeti kopyalandı. Bilgiler gönderilmedi.";}catch{status.textContent="Otomatik kopyalama kullanılamadı. Önizleme metnini seçip kopyalayabilirsiniz.";}});}
+if("IntersectionObserver"in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:0,rootMargin:"0px 0px -24px 0px"});document.querySelectorAll(".reveal").forEach(x=>io.observe(x))}else{document.querySelectorAll(".reveal").forEach(x=>x.classList.add("in"))}document.querySelectorAll("[data-year]").forEach(x=>x.textContent=new Date().getFullYear());
+const projectForm = document.querySelector("[data-project-form]");
+
+if (projectForm) {
+  const topic = projectForm.elements.namedItem("topic");
+  const topicParam = new URLSearchParams(location.search).get("konu");
+  const submit = projectForm.querySelector('[type="submit"]');
+  const panel = projectForm.querySelector("[data-brief-panel]");
+  const heading = panel.querySelector("h3");
+  const summary = panel.querySelector("[data-brief-output]");
+  const status = panel.querySelector("[data-brief-status]");
+  const whatsappLink = panel.querySelector("[data-brief-whatsapp]");
+  const emailLink = panel.querySelector("[data-brief-email]");
+
+  if (topicParam) {
+    const requested = topicParam.toLocaleLowerCase("tr");
+    const match = [...topic.options].find(option =>
+      option.value && option.value.toLocaleLowerCase("tr").includes(requested)
+    );
+    if (match) topic.value = match.value;
+  }
+
+  projectForm.addEventListener("submit", event => {
+    event.preventDefault();
+    if (!projectForm.reportValidity()) return;
+
+    const fields = new FormData(projectForm);
+    const value = field => String(fields.get(field) ?? "").trim();
+    const details = [
+      ["Ad", value("name")],
+      ["E-posta", value("email")],
+      ["Konu", value("topic")],
+      ["Firma", value("company")],
+      ["Hedef zaman", value("timing") === "Henüz net değil" ? "" : value("timing")],
+      ["Öncelik", value("priority")]
+    ];
+    const summaryLines = details.filter(([, text]) => text).map(([label, text]) => label + ": " + text);
+    const brief = summaryLines.join("\n") + "\n\n" + value("message");
+
+    summary.textContent = brief;
+    whatsappLink.href = "https://wa.me/905075385671?text=" + encodeURIComponent("Merhaba ALAT Medya,\n\n" + brief);
+    emailLink.href = "mailto:destek@alatmedya.tech?subject=" + encodeURIComponent("ALAT Medya — " + value("topic")) + "&body=" + encodeURIComponent(brief);
+    status.textContent = "";
+    panel.hidden = false;
+    submit.setAttribute("aria-expanded", "true");
+    heading.focus();
+  });
+
+  projectForm.addEventListener("input", () => {
+    panel.hidden = true;
+    submit.setAttribute("aria-expanded", "false");
+  });
+
+  panel.querySelector("[data-brief-copy]").addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText(summary.textContent);
+      status.textContent = "Proje özeti kopyalandı.";
+    } catch {
+      status.textContent = "Önizleme metnini seçip kopyalayabilirsin.";
+    }
+  });
+}
+
+document.querySelectorAll("[data-demo]").forEach(demo => {
+  const navigation = demo.querySelector("[data-demo-nav]");
+  const buttons = [...navigation.querySelectorAll("[data-demo-button]")];
+  const panels = [...demo.querySelectorAll("[data-demo-panel]")];
+
+  function selectDemoPanel(panelId) {
+    buttons.forEach(button => {
+      const selected = button.getAttribute("aria-controls") === panelId;
+      button.setAttribute("aria-pressed", String(selected));
+    });
+    panels.forEach(panel => { panel.hidden = panel.id !== panelId; });
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => selectDemoPanel(button.getAttribute("aria-controls")));
+  });
+  demo.classList.add("product-demo--active");
+  selectDemoPanel(panels[0].id);
+  navigation.hidden = false;
+});
+
 document.querySelectorAll("[data-copy-email]").forEach(btn=>{btn.addEventListener("click",async()=>{const email=btn.getAttribute("data-copy-email")||"destek@alatmedya.tech";const copyStatus=document.querySelector("[data-copy-status]");try{await navigator.clipboard.writeText(email);if(copyStatus)copyStatus.textContent="E-posta adresi panoya kopyalandı: "+email;btn.textContent="Kopyalandı ✓";}catch{if(copyStatus)copyStatus.textContent="Adres: "+email;}})});
 
 document.querySelectorAll('.nav a').forEach(a=>{if(a.pathname===location.pathname||(location.pathname==='/'&&a.getAttribute('href')==='index.html'))a.setAttribute('aria-current','page')});

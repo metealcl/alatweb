@@ -438,3 +438,176 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-offset:4px}
 @keyframes partner-loop {
   to { transform: translateX(-50%); }
 }
+
+.case-highlight {
+  padding-block: clamp(48px, 6vw, 88px) 24px;
+}
+
+.case-highlight .section-head {
+  align-items: flex-end;
+  gap: 10px 24px;
+  margin-bottom: 24px;
+}
+
+.case-highlight .section-title { margin: 0; }
+
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.case-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+
+.case-card, .case-step, .case-image {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #211016;
+}
+
+.case-card { display: flex; flex-direction: column; overflow: hidden; }
+
+.case-cover {
+  display: grid;
+  min-width: 0;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #190c13;
+}
+
+.case-card .case-cover { border-radius: 0; border-bottom: 1px solid var(--line); }
+
+.case-cover--website img, .case-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.case-cover--website img { aspect-ratio: 16 / 9; object-fit: cover; }
+
+.case-cover--product {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  justify-items: center;
+  gap: 7px;
+  padding: 24px clamp(18px, 5vw, 52px) 0;
+  background: radial-gradient(ellipse at center, #72213b, #220b16 76%);
+}
+
+.case-cover--product img {
+  width: min(100%, 160px);
+  height: auto;
+}
+
+.case-cover--product img:nth-child(2) { margin-top: 14px; }
+
+.case-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: clamp(18px, 3vw, 30px);
+}
+
+.case-kind { color: #cbabb4; font-size: 13px; }
+.case-body h3, .case-step h2, .case-step h3 { margin: 0; font-size: clamp(20px, 2.4vw, 28px); }
+.case-body p, .case-step p { margin: 0; color: #d2c7ca; font-size: 14px; line-height: 1.75; }
+.case-body .btn { margin-top: auto; }
+.case-body p { padding-bottom: 8px; }
+.case-step { padding: clamp(18px, 3vw, 26px); }
+.case-step p { margin-top: 10px; }
+.case-image { overflow: hidden; margin-block: 0; }
+
+.product-demo--active .phone-showcase { display: block; }
+
+.demo-nav {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.demo-nav button {
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 8px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #251217;
+  color: var(--paper);
+  font: 700 13px/1.35 var(--body);
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.demo-nav button[aria-pressed="true"] {
+  border-color: var(--crimson);
+  background: var(--crimson);
+  color: #fff;
+}
+
+.product-demo--active .phone-frame {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.35fr);
+  align-items: center;
+  gap: clamp(20px, 5vw, 52px);
+  padding: clamp(16px, 4vw, 40px);
+}
+
+.product-demo--active .phone-frame:hover { transform: none; }
+
+.product-demo--active .phone-frame img {
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+  max-height: 420px;
+  height: auto;
+}
+
+.product-demo--active .phone-caption { margin: 0; padding: 0; border: 0; }
+.product-demo--active .phone-caption h3 { font-size: clamp(21px, 3vw, 32px); }
+.product-demo--active .phone-caption p { font-size: 15px; }
+
+.brief-optional summary {
+  min-height: 44px;
+  padding: 12px 0;
+  border-block: 1px solid var(--line);
+  color: var(--paper);
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.brief-optional summary span { color: #bfb0b4; font-size: 13px; }
+.brief-optional .form-grid { margin-top: 14px; }
+
+.brief-preview {
+  padding: clamp(14px, 3vw, 22px);
+  border: 1px solid #86425b;
+  border-radius: 14px;
+  background: #190a13;
+}
+
+.brief-preview h3 { margin: 0; }
+.brief-preview > p { margin: 0; }
+.brief-preview [data-brief-output] { margin: 6px 0; }
+
+.brief-channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr));
+  gap: 8px;
+}
+
+@media (max-width: 760px) {
+  .case-grid, .case-grid--three { grid-template-columns: minmax(0, 1fr); }
+  .case-body .btn { width: 100%; }
+  .product-demo--active .phone-frame { grid-template-columns: minmax(0, 1fr); }
+  .product-demo--active .phone-frame img { max-height: 390px; }
+}
+
+@media (max-width: 420px) {
+  .demo-nav { gap: 6px; }
+  .demo-nav button { font-size: 12px; }
+}

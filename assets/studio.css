@@ -329,7 +329,7 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-offset:4px}
 }
 .partner-group {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: var(--partner-gap);
   margin: 0;
   padding: 0;
@@ -386,9 +386,32 @@ button:focus-visible,a:focus-visible,summary:focus-visible{outline-offset:4px}
   --logo-width: 164px;
   --logo-aspect: 1280 / 426;
 }
+.partner-logo--malatya-city {
+  --logo-width: 164px;
+  --logo-aspect: 365 / 154;
+  --source-width: 109.59%;
+  --source-left: -2.74%;
+  --source-top: -18.83%;
+  border-radius: 7px;
+  background: white;
+}
+.partner-name {
+  display: grid;
+  gap: 4px;
+  color: var(--paper);
+  text-align: center;
+  line-height: 1.25;
+}
+.partner-name strong { font-size: 14px; font-weight: 700; }
+.partner-name > span { font-size: 12px; color: #c7b9bc; }
+
 .partner-logo--neova,
 .partner-logo--celiksan,
 .partner-logo--eksem { mix-blend-mode: lighten; }
+
+@media (max-width: 930px) {
+  .partner-group { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
 
 @media (max-width: 560px) {
   .partner-group { grid-template-columns: repeat(2, minmax(0, 1fr)); }
